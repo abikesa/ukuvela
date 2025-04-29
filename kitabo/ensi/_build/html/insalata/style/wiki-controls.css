@@ -1,0 +1,39 @@
+/* style/wiki-controls.css - Settings Panel + TOC Hide */
+
+#settings-bar {
+  min-width: 200px;
+  background: #f8f9fa;
+  padding: 1rem;
+  font-size: 0.9em;
+  border: 1px solid #ccc;
+  height: fit-content;
+  position: sticky;
+  top: 1rem;
+}
+
+#settings-bar button {
+  width: 100%;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+#toc-hide-button {
+  background: none;
+  border: none;
+  color: #0645ad;
+  cursor: pointer;
+  font-size: 0.9em;
+  padding: 0;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}

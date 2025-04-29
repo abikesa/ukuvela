@@ -1,0 +1,53 @@
+# 🧪 Kidney Donor Risk Tool
+
+A tool to compare projected survival before and after donation.
+
+Data-driven but emotionally resonant.
+
+Uses Kaplan-Meier overlays with custom beta coefficients.# flick 20250409213605-e9sU
+# flick 20250409214211-9DVA
+# flick 20250409214627-0th8
+# flick 20250409230604-8uBq
+# flick 20250409231148-Q5Lj
+# flick 20250410002735-xXFq
+# flick 20250410005408-3JIb
+# flick 20250410023040-kvXh
+# flick 20250410140620-qU2c
+# flick 20250410144301-0yKw
+# flick 20250410151212-JmRG
+# flick 20250410162337-wuLn
+# flick 20250410162733-FB2d
+# flick 20250410201241-yO7d
+# flick 20250413011053-uFqG
+# flick 20250413011142-CJRa
+# flick 20250413124136-KlLR
+# flick 20250413222701-9q1f
+# flick 20250414004210-5hGk
+# flick 20250415193035-18Nr
+# flick 20250415200148-QKDC
+# flick 20250415200843-O77N
+# flick 20250415212400-6R8O
+# flick 20250415225606-XKEx
+# flick 20250415233204-Ow6r
+# flick 20250416014324-rIrJ
+# flick 20250416160321-YwGn
+# flick 20250416185337-hwZY
+# flick 20250416215310-SbFy
+# flick 20250416222857-62c7
+# flick 20250416232105-lkP6
+# flick 20250417030422-kXZg
+# flick 20250417183914-IoIq
+# flick 20250417185035-KSdr
+# flick 20250417190344-l8eJ
+# flick 20250417215305-Cv8Q
+# flick 20250418040655-DK87
+# flick 20250422211721-nxxg
+# flick 20250422214552-r4Uu
+# flick 20250422215933-n6de
+# flick 20250423014454-dEdG
+# flick 20250423173643-nRtr
+# flick 20250423181652-KWNE
+# flick 20250429013033-b0CA
+# flick 20250429155245-TZFP
+# flick 20250429160213-Bcxa
+# flick 20250429193948-TYpi

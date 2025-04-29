@@ -1,0 +1,162 @@
+/* homepage.css - styles for the orb homepage */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Linux Libertine', Georgia, Times, serif;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 3em;
+}
+
+body {
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+/* FadeIn keyframes */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+/* Site title */
+#site-name {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 0.2em;
+  margin-top: -1em; /* bring it closer to 12 o'clock */
+}
+
+/* Tagline */
+#site-tagline {
+  font-size: 16px;
+  font-style: italic;
+  color: #cccccc;
+  margin-bottom: 1em;
+}
+
+/* Centerpiece container */
+#centerpiece {
+  position: relative;
+  width: 450px;
+  height: 450px;
+}
+
+/* Globe image */
+#globe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  animation: spin 60s linear infinite;
+}
+
+/* Spin animation keyframes */
+@keyframes spin {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+
+/* Topic links arranged around a perfect circle */
+.topic {
+  position: absolute;
+  color: #93c5fd;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s;
+  top: 50%;
+  left: 50%;
+  transform:
+    rotate(calc(var(--i) * 60deg))
+    translate(200px)
+    rotate(calc(var(--i) * -60deg));
+}
+
+/* Hover effect */
+.topic:hover {
+  color: #ffffff;
+  text-decoration: underline;
+  text-shadow: 0 0 8px #93c5fd, 0 0 12px #ffffff;
+}
+
+
+/* Search bar */
+#search-bar {
+  margin-top: 2em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#search-bar input {
+  width: 300px;
+  padding: 0.7em;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Highlighted search match style */
+mark.highlight {
+  background-color: rgba(147, 197, 253, 0.4);
+  padding: 0 2px;
+  border-radius: 3px;
+  font-weight: bold;
+  animation: fadeInHighlight 0.5s ease;
+}
+
+/* Search preview snippet under each topic link */
+.search-preview {
+  font-size: 0.9em;
+  color: #aaa;
+  font-style: italic;
+  margin-top: 6px;
+  margin-bottom: 14px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeInHighlight 0.5s ease;
+  line-height: 1.4;
+}
+
+/* Soft divider between articles */
+.topic + .search-preview {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Special animation just for search results fade */
+@keyframes fadeInHighlight {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+.search-preview {
+  font-size: 0.85em;
+  color: #cccccc;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  animation: fadeInHighlight 0.5s ease;
+}
+
+@keyframes fadeInHighlight {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

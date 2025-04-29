@@ -1,0 +1,99 @@
+/* article.css - clean Wikipedia-style article page */
+
+body {
+  font-family: 'Linux Libertine', Georgia, Times, serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #202122;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f8f9fa;
+  padding: 0.8em 1em;
+  border-bottom: 1px solid #a2a9b1;
+}
+
+#logo {
+  height: 50px;
+}
+
+#content-wrapper {
+  display: grid;
+  grid-template-columns: 220px 1fr 220px;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 2em auto;
+  padding: 0 1em;
+}
+
+nav#toc {
+  background-color: #f8f9f9;
+  border: 1px solid #ccc;
+  padding: 1em;
+  font-size: 0.9em;
+  position: sticky;
+  top: 1em;
+  max-height: calc(100vh - 4em);
+  overflow-y: auto;
+}
+
+main#content {
+  background-color: #ffffff;
+  padding: 2em;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+aside#settings-bar {
+  background-color: #f8f9f9;
+  border: 1px solid #ccc;
+  padding: 1em;
+  font-size: 0.9em;
+  position: sticky;
+  top: 1em;
+  height: fit-content;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  font-size: 0.9em;
+  color: #777;
+}
+
+h1, h2 {
+  font-family: 'Linux Libertine', Georgia, Times, serif;
+}
+
+p {
+  line-height: 1.6;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+aside#infobox {
+  background-color: #f8f9fa;
+  border: 1px solid #a2a9b1;
+  padding: 1em;
+  float: right;
+  width: 250px;
+  margin: 0 0 1em 1em;
+}
+
+aside#infobox table {
+  width: 100%;
+}
+
+aside#infobox th {
+  background-color: #cedff2;
+  font-size: 1.2em;
+  padding: 0.5em;
+}
+
+aside#infobox td {
+  padding: 0.5em;
+}

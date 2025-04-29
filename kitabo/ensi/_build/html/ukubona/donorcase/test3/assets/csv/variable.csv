@@ -1,0 +1,92 @@
+variable,value_label,categorical,values,base,display_text
+race,Mexican America,1,1.race,0,Race
+race,Other Hispanic,1,2.race,0,Race
+race,Non-Hispanic White,1,3b.race,1,Race
+race,Non-Hispanic Black,1,4.race,0,Race
+race,Other,1,5.race,0,Race
+gender,Male,1,1.gender,0,Gender
+gender,Female,1,2b.gender,1,Gender
+education,k8,1,1.education,0,Education
+education,Some High School,1,2.education,0,Education
+education,High School,1,3.education,0,Education
+education,Some College,1,4.education,0,Education
+education,Bachelor,1,5b.education,1,Education
+education,More Thank High School,1,6.education,0,Education
+education,Refused,1,7.education,0,Education
+health,Excellent,1,1.hs,0,Self Rated Health Status
+health,Very Good,1,2.hs,0,Self Rated Health Status
+health,Good,1,3b.hs,1,Self Rated Health Status
+diabete,No,1,0b.diabete,1,Diabetic
+diabete,Yes,1,1.diabete,0,Diabetic
+insulin,No,1,0b.insulin,1,Insulin Intake
+insulin,Yes,1,1.insulin,0,Insulin Intake
+dia_pill,No,1,0b.dia_pill,1,Diabetic Medication Intake
+dia_pill,Yes,1,1.dia_pill,0,Diabetic Medication Intake
+hypertension,No,1,0b.hypertension,1,Hypertension
+hypertension,Yes,1,1.hypertension,0,Hypertension
+hypertension,Unknown,1,3.hypertension,0,Hypertension
+hyp_med,No,1,0b.hbp_pill,1,Hypertension Medication Intake
+hyp_med,Yes,1,1.hbp_pill,0,Hypertension Medication Intake
+smoke,No,1,0b.smoke,1,Smoking History
+smoke,Yes,1,1.smoke,0,Smoking History
+age,age,0,e_age_centered,60,Age
+bp_sys,bp_sys,0,bpxsar_new_centered,120,Systolic Blood Pressure
+bp_dia,bp_dia,0,bpxdar_new_centered,75,Diastolic Blood Pressure
+bmi,bmi,0,bmi_centered,24,BMI
+ghb,ghb,0,ghb,0,Glycohemoglobin
+eGFR,eGFR,0,egfr_centered,90,Estimated Glomerular Filtration Rate
+uACR,uACR,0,uacr_centered,4,Urine Albumin-to-Creatinine Ratio
+# flick 20250409213613-eikq
+# flick 20250409214218-idWs
+# flick 20250409214635-LJgR
+# flick 20250409220322-wxt9
+# flick 20250409230606-kARO
+# flick 20250409234311-yrWb
+# flick 20250410003323-V7yj
+# flick 20250410004430-pVeJ
+# flick 20250410005846-abhh
+# flick 20250410013246-xGrk
+# flick 20250410130448-8UQK
+# flick 20250410145601-icbg
+# flick 20250410152046-feoj
+# flick 20250410152851-PaWx
+# flick 20250410161627-NnOD
+# flick 20250410212158-axy6
+# flick 20250410225840-Cxix
+# flick 20250410232149-WBwO
+# flick 20250413011053-DeN5
+# flick 20250413011145-h1Lk
+# flick 20250413214014-nWUG
+# flick 20250414004213-xatU
+# flick 20250414041738-l4dF
+# flick 20250414042550-Ht1R
+# flick 20250414181114-xRzU
+# flick 20250415192650-qJvp
+# flick 20250415193729-mw4X
+# flick 20250415203935-dFKb
+# flick 20250415225607-o0lw
+# flick 20250416171216-xX1T
+# flick 20250416214708-98Ms
+# flick 20250416222356-fL3p
+# flick 20250416222628-GRrZ
+# flick 20250416223142-JS3S
+# flick 20250416224029-lRgh
+# flick 20250416225811-jkxN
+# flick 20250416232108-ZXAz
+# flick 20250417002613-LDri
+# flick 20250417030422-5vSB
+# flick 20250417033847-kWFp
+# flick 20250417034408-enPh
+# flick 20250417141941-uLPU
+# flick 20250417212533-TFhb
+# flick 20250418021900-fJZa
+# flick 20250418025026-V66I
+# flick 20250418032007-mGlW
+# flick 20250418042250-tUOF
+# flick 20250422002919-uPXz
+# flick 20250422215641-Ug1n
+# flick 20250423021931-JEEm
+# flick 20250423161904-VCYo
+# flick 20250423171403-UfHd
+# flick 20250423175007-2kCq
+# flick 20250423181652-a5og

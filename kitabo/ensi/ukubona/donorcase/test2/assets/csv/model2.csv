@@ -1,0 +1,74 @@
+Variable,Type,id,coefficient
+age,2,age,0.068411678
+gender,1,genderMale,0.717981326
+gender,1,genderFemale,0
+raceEthnicity,1,raceEthnicity1,-0.429578351
+raceEthnicity,1,raceEthnicity2,-0.137973179
+raceEthnicity,1,raceEthnicity3,0
+raceEthnicity,1,raceEthnicity4,0.191581241
+raceEthnicity,1,raceEthnicity5,-0.517312611
+selfRatedHealth,1,selfRatedHealth1,-0.910488978
+selfRatedHealth,1,selfRatedHealth2,-0.463887133
+selfRatedHealth,1,selfRatedHealth3,0
+selfRatedHealth,1,selfRatedHealth4,0.661245512
+selfRatedHealth,1,selfRatedHealth5,1.487498098
+# flick 20250409213615-P17t
+# flick 20250409214219-k1ex
+# flick 20250409214637-O7ys
+# flick 20250409220134-heZZ
+# flick 20250409220944-dd40
+# flick 20250410010502-nHHw
+# flick 20250410013759-nA8S
+# flick 20250410023042-vaOi
+# flick 20250410031041-aSb7
+# flick 20250410032003-qlqb
+# flick 20250410131707-P3mo
+# flick 20250410134054-mVkY
+# flick 20250410145605-ITPm
+# flick 20250410152048-XCzu
+# flick 20250410154335-gGra
+# flick 20250410202644-PuMH
+# flick 20250410225840-TEs2
+# flick 20250410232151-LKTi
+# flick 20250413010201-m87S
+# flick 20250413132128-HdBD
+# flick 20250413171243-6D1U
+# flick 20250413214017-gqtI
+# flick 20250414003733-IbSq
+# flick 20250415193727-ThMT
+# flick 20250415194336-qtj6
+# flick 20250415200844-GlC4
+# flick 20250415203936-UB6W
+# flick 20250415210426-Tgj6
+# flick 20250415212400-17TR
+# flick 20250415220557-o76D
+# flick 20250416025010-ldSY
+# flick 20250416031038-34e1
+# flick 20250416034834-w1is
+# flick 20250416151119-bHCL
+# flick 20250416160320-H9UT
+# flick 20250416165919-Qg5a
+# flick 20250416221051-qztn
+# flick 20250416222355-DlkF
+# flick 20250416223139-vKUg
+# flick 20250416225811-p0Up
+# flick 20250416232103-HGU8
+# flick 20250417030420-dKGe
+# flick 20250417140108-qNsI
+# flick 20250417141942-2mKV
+# flick 20250417181706-8wx7
+# flick 20250417183513-FokE
+# flick 20250417183915-OcB7
+# flick 20250417184542-k6OH
+# flick 20250417190347-jjYY
+# flick 20250417192641-9q2D
+# flick 20250418021903-chNQ
+# flick 20250418022427-mhdZ
+# flick 20250418032004-UnKZ
+# flick 20250422211720-eDNz
+# flick 20250422214553-jXK2
+# flick 20250422215639-0mI3
+# flick 20250423173644-1F7C
+# flick 20250423175004-YCxS
+# flick 20250423181655-OMgw
+# flick 20250428112847-dXKE

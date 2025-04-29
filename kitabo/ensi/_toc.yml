@@ -1,0 +1,56 @@
+# Dionysus
+format: jb-book
+root: index
+chapters:
+  # Sing O Muse!
+  - file: act1/part1
+    sections:
+      - title: Idols
+        file: act1/chapter1
+      - title: Realities
+        file: act1/chapter2
+      - title: Question
+        file: act1/chapter3
+        
+  # Of Athena
+  - file: act2/part2
+    sections:
+      - title: Eternal
+        file: act2/chapter1
+      - title: War
+        file: act2/chapter2
+      - title: Hammer
+        file: act2/chapter3
+
+  # Apollo
+  - file: act3/part3
+    sections:
+      - title: 'Self 🗡'
+        file: act3/act1
+        sections:
+          - title: Adversarial
+            file: act3/part1/part1_1
+          - title: Competitive
+            file: act3/part1/part1_2
+          - title: Worthy
+            file: act3/part1/part1_3
+      - title: 'Emergent 🤝'  
+        file: act3/act2
+        sections:
+          - title: Transactional
+            file: act3/part2/part2_1
+          - title: Suspended
+            file: act3/part2/part2_2
+          - title: Loyal
+            file: act3/part2/part2_3
+      - title: 'Nonself ❤️' 
+        file: act3/act3
+        sections:
+          - title: Cooperative
+            file: act3/part3/part3_1
+          - title: Unconditional
+            file: act3/part3/part3_2
+          - title: 'Family 🎹' 
+            file: act3/part3/part3_3
+
+  - file: bibliography

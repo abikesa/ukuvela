@@ -1,0 +1,69 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.ukusoma.hook</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/echo</string>
+        <string>🪝 initialized</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+</dict>
+</plist>
+# flick 20250409213555-4mW4
+# flick 20250409214202-jRQc
+# flick 20250409214617-XIaD
+# flick 20250409230557-dB30
+# flick 20250410004050-ujrh
+# flick 20250410004433-eSEy
+# flick 20250410004710-lLFb
+# flick 20250410004925-xMnd
+# flick 20250410005410-KnWQ
+# flick 20250410013244-49Ff
+# flick 20250410030139-F935
+# flick 20250410032335-SyJi
+# flick 20250410032811-EL3o
+# flick 20250410201244-PeIu
+# flick 20250410214248-q0E4
+# flick 20250413010203-K906
+# flick 20250413011144-Dbhy
+# flick 20250413132131-osJI
+# flick 20250414003734-yaOU
+# flick 20250414004210-xdBn
+# flick 20250415220600-T0xn
+# flick 20250416025011-UArY
+# flick 20250416031040-p4j9
+# flick 20250416034835-51Ks
+# flick 20250416150454-rSPF
+# flick 20250416163057-A44E
+# flick 20250416191007-SkNw
+# flick 20250416222353-inpe
+# flick 20250416222626-rWdT
+# flick 20250416222857-bJLD
+# flick 20250416232104-Zsgx
+# flick 20250417034406-dfkq
+# flick 20250417183916-sdUo
+# flick 20250417212535-oGzy
+# flick 20250418021902-1Mkd
+# flick 20250418022426-EYig
+# flick 20250418040654-UKUP
+# flick 20250422040654-uf5Y
+# flick 20250422211722-vNOt
+# flick 20250423014454-VPqE
+# flick 20250423021930-dGdf
+# flick 20250423172039-eyMn
+# flick 20250423180925-A6PA
+# flick 20250423181655-I7W5
+# flick 20250423194208-YRwa
+# flick 20250423195658-e0X9
+# flick 20250428113617-YzVA
+# flick 20250429020307-oBL8
+# flick 20250429111920-uoLu
+# flick 20250429162400-mI5F
+# flick 20250429165849-9qvz
+# flick 20250429170605-1CS4

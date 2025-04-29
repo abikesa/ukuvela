@@ -1,0 +1,38 @@
+/* settings-bar.css - Clean Wikipedia-style Settings Sidebar */
+
+#settings-bar {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 1em;
+  font-size: 0.9em;
+  border-radius: 4px;
+}
+
+/* Section titles (like Appearance) */
+.settings-section {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+/* Radio group container */
+.radio-group {
+  margin-bottom: 1em;
+}
+
+/* Each radio option */
+.radio-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.3em;
+}
+
+/* The radio input itself */
+.radio-option input[type="radio"] {
+  margin-right: 0.5em;
+}
+
+/* Label hover */
+#settings-bar label {
+  cursor: pointer;
+}

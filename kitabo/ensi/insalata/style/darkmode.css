@@ -1,0 +1,20 @@
+/* style/darkmode.css - Dark Mode Tweaks */
+
+body.darkmode {
+    background: #1a1a1a;
+    color: #e0e0e0;
+  }
+  
+  .darkmode a {
+    color: #71a7ff;
+  }
+  
+  header.darkmode {
+    background: #2a2a2a;
+  }
+  
+  #toc.darkmode, #infobox.darkmode {
+    background: #2a2a2a;
+    border-color: #555;
+  }
+  
