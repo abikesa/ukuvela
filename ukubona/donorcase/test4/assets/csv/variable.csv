@@ -1,0 +1,67 @@
+variable,value_label,categorical,values,base,display_text,scale,min,max
+gender,Male,1,0b.female,1,Gender,1,0,1
+gender,Female,1,1.female,0,Gender,1,0,1
+pre_hx_htn,No,1,0b.htn,1,History of Hypertension,1,0,1
+pre_hx_htn,Yes,1,1.htn,0,History of Hypertension,1,0,1
+hxsmk,No,1,0b.smoke,1,History of Smoking,1,0,1
+hxsmk,Yes,1,1.smoke,0,History of Smoking,1,0,1
+no_college,No,1,0b.not_college_bin,1,No College Education,1,0,1
+no_college,Yes,1,1.not_college_bin,0,No College Education,1,0,1
+insurance,No,1,0b.insurance_pre,1,Has Insurance,1,0,1
+insurance,Yes,1,1.insurance_pre,0,Has Insurance,1,0,1
+adi,No,1,0b.adi_bin,1,Area Deprivation Index Greater Than Median,1,0,1
+adi,Yes,1,1.adi_bin,0,Area Deprivation Index Greater Than Median,1,0,1
+race,Non-Hispanic White,1,0b.race_howell,1,Race/Ethnicity,1,0,4
+race,Hispanic (Any Race),1,1.race_howell,0,Race/Ethnicity,1,0,4
+race,Non-Hispanic Black,1,2.race_howell,0,Race/Ethnicity,1,0,4
+race,Non-Hispanic Other,1,3.race_howell,0,Race/Ethnicity,1,0,4
+age,Age,0,age,40,Age,10,0,100
+bmi,Body Mass Index,0,bmi,25,Body Mass Index,5,0,55
+sbp,Systolic Blood Pressure At Donation,0,sbp,120,Systolic Blood Pressure At Donation,10,0,225
+dbp,Diastolic Blood Pressure At Donation,0,dbp,80,Diastolic Blood Pressure At Donation,10,0,225
+egfr,Estimated Glomerular Filtration Rate At Donation,0,egfr_pre,90,Estimated Glomerular Filtration Rate At Donation,10,0,150
+income,Household Income,0,income,0,Household Income,10000,0,700000
+# flick 20250409213612-p5UD
+# flick 20250409214217-o1Be
+# flick 20250409214634-VAzM
+# flick 20250410002731-QTY9
+# flick 20250410004051-qRvM
+# flick 20250410005848-fITf
+# flick 20250410010500-dWyd
+# flick 20250410031043-ZTOv
+# flick 20250410032004-FWQZ
+# flick 20250410134055-9x2t
+# flick 20250410151213-zgqk
+# flick 20250410201244-cEDf
+# flick 20250413005458-0jKn
+# flick 20250413214015-gDv9
+# flick 20250415193038-hZOU
+# flick 20250415193509-Pfuq
+# flick 20250415200844-rfyc
+# flick 20250415205659-zLSw
+# flick 20250415210429-dRIJ
+# flick 20250415212833-v8S1
+# flick 20250415230808-R4XQ
+# flick 20250416160545-rRKq
+# flick 20250416161513-mEqv
+# flick 20250416171213-VgcZ
+# flick 20250416180328-Ly3d
+# flick 20250416185339-5pss
+# flick 20250416191010-xAtU
+# flick 20250416222901-7uf6
+# flick 20250416224616-CI38
+# flick 20250416234855-tZz5
+# flick 20250417001810-gVm4
+# flick 20250417002616-ahnZ
+# flick 20250417030421-ArIH
+# flick 20250417141942-6Q7s
+# flick 20250417185033-jtkP
+# flick 20250417190016-opGo
+# flick 20250417210324-fBBu
+# flick 20250418040653-Hkjr
+# flick 20250422033027-x8f1
+# flick 20250422215933-YiIj
+# flick 20250423005252-612m
+# flick 20250423173643-622X
+# flick 20250423175007-YmOm
+# flick 20250423180024-sptt

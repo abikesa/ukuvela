@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <title>Jonathan Gasaatura</title>
+  <link rel="stylesheet" href="https://en.wikipedia.org/w/load.php?modules=skins.vector.styles&only=styles">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root[data-theme='light'] {
+      --bg-color: #f8f9fa;
+      --text-color: #202122;
+      --infobox-bg: #f9f9f9;
+      --border-color: #a2a9b1;
+      --highlight-color: #f0f8ff;
+    }
+    :root[data-theme='dark'] {
+      --bg-color: #202122;
+      --text-color: #f8f9fa;
+      --infobox-bg: #2a2d2f;
+      --border-color: #555;
+      --highlight-color: #333366;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--border-color);
+    }
+    #container {
+      display: flex;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+    nav.toc {
+      width: 220px;
+      flex-shrink: 0;
+      font-size: 90%;
+      background: var(--infobox-bg);
+      padding: 1rem;
+      border: 1px solid var(--border-color);
+      margin-right: 1rem;
+      position: sticky;
+      top: 1rem;
+      height: fit-content;
+    }
+    aside.appearance {
+      width: 220px;
+      flex-shrink: 0;
+      background: var(--infobox-bg);
+      padding: 1rem;
+      border: 1px solid var(--border-color);
+      margin-left: 1rem;
+      position: sticky;
+      top: 1rem;
+      height: fit-content;
+    }
+    main#content {
+      flex-grow: 1;
+      padding: 0 1rem;
+      max-width: 720px;
+    }
+    .infobox {
+      float: right;
+      width: 260px;
+      background: var(--infobox-bg);
+      border: 1px solid var(--border-color);
+      padding: 1rem;
+      font-size: 90%;
+      margin: 1rem 0 1rem 1rem;
+    }
+    .infobox img {
+      width: 100%;
+      height: auto;
+    }
+    h1, h2 {
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    @media (max-width: 768px) {
+      #container {
+        flex-direction: column;
+        padding: 0.5rem;
+      }
+    
+      nav.toc, aside.appearance {
+        width: auto;
+        margin: 0 0 1rem 0;
+        position: relative;
+      }
+    
+      .infobox {
+        float: none;
+        width: 100%;
+        margin: 1rem 0;
+      }
+    
+      main#content {
+        max-width: 100%;
+        padding: 0;
+      }
+    
+      header h1 {
+        font-size: 1.5rem;
+        padding-left: 1rem;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <div style="max-width: 720px; margin: 0 auto; padding-left: 8rem;">
+      <h1>Jonathan Gasaatura</h1>
+    </div>
+  </header>
+  <div id="container">
+    <nav class="toc">
+      <strong>Contents</strong>
+      <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#internship">Internship</a></li>
+        <li><a href="#projects">Emerging Projects</a></li>
+        <li><a href="#athletics">Athletics</a></li>
+      </ol>
+    </nav>
+    <main id="content">
+      <div class="infobox">
+        <img src="../figures/ukubona.png" alt="Logo of Statlace">
+        <table>
+          <tr><th>First released</th><td>March 2025</td></tr>
+          <tr><th>Developed by</th><td>OpenCanvas Collective</td></tr>
+          <tr><th>Core languages</th><td>PAIRS@JH (python, AI, R, Stata, JavaScript, HTML)</td></tr>
+          <tr><th>Purpose</th><td>Decision analytics for clinical medicine, sports medicine, and public health, </td></tr>
+          <tr><th>Notable user</th><td>Jonathan G (Ukubona Intern, 2025)</td></tr>
+          <tr><th>License</th><td>Creative Commons Attribution 4.0</td></tr>
+        </table>
+      </div>
+    
+      <h2 id="overview"></h2>
+      <p><strong>Starlace</strong> is a modular analytics engine designed by <i>Ukubona</i>, a Virginia-based analytics firm, to democratize statistical insight across sectors ranging from public health to environmental justice. Launched in 2025 by the OpenCanvas Collective, the tool offers a drag-and-drop interface backed by deeply customizable code blocks—allowing novice users and expert analysts to collaborate in real time. It gained early traction in clinical research at leading clinical research instutions in Maryland and California and quickly expanded to support real-world case simulations beyond clinical medicine and public health, sports medicine, education policy, water equity, and even refugee <em>logisitics</em><sup class="reference"><a href="#ref1" id="note1">[1]</a></sup>.</p>
+    
+      <h2 id="architecture">Architecture</h2>
+      <p>At its core, Statlace is powered by a hybrid stack: Python-based inference engines for speed, R visual layers for clarity, and Julia-based optimization modules for matrix-intensive tasks. Each statistical “lace” can be braided—modular components reused, recombined, and rerun under variant assumptions. The engine’s real innovation is its open lattice design: any data source, once verified, can be plugged in as a dynamic node in a causal inference chain.</p>
+    
+      <h2 id="use-cases">Use Cases</h2>
+      <ul>
+        <li><strong>Kidney Donor Risk Simulator:</strong> Powered by Cox regression overlays from SRTR, CMS, and NHANES databases, this tool allows prospective donors to visualize projected ESRD risk over time compared to matched<em>controls</em><sup class="reference"><a href="#ref1" id="note1"> [2]</a></sup>.</li>
+        <li><strong>School Closure Forecasts:</strong> Used during 2023 respiratory outbreaks to model absenteeism effects across socio-economic strata.</li>
+        <li><strong>Urban Heat Mapping (Africa Node):</strong> Incorporates Landsat satellite data and population density inputs to flag microclimates with elevated mortality risk.</li>
+      </ul>
+    
+      <h2 id="notable-analysts">Notable Analysts</h2>
+      <p>In 2025, <strong>Jonathan G.</strong>, a high school student from Virginia and short-term intern at Ukubona LLC, helped debug and test several Statlace modules under supervised mentorship. His proposed refactor of the “multi-risk matrix” module led to a 38% runtime reduction—later merged into version 2.4.3. He presented these contributions in a student lightning talk at Hopkins’ Summer Symposium on Open Science and Equity <em> (SSOSE 2025)</em><sup class="reference"><a href="#ref1" id="note1">[1]</a></sup>.</p>
+    
+      <h2 id="criticism">Criticism & Limitations</h2>
+      <p>Statlace has been praised for its transparency and adaptability, but some critics argue it risks overfitting public belief systems with polished visuals—substituting aesthetics for epistemic rigor. Others raise concerns about interoperability with proprietary data silos and the risk of statistical colonialism when models are applied across cultural contexts without adequate consultation.</p>
+    
+      <h2 id="future">Future Development</h2>
+      <p>Planned expansions include integration with voice-activated interfaces for accessibility, sandboxed modules for youth training, and a “narrative trace” feature that embeds epistemic footnotes alongside visual outputs. A GitHub mirror is maintained under the <code>OpenMethods/statlace</code> repository, with versioned releases archived at DataCommons.io.</p>
+    
+      <h2 id="references">References</h2>
+      <ol class="references">
+        <li id="ref1">Muzaale, A. (2023). “Statlace: Open Analytics in an Unequal World.” <em>Data Sovereignty Journal</em>. <a href="#note1">↩</a></li>
+        <li id="ref2">Ukubona LLC. (2025). “Kaplan-Meier Risk Comparison App Documentation.” <a href="#note2">↩</a></li>
+        <li id="ref3">Jonathan G. (2025). “Multi-Risk Matrix Refactor Notes.” SSOSE Symposium Poster. <a href="#note3">↩</a></li>
+      </ol>
+    </main>
+    <aside class="appearance">
+      <strong>Settings</strong>
+      <p>Text Size:<br>
+        <input type="radio" name="text"> Small<br>
+        <input type="radio" name="text" checked> Standard<br>
+        <input type="radio" name="text"> Large</p>
+      <p>Theme:<br>
+        <input type="radio" name="color" checked> Light<br>
+        <input type="radio" name="color"> Dark<br>
+        <button onclick="toggleTheme()">Toggle Theme</button></p>
+    </aside>
+  </div>
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      html.dataset.theme = html.dataset.theme === 'dark' ? 'light' : 'dark';
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+# flick 20250409213609-3Wai
+# flick 20250409214215-TdAx
+# flick 20250409214631-Moe6
+# flick 20250409230556-9yly
+# flick 20250410002733-SNHs

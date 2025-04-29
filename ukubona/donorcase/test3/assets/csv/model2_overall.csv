@@ -1,0 +1,90 @@
+Variable,Type,id,coefficient
+race,1,1.race,0.590849404
+race,1,2.race,-0.669596538
+race,1,3b.race,0
+race,1,4.race,1.196468247
+race,1,5.race,0.514955226
+gender,1,1.gender,0.583339539
+gender,1,2b.gender,0
+education,1,1.education,0.361792901
+education,1,2.education,0.298417868
+education,1,3.education,0.323014082
+education,1,4.education,0.192090663
+education,1,5b.education,0
+education,1,6.education,-1.84748423
+education,1,7.education,-41.6980083
+health,1,1.hs,-0.329012858
+health,1,2.hs,-0.273794442
+health,1,3b.hs,0
+diabete,1,0b.diabete,0
+diabete,1,1.diabete,1.425748363
+insulin,1,0b.insulin,0
+insulin,1,1.insulin,0.872891292
+dia_pill,1,0b.dia_pill,0
+dia_pill,1,1.dia_pill,0.155023538
+hypertension,1,0b.hypertension,0
+hypertension,1,1.hypertension,0.916028627
+hypertension,1,3.hypertension,-42.20249939
+hyp_med,1,0b.hbp_pill,0
+hyp_med,1,1.hbp_pill,-0.05596719
+smoke,1,0b.smoke,0
+smoke,1,1.smoke,0.413594432
+age,0,e_age_centered,0.007510088
+bp_sys,0,bpxsar_new_centered,0.011527337
+bp_dia,0,bpxdar_new_centered,-0.007979888
+bmi,0,bmi_centered,-0.000170755
+ghb,0,ghb,-0.000102101
+eGFR,0,egfr_centered,-0.018122615
+uACR,0,uacr_centered,1.36356E-05
+# flick 20250409213613-BJ4Y
+# flick 20250409214218-skNe
+# flick 20250409214635-4VfV
+# flick 20250409220325-KgqJ
+# flick 20250409230556-kkpt
+# flick 20250410003642-cyFC
+# flick 20250410004711-50rH
+# flick 20250410013801-luXi
+# flick 20250410023042-l2SW
+# flick 20250410141343-TGI2
+# flick 20250410145602-Ocnb
+# flick 20250410152851-XJCH
+# flick 20250410154331-FDvJ
+# flick 20250410205357-phQb
+# flick 20250410212158-ZvXB
+# flick 20250410232152-FYuT
+# flick 20250413011055-ffjL
+# flick 20250413011144-Ffp2
+# flick 20250413132129-MdiO
+# flick 20250413213136-GVUR
+# flick 20250414181114-JKDh
+# flick 20250414182647-JYXO
+# flick 20250415195127-kiZB
+# flick 20250415200843-Wzrq
+# flick 20250415203937-hXhD
+# flick 20250415204935-3zJf
+# flick 20250416014328-CplL
+# flick 20250416150450-1hfJ
+# flick 20250416152308-qWGC
+# flick 20250416155838-dcyl
+# flick 20250416160546-s9fS
+# flick 20250416212947-FzUQ
+# flick 20250416214303-rjog
+# flick 20250416222356-gxHB
+# flick 20250416222858-tDYl
+# flick 20250416223540-X3DI
+# flick 20250416230551-5doG
+# flick 20250417183916-dzKG
+# flick 20250417185032-d4QX
+# flick 20250417190345-4Lrk
+# flick 20250418022425-WLTm
+# flick 20250418022524-h0h3
+# flick 20250422003910-u3Kd
+# flick 20250422212436-EOEI
+# flick 20250422215934-lma5
+# flick 20250422235232-Dayh
+# flick 20250423014100-BPd0
+# flick 20250423161905-r8fI
+# flick 20250423173643-j42v
+# flick 20250423175005-79N9
+# flick 20250423200930-ymVD
+# flick 20250428112847-3Qpe

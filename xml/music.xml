@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE score-partwise PUBLIC "-//Recordare//DTD MusicXML 3.1 Partwise//EN" "http://www.musicxml.org/dtds/partwise.dtd">
+<score-partwise version="3.1">
+  <part-list>
+    <score-part id="P1">
+      <part-name>Voice</part-name>
+    </score-part>
+  </part-list>
+  <part id="P1">
+    <measure number="1">
+      <attributes>
+        <divisions>1</divisions>
+        <key>
+          <fifths>0</fifths>
+        </key>
+        <time>
+          <beats>4</beats>
+          <beat-type>4</beat-type>
+        </time>
+        <clef>
+          <sign>G</sign>
+          <line>2</line>
+        </clef>
+      </attributes>
+      <note>
+        <pitch>
+          <step>D</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>4</duration>
+        <type>quarter</type>
+      </note>
+      <note>
+        <pitch>
+          <step>F</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>2</duration>
+        <type>eighth</type>
+      </note>
+      <note>
+        <pitch>
+          <step>A</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>2</duration>
+        <type>eighth</type>
+      </note>
+      <note>
+        <pitch>
+          <step>G</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>2</duration>
+        <type>eighth</type>
+      </note>
+      <note>
+        <pitch>
+          <step>C</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>2</duration>
+        <type>eighth</type>
+      </note>
+    </measure>
+    <measure number="2">
+      <note>
+        <pitch>
+          <step>A</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>2</duration>
+        <type>eighth</type>
+      </note>
+      <note>
+        <pitch>
+          <step>F</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>2</duration>
+        <type>eighth</type>
+      </note>
+      <note>
+        <pitch>
+          <step>D</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>2</duration>
+        <type>eighth</type>
+      </note>
+    </measure>
+  </part>
+</score-partwise>
+# flick 20250409213603-aw7j
+# flick 20250409214209-3MDT
+# flick 20250409214625-PY9v
+# flick 20250410003644-Qy85
+# flick 20250410005410-kKZi
+# flick 20250410032116-SE0r
+# flick 20250410032812-t878
+# flick 20250410144303-rSL4
+# flick 20250410152849-CPtA
+# flick 20250410154742-THC8
+# flick 20250410162336-T2aa
+# flick 20250410201241-uhKO
+# flick 20250410202644-33FA
+# flick 20250410212200-Mkwi
+# flick 20250410232148-QfnX
+# flick 20250410235823-nRvO
+# flick 20250413005457-WjLX
+# flick 20250413011054-oL2B
+# flick 20250414181112-1QFs
+# flick 20250415192651-Q8EP
+# flick 20250415193510-s75d
+# flick 20250415212834-YGbd
+# flick 20250415230810-HONX
+# flick 20250416020251-pPKg
+# flick 20250416025011-cZrl
+# flick 20250416160544-0c2J
+# flick 20250416191008-CjvE
+# flick 20250416191901-lpqi
+# flick 20250416214305-nVTo
+# flick 20250416214706-kME4
+# flick 20250416222628-IAxp
+# flick 20250416234857-0WQs
+# flick 20250417000350-vXKw
+# flick 20250417181704-53BR
+# flick 20250417184545-tNLe
+# flick 20250417190343-lQ7N
+# flick 20250417192642-4cLo
+# flick 20250418021902-LAX3
+# flick 20250422204826-sIXm
+# flick 20250422212436-4L80
+# flick 20250422214551-cuzR
+# flick 20250422215641-i8sh
+# flick 20250423172039-fQ8m
+# flick 20250423173642-V9iF
+# flick 20250423180927-097A
+# flick 20250423200931-Qgkh
+# flick 20250428112848-OcZM
+# flick 20250429014920-FgdP
+# flick 20250429111921-HY2h
+# flick 20250429170606-DgyC
+# flick 20250429190504-d6Gd
+# flick 20250429193947-CLkr
+# flick 20250429200420-rSpH

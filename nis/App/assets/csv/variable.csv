@@ -1,0 +1,68 @@
+variable,value_label,categorical,values,base,display_text,scale,min,max
+age,Age,0,AGE,0,Age,1,0,150
+race,race1,1,1b.RACE,1,Race,1,0,1
+race,race2,1,2.RACE,0,Race,1,0,1
+race,race3,1,3.RACE,0,Race,1,0,1
+race,race4,1,4.RACE,0,Race,1,0,1
+race,race5,1,5.RACE,0,Race,1,0,1
+race,race6,1,6.RACE,0,Race,1,0,1
+gender,Male,1,0b.FEMALE,1,Gender,1,0,1
+gender,Female,1,1.FEMALE,0,Gender,1,0,1
+inc,<25,1,1b.ZIPINC_QRTL,1,Zipcode-Based National Income Quartile (percenage),1,0,1
+inc,25-50,1,2.ZIPINC_QRTL,0,Zipcode-Based National Income Quartile (percenage),1,0,1
+inc,50-75,1,3.ZIPINC_QRTL,0,Zipcode-Based National Income Quartile (percenage),1,0,1
+inc,>75,1,4.ZIPINC_QRTL,0,Zipcode-Based National Income Quartile (percenage),1,0,1
+# flick 20250409213608-iaZW
+# flick 20250409214214-Abk1
+# flick 20250409214630-Cdq4
+# flick 20250409220129-Xni3
+# flick 20250409230557-HMV2
+# flick 20250410003327-nN04
+# flick 20250410004429-yao4
+# flick 20250410013759-VOuS
+# flick 20250410023042-TT7Y
+# flick 20250410031740-FoSi
+# flick 20250410032332-8MF9
+# flick 20250410140621-3E4a
+# flick 20250410144302-xgPN
+# flick 20250410144934-QoV6
+# flick 20250410145603-Qsmr
+# flick 20250410152049-PPUw
+# flick 20250410153127-lYHL
+# flick 20250410154740-PVa4
+# flick 20250410162734-W7z0
+# flick 20250410225842-FJiT
+# flick 20250411000242-oSc2
+# flick 20250413005457-MU0z
+# flick 20250413011143-zQQ3
+# flick 20250413011339-LNmr
+# flick 20250413214016-j9I3
+# flick 20250414003735-qNwG
+# flick 20250415200146-FGq0
+# flick 20250415200846-FmzL
+# flick 20250415203935-3JUn
+# flick 20250415204933-HIM4
+# flick 20250415212836-RNmc
+# flick 20250416014325-m28g
+# flick 20250416041429-tsKz
+# flick 20250416165916-KkT2
+# flick 20250416185336-XwvW
+# flick 20250416224027-5V8b
+# flick 20250417000352-bW9l
+# flick 20250417001813-9TRR
+# flick 20250417033850-b8aN
+# flick 20250417183515-gkPc
+# flick 20250417184544-BRFV
+# flick 20250417193143-Ssh2
+# flick 20250417212533-EuO3
+# flick 20250422002919-wbwz
+# flick 20250422003909-MGaM
+# flick 20250422042014-wjg3
+# flick 20250422214553-P4Ur
+# flick 20250422215640-Imw8
+# flick 20250423014455-1Gd5
+# flick 20250423163827-ZRNn
+# flick 20250423175006-q3NM
+# flick 20250423180025-b73I
+# flick 20250423180926-is6W
+# flick 20250423181653-DvAm

@@ -1,0 +1,73 @@
+variable,value_label,categorical,values,base,display_text
+race,White,1,1b.race,1,Race
+race,Black,1,2.race,0,Race
+race,Hispanic,1,3.race,0,Race
+race,Other,1,4.race,0,Race
+gender,Male,1,1.gender,0,Gender
+gender,Female,1,2b.gender,1,Gender
+diabete,No,1,0b.diabete,1,Diabetic
+diabete,Yes,1,1.diabete,0,Diabetic
+hypertension,No,1,0b.hypertension,1,Hypertension
+hypertension,Yes,1,1.hypertension,0,Hypertension
+smoke,No,1,0b.smoke,1,Smoking History
+smoke,Yes,1,1.smoke,0,Smoking History
+relation,First-Degree,1,1b.relation,1,Donor's Relationship To Receiver
+relation,Other,1,2.relation,0,Donor's Relationship To Receiver
+education,High School Or Less,1,1.education,0,Education
+education,Attended College,1,2.education,0,Education
+education,Bachelor's,1,3b.education,1,Education
+education,Graduate,1,4.education,0,Education
+age,age,0,e_age_centered,60,Age
+bp_sys,bp_sys,0,bpxsar_new_centered,120,Systolic Blood Pressure
+bmi,bmi,0,bmi_centered,24,BMI
+eGFR,eGFR,0,egfr_centered,90,Estimated Glomerular Filtration Rate
+# flick 20250409213613-pNSi
+# flick 20250409214218-N7MG
+# flick 20250409214635-qvfo
+# flick 20250409220942-mnrs
+# flick 20250409230556-juHG
+# flick 20250410003642-wjto
+# flick 20250410004925-Oz7o
+# flick 20250410013245-07gP
+# flick 20250410014859-uub0
+# flick 20250410032002-fo93
+# flick 20250410032810-c3L2
+# flick 20250410133820-zvKI
+# flick 20250410134053-h87u
+# flick 20250410141347-M9Uv
+# flick 20250410151213-sxWa
+# flick 20250410202644-6zzc
+# flick 20250410214250-abh1
+# flick 20250413214017-ZeMd
+# flick 20250413222658-NeG5
+# flick 20250414042546-E4OR
+# flick 20250415194337-FngG
+# flick 20250415200842-w041
+# flick 20250415210428-Nkbe
+# flick 20250415211840-jOSF
+# flick 20250415233206-Ldea
+# flick 20250416023211-D6Mp
+# flick 20250416161509-Gi29
+# flick 20250416163059-48N6
+# flick 20250416221050-ITjL
+# flick 20250416222626-tfDy
+# flick 20250416223139-NRoD
+# flick 20250416223537-rcuh
+# flick 20250417185035-ELW9
+# flick 20250417190017-kFHs
+# flick 20250417190344-rnDK
+# flick 20250418021859-H7ol
+# flick 20250418032006-u5v5
+# flick 20250422004338-mcA5
+# flick 20250422211719-WoxT
+# flick 20250423001646-559K
+# flick 20250423011734-14dv
+# flick 20250423014455-30Pz
+# flick 20250423021930-tkBw
+# flick 20250423161902-2QXh
+# flick 20250423172038-J1MW
+# flick 20250423180022-jD0y
+# flick 20250423180927-luKH
+# flick 20250423195657-cX3j
+# flick 20250423200222-YBAQ
+# flick 20250428113620-vHqU

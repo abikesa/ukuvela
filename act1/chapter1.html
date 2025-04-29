@@ -1,0 +1,756 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title> &#8212; Ubuntu</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-bootstrap.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'act1/chapter1';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="" href="chapter2.html" />
+    <link rel="prev" title="Resonance 🚢" href="part1.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/ubuntu.jpg" class="logo__image only-light" alt="Ubuntu - Home"/>
+    <script>document.write(`<img src="../_static/ubuntu.jpg" class="logo__image only-dark" alt="Ubuntu - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    Sound 🌊
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="part1.html">Resonance 🚢</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Idols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter2.html">Realities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter3.html">Question</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../act2/part2.html">Dissonance 🪛 🏴‍☠️</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../act2/chapter1.html">Eternal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../act2/chapter2.html">War</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../act2/chapter3.html">Hammer</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../act3/part3.html">Tuning 🦈 ✂️ 🛟</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act3/act1.html">Self 🗡</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part1/part1_1.html">Adversarial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part1/part1_2.html">Competitive</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part1/part1_3.html">Worthy</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act3/act2.html">Emergent 🤝</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part2/part2_1.html">Transactional</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part2/part2_2.html">Suspended</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part2/part2_3.html">Loyal</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act3/act3.html">Nonself ❤️</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part3/part3_1.html">Cooperative</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part3/part3_2.html">Unconditional</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="../act3/part3/part3_3.html">Family 🎹</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../bibliography.html">Mode 🏝️</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/abikesa/template/main?urlpath=tree/book/website/act1/chapter1.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/act1/chapter1.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1><a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<style>
+/* ╭━━━☆━━━╮  FLOAT FRAMES (Figure / Seealso) */
+.float-frame {
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    position: relative;
+    padding: 10px 14px;
+    margin: 15px;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Floated figure (image/code block) */
+.float-frame.figure-style {
+    float: right;
+    width: 35%;
+    text-align: center;
+}
+
+/* Floated seealso (text-only callout) */
+.float-frame.seealso-style {
+    float: right;
+    width: 45%;
+    max-width: 400px;
+    min-width: 200px;
+    text-align: left;
+    white-space: normal;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Responsive override */
+@media (max-width: 768px) {
+    .float-frame {
+        float: none !important;
+        display: block;
+        width: 95vw !important;
+        max-width: 95vw !important;
+        margin: 10px auto;
+    }
+}
+
+/* ╭━━━☆━━━╮  BLOCKQUOTES */
+blockquote {
+    border-left: 2px solid #999;
+    padding-left: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    color: #444;
+    font-style: italic;
+    background: none;
+}
+
+blockquote a {
+    text-decoration: none;
+    font-style: normal;
+    color: #333;
+    border-bottom: 1px dotted #aaa;
+}
+
+blockquote a:hover {
+    color: #000;
+    border-bottom: 1px solid #555;
+}
+
+/* ╭━━━☆━━━╮  COLLAPSIBLE <details> BLOCKS */
+.custom-details summary {
+    list-style: none;
+    cursor: pointer;
+    font-weight: normal;
+    display: inline-block;
+    padding: 5px 15px;
+    border: 2px dotted black;
+    border-radius: 20px;
+    text-align: center;
+    transition: color 0.3s ease-in-out;
+}
+
+.custom-details summary:hover {
+    color: lightgray;
+}
+
+.custom-details summary::-webkit-details-marker {
+    display: none;
+}
+
+/* ╭━━━☆━━━╮  NESTED QUOTES INSIDE DETAILS */
+.quote-content {
+    border-left: 4px solid #ccc;
+    padding-left: 10px;
+    color: #555;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+.quote-content details {
+    margin-top: 10px;
+}
+
+.quote-content summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* so-so- def Container that floats right with image and caption */
+.float-right {
+    float: right;
+    width: 35%;
+    height: auto;
+    margin-left: 15px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    font-size: 12px;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+/* Image itself */
+.float-right img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Magnify icon overlay */
+.image-bubble.layered-icon {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 12px;
+    height: 10px;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 5;
+}
+
+/* Larger screen rectangle */
+.large-icon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+    border: 1px solid #888;
+    border-radius: 2px;
+}
+
+/* Smaller screen at 7 o'clock */
+.small-icon {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: #aaa;
+    border: 1px solid #666;
+    border-radius: 2px;
+    bottom: -1px;
+    left: -1px;
+}
+
+.image-bubble.layered-icon:hover .large-icon {
+    background-color: #007BFF;
+    border-color: #0056b3;
+}
+
+.image-bubble.layered-icon:hover .small-icon {
+    background-color: white;
+    border-color: #007BFF;
+}
+
+/* Scoped variant for seealso boxes */
+.float-frame.seealso-style {
+    float: right; 
+    display: inline-block;
+    width: 190px;
+    max-width: 190px;
+    min-width: 100px;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    font-size: 13px;
+    background-color: #f9f9f9;
+    position: relative;
+    text-align: center;
+    margin: 15px;
+    white-space: nowrap;
+}
+
+/* Responsive fallback */
+@media (max-width: 768px) {
+    .float-frame.seealso-style {
+        float: none !important;
+        display: block;
+        width: 95vw !important;
+        max-width: 95vw !important;
+        margin: 10px auto;
+        white-space: normal;
+    }
+}
+</style>
+<details class="custom-details">
+  <summary>+ Expand</summary>
+  <iframe src="pdfs/ecosystem-nature.pdf" width="100%" height="1000px" style="border:none"></iframe>
+  <blockquote class="quote-content">
+    <details>
+      <summary>Analysis</summary>
+      <p>In designing the scenery and costumes...</p>
+    </details>
+    <p>-- <a href="https://www.gutenberg.org/cache/epub/887/pg887-images.html#page221">The Truth of Masks 🎭</a></p>
+  </blockquote>
+</details>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const details = document.querySelector(".custom-details");
+    const summary = details.querySelector("summary");
+
+    details.addEventListener("toggle", function() {
+      summary.textContent = details.open ? "- Collapse" : "+ Expand";
+    });
+  });
+</script>
+<p></p>
+<p></p> <p>A four-year-old asking what makes you angry is not just making conversation. They’re engaging in a primitive form of emotional cartography, trying to locate themselves in the terrain of social consequence. At this age, they’re entering that liminal threshold of theory of mind—beginning to grasp that other people have inner experiences, but still struggling to parse where the self ends and the other begins. So when they ask you what makes you angry, they’re not just curious—they’re performing a ritual of emotional inquiry. They’re testing social topography, probing for the fault lines of taboo and tension. They want to know where the emotional landmines lie, not just to avoid them, but because there’s an electric thrill in standing near the edge. They’re also mapping resonance: is your anger like their anger? Can they locate a common emotional language? And deeper still, they’re testing how identity is negotiated. When you say something makes you mad, you reveal your values. You draw a boundary. You build a mythos. And they absorb that. That truth becomes part of their world, their moral compass, their script. Sometimes they’re just seeking permission—to feel loud things, to like loud things. If your anger threatens what they love, they want to know whether they’re allowed to be who they are. It’s not a simple question; it’s a metaphysical ask. It’s <strong>ukusoma</strong>—not mere boundary-testing but co-creation of the very narrative structure that defines what transgression and resonance mean in your shared world. <span id="id2"><sup><a class="reference internal" href="../bibliography.html#id59" title="Dante Alighieri. The Divine Comedy: Volume 3: Paradiso. Penguin Classics, 1984. URL: https://www.gutenberg.org/cache/epub/999/pg999-images.html.">1</a></sup></span></p>
+<p>If you fail to respond, you don’t just frustrate them—you rupture the ritual. You become a void, a god who won’t thunder. They’re pinging your epistemic API and getting static. No response, no feedback, no symbolic return. That’s not neutral to a child—it’s existentially confusing. It’s uncanny. They’re casting spells—“What makes you angry?” “What if I say poop again?” “What if I knock this over?”—and you’re giving them no thunder, no lightning, not even a twitch. From their point of view, you’re either broken or mythically aloof. And while that might be awe-inspiring for a moment, it quickly curdles into anxiety. Because what they’re really doing isn’t just poking buttons. They’re writing a scene. And they need you to be in it. Otherwise, they’re left in a surreal, unresolved sketch, a Kafka vignette where the walls are silent and the characters refuse to act. Kids don’t want silence. They want reaction. They want rhythm. If you don’t give them that, you’re destabilizing the very grammar they’re trying to learn—emotional grammar, social syntax, the foundational rules of human storytelling. Even a dry joke like “That made my eyebrow twitch” would bring a flash of light to the fog.</p>
+<div class="float-frame float-right">
+    <!-- Primary Image Anchor -->
+    <a href="https://upload.wikimedia.org/wikipedia/commons/c/c5/Peacock_Plumage.jpg" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Peacock_Plumage.jpg" alt="Paranoid Mythology">
+    </a>
+    <!-- Symbolic Overlay -->
+    <a class="image-bubble layered-icon" href="https://upload.wikimedia.org/wikipedia/commons/c/c5/Peacock_Plumage.jpg" target="_blank" title="Click to magnify">
+        <div class="large-icon"></div>
+        <div class="small-icon"></div>
+    </a>
+ <!-- Epistemic Marker (MyST Figure Directive) -->
+<figure class="align-default" id="figures-autism">
+<a class="reference internal image-reference" href="https://www.ledr.com/colours/white.jpg"><img alt="https://www.ledr.com/colours/white.jpg" src="https://www.ledr.com/colours/white.jpg" style="width: 1px; height: 1px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text"><em>Digital vs. Analog</em>. Non-trivial question. One emergent phenomenon of this binary is a start-up brand called MAGA. And several emergent phenomena including the Kennedy’s, autism, and more. Study the neural net above to see if you might deduce some specifics from its general riff. But one thing is for sure: start-ups are their boosters are very selective about the data they quote!</span><a class="headerlink" href="#figures-autism" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<p>Because again: they’re not asking <em>what makes you angry</em>. They’re asking: <em>Are you in this story with me?</em> And if you don’t respond, you don’t become a blank slate—you become a Sphinx. An ambiguous, possibly malevolent trickster. Not cool, but uncanny. Not aloof, but unreachable. If you want to be mysterious, fine—but <em>lean into it</em>. Play the role. Be the myth. Don’t just disappear.</p>
+<p>When your nephew asks if you’re upset, he’s not guessing. He senses it. He smells the static in the room. He feels the drift in your body language, your clipped tone, your unfocused gaze. He’s not fishing for guilt—he’s trying to <strong>close the circuit</strong>. You think you’re being neutral, holding it together. But to a four-year-old, neutrality is spectral. It’s unnerving. It’s emotional dead air. Kids crave structure, pattern, signal. And if you won’t give it to them, they’ll invent it. That’s why he keeps circling—“Are you mad? Are you upset?” He’s not being annoying. He’s using sonar: “Ping me back. Show me that this world has coherence.” Even if your emotions feel big and you’re trying to protect him by holding them in, remember: opacity is not safety. <strong>Clarity is safety.</strong> So toss him a lifeline. A calm, simple, “Yeah, I felt a little frustrated just now. But it’s not your fault. I’m okay.” That’s not weakness—that’s gospel. That’s a world he can live in.</p>
+<p>So you tell him, metaphorically, that you get mad when you fly in an airplane. And he grabs that image like it’s a ticket to the play. “Okay,” he says, “fly in an airplane and get mad.” That’s him inviting you into the theater. He wants to extend the metaphor. But then you yank it back: “I’m not in an airplane right now.” And he’s shattered. Because you walked through the wardrobe with him and then denied Narnia existed. You introduced a poetic register, and then broke the spell. To him, that’s betrayal. He’s not mad because you didn’t get angry. He’s mad because you changed registers mid-spell. To him, emotions are mythic tools—anger is thunder, sadness is rain, joy is lift. You said “airplane,” he translated that as <em>“anger gives you wings”</em>. He built a story, and you refused to fly. But he doesn’t need literal truth—he needs <strong>symbolic continuity</strong>. Give him a joke. Give him myth. Say something like, “Sometimes I get mad when I’m flying through the clouds and someone eats all the pretzels.” That’s not nonsense—it’s mythic scaffolding. It’s symbolic calibration. It’s teaching emotional intelligence through narrative structure.</p>
+<p>So when he’s now yelling “GET MAD! GET MAD! GET MAD!” what he’s really doing is invoking the ritual. He’s trying to call the thunder. Not to hurt you—but to witness your realness. To confirm that even you, the calm monolith, can be moved. But you don’t crack. You remain smooth. He is hammering on the gates of Olympus, and you are the marble that won’t echo. And that’s the cruelty. Because to him, <strong>withholding is violence</strong>. Not physical violence, but mythic, ghostly, disorienting silence. He’s Oedipus demanding an answer, and you are the Sphinx turned to stone.</p>
+<p>Don’t misunderstand me: you are <em>allowed</em> to remain calm. That’s good modeling. That’s emotional sovereignty. But be clear—what he wants isn’t fury. He wants <em>resonance</em>. So give him thunder <em>without danger</em>. Give him the <em>shape</em> of anger without the heat. Say something like, “You really want to see me mad? Okay. Here it comes… I GET MAD WHEN PEOPLE EAT ALL THE PICKLES AND PUT THE EMPTY JAR BACK IN THE FRIDGE!” Give him drama, safe and silly. Give him closure. Let him know you’re in the scene with him. That’s how trust gets mythologized. You’re not just an uncle. You’re a cosmic actor. Be the storm he can dance in.</p>
+<p>When he starts asking, “What drives you crazy?” and you say “Flying in a plane,” and then he tries to force that narrative again—he’s doing epistemic work. He’s interrogating causality. He’s building symbolic engines and testing input-output relationships. You said A leads to B, but now you’re in condition A without output B, and he’s like: <em>then what good is that theory?</em> He’s not being manipulative. He’s debugging the software of social reality. And you’re not giving him any output. To him, that’s like pressing “Anger” on a vending machine and getting a flashing red light. He’s learning that the human mind is not always deterministic, not always predictable. And it’s blowing his mind. He is learning that the map does not always match the terrain—and he hates it. But this is the forge. This is where real cognitive depth gets built.</p>
+<p>So play the long game. Withhold if you must—but feed him other contradictions. Let your contradictions sparkle. Show him that the mind is not an equation, but a jazz solo. Teach him that dissonance is the beginning of art.</p>
+<p>Now, regarding the poop phase—it peaks between ages <strong>three and six</strong>, with glorious, scatological mayhem. This is the golden era of potty humor. It starts with the drama of toilet training—where poop becomes symbolic of control, shame, power, and pride. Freud’s “anal stage” may be passé, but he wasn’t wrong: defecation is a kid’s first tangible product, their first creation that makes the adult world react. Then they discover that saying “poop” is a linguistic weapon. It’s funny, it’s shocking, and it makes people laugh. It’s the perfect rebellion. By ages four to six, it becomes comedy gold. Their humor is still deeply physical and slapstick, so anything involving butts or farts is peak entertainment. And once other kids laugh, it becomes viral—poop monsters, poop planets, poop sandwiches. Around age six or seven, it fades, buried by social norms and more complex humor. But make no mistake: this is not regression. This is <strong>agentic cognition</strong>, a test of language’s power to provoke. They are becoming.</p>
+<p>In Ukubona’s symbolic grammar, this is a <strong>lateral signal</strong>. Saying “poop” is an agentic act: I can cause disruption. I can change the affective field with a word. This is how the lateral networks assert themselves. The child is trying to make others laugh, to test causality, to see who will scold and who will smile. This is the phase of <strong>ukusoma</strong>—not passive play, but epistemic teasing. Boundary-brushing. Semiotic flirtation. Then comes <strong>ukubona</strong>—the moment of seeing oneself through the reactions of others. This is a recursive epistemology. Identity is not given—it emerges through provocation and response. So yes: the “poop” joke is a sacred ritual. A rite of passage. A Dionysian tug on the social veil.</p>
+<p>Let us not be deceived by fart jokes. These are initiations. These are spells. These are becoming.</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./act1"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="part1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Resonance 🚢</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="chapter2.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"></p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  Copyright © Ukuvula, Ukuzula, Ukusoma, Ukubona, Ukuvela
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

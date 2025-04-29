@@ -1,0 +1,314 @@
+/* Base body */
+body {
+  font-family: system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #202122;
+  margin: 0;
+  padding: 0;
+}
+
+/* Logo */
+/* Bigger, prouder logo */
+#logo {
+  height: 100px;
+  width: auto;
+  margin-right: 1em;
+}
+
+
+/* Header */
+header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #a2a9b1;
+  display: flex;
+  align-items: center;
+  padding: 0.5em 1em;
+}
+#search-bar {
+  margin-left: auto;
+}
+#search-bar input {
+  width: 200px;
+  padding: 4px;
+  border: 1px solid #a2a9b1;
+  border-radius: 4px;
+}
+
+/* Page Wrapper */
+#global-wrapper {
+  width: 100%;
+}
+
+/* Core Layout */
+#content-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 200px 1fr 220px;
+  gap: 16px;
+  padding: 1em 0;
+}
+
+/* Table of Contents */
+#toc {
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  padding: 0.5em;
+  font-size: 13px;
+  height: fit-content;
+  position: sticky;
+  top: 1em;
+}
+#toc > div {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+#toc ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 0.5em;
+}
+#toc li {
+  margin-bottom: 0.2em;
+}
+
+/* Main Content */
+#content {
+  min-width: 0;
+}
+
+/* Always show TOC sidebar */
+#toc {
+  display: block !important;
+  position: sticky;
+  top: 1em;
+  max-height: calc(100vh - 2em);
+  overflow-y: auto;
+  border-right: 1px solid #ddd;
+  padding-right: 1em;
+}
+
+
+/* Settings Sidebar */
+#settings-bar {
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  padding: 0.5em;
+  font-size: 13px;
+  height: fit-content;
+  position: sticky;
+  top: 1em;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 2em;
+  font-size: 12px;
+  color: #555;
+}
+
+/* Hidden class for TOC toggle */
+.hidden {
+  display: none;
+}
+
+/* Link styling */
+a {
+  color: #0645ad;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Comfortable article width */
+#content-wrapper > main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2em;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* General tidy-up */
+body {
+  font-family: system-ui, sans-serif;
+  background: #ffffff;
+  color: #202122;
+}
+
+a {
+  color: #0645ad;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  background: #f8f9fa;
+  border-bottom: 1px solid #ccc;
+}
+
+footer {
+  margin-top: 4em;
+  font-size: 0.9em;
+  color: #666;
+  text-align: center;
+}
+
+/* Hide default disclosure triangle on <details> */
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Wikipedia-Style TOC */
+#toc {
+  font-size: 14px;
+  background: #f8f9fa;
+  padding: 0.5em 1em;
+  border: 1px solid #a2a9b1;
+  width: 200px;
+  position: sticky;
+  top: 1em;
+  max-height: calc(100vh - 2em);
+  overflow-y: auto;
+}
+
+#toc div {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  font-size: 13px;
+}
+
+#toc ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+#toc ul li {
+  margin-bottom: 0.4em;
+}
+
+#toc a {
+  text-decoration: none;
+  color: #0645ad;
+  font-weight: normal;
+}
+
+#toc a:hover {
+  text-decoration: underline;
+}
+
+#header-right a {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#header-right a:hover {
+  text-decoration: underline;
+}
+
+#header-left #logo-text span:first-child {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#header-left #logo-text span:last-child {
+  font-size: 12px;
+  font-style: italic;
+  color: #54595d; /* Slightly soft gray like Wikipedia motto */
+}
+
+/* Responsive tweak for small screens */
+@media (max-width: 600px) {
+  #header-left {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #header-left img {
+    height: 40px;
+  }
+
+  #header-left #logo-text span:first-child {
+    font-size: 18px;
+  }
+
+  #header-left #logo-text span:last-child {
+    font-size: 11px;
+  }
+}
+
+#header-left #logo-text span:first-child {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+#header-left #logo-text span:last-child {
+  font-size: 12px;
+  font-style: italic;
+  color: #54595d;
+  margin-top: -2px;
+}
+
+/* Responsive stacking */
+@media (max-width: 600px) {
+  #header-left {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #header-left img {
+    height: 40px;
+  }
+
+  #header-left #logo-text span:first-child {
+    font-size: 18px;
+  }
+
+  #header-left #logo-text span:last-child {
+    font-size: 11px;
+  }
+}
+
+/* Header layout */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 2em; /* increased breathing room */
+  background-color: #f8f9fa;
+  /* border-bottom: 1px solid #a2a9b1; */ /* REMOVE this line */
+  box-shadow: none; /* ensure no shadow too */
+}
+
+/* Small tweak to Login area */
+#login-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5em; /* add a little gap between login and "..." */
+}
+
+body {
+  margin: 0;
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #202122;
+}
+
+a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,101 @@
+/* === Phantom Styles for Legacy Build === */
+
+#phantomSection {
+    display: none;
+    animation: glitch 2s infinite;
+}
+
+.glitch::before,
+.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 2px;
+    text-shadow: -1px 0 red;
+    top: 0;
+}
+
+.glitch::after {
+    left: -2px;
+    text-shadow: 1px 0 blue;
+}
+
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-5px, 5px);
+    }
+    40% {
+        transform: translate(5px, -5px);
+    }
+    60% {
+        transform: translate(-5px, 5px);
+    }
+    80% {
+        transform: translate(5px, -5px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+.debug-shadow {
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+/* TODO: Remove vaporwave.css once migration to Brutalism complete */
+# flick 20250409213616-7v5L
+# flick 20250409214220-DhVU
+# flick 20250409214637-TGoD
+# flick 20250409230552-mzOi
+# flick 20250410003326-O7CM
+# flick 20250410010459-PCPo
+# flick 20250410013801-bNTO
+# flick 20250410023041-XhzN
+# flick 20250410023654-a9eN
+# flick 20250410030143-svcJ
+# flick 20250410032004-Opxk
+# flick 20250410032333-WAxR
+# flick 20250410130451-QORg
+# flick 20250410151213-GAT0
+# flick 20250410154740-F1GH
+# flick 20250410201244-sOIR
+# flick 20250410204400-Fwnp
+# flick 20250410213334-0LCE
+# flick 20250410235823-Eprw
+# flick 20250411000241-42GO
+# flick 20250413233325-FcMt
+# flick 20250415192653-i9lU
+# flick 20250415194335-LByN
+# flick 20250415230809-d8IW
+# flick 20250415233204-E6Zc
+# flick 20250416014324-qpl5
+# flick 20250416023209-ydLj
+# flick 20250416034833-x2Ld
+# flick 20250416041427-neD1
+# flick 20250416214302-BENn
+# flick 20250416222357-Bdbg
+# flick 20250416225007-KCPN
+# flick 20250416230552-WVPr
+# flick 20250417000350-uUjL
+# flick 20250417001514-wG0r
+# flick 20250417181704-tk6R
+# flick 20250417184544-sMD8
+# flick 20250417193145-p0UI
+# flick 20250418021902-MsFW
+# flick 20250418042249-EpnW
+# flick 20250422004340-JhHX
+# flick 20250422033023-0Nfo
+# flick 20250422040654-hmsA
+# flick 20250422042014-0CQy
+# flick 20250422211720-EoIJ
+# flick 20250422212435-UFVV
+# flick 20250422215934-O9Nt
+# flick 20250422235233-2IY2
+# flick 20250423005724-f4ZI
+# flick 20250423014454-2VOF
+# flick 20250423161903-2bYN
+# flick 20250423163826-s2DH
+# flick 20250423172039-lkaA
+# flick 20250423200221-sxDe

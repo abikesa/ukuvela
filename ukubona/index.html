@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ukubona</title>
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      background: #fff;
+      font-family: 'Inter', system-ui, sans-serif;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      opacity: 0;
+      animation: fadeIn 0.8s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    .logo-center {
+      text-align: center;
+    }
+
+    .logo-center img:hover {
+      transform: rotate(10deg) scale(1.05);
+    }
+
+    .logo-center img {
+      max-width: 240px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .top-links {
+      position: absolute;
+      top: 1.2rem;
+      right: 1rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .menu-icon {
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+    }
+
+    .menu-icon div {
+      background-color: #444;
+      width: 8px;
+      height: 8px;
+      border-radius: 1px;
+    }
+
+    .app-grid {
+      position: absolute;
+      top: 3.5rem;
+      right: 1rem;
+      display: none;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 1rem;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      z-index: 999;
+      max-height: 80vh;
+      overflow-y: auto;
+      width: 90vw;
+      max-width: 1200px;
+    }
+
+    .app-grid a {
+      text-align: center;
+      text-decoration: none;
+      color: #333;
+      font-size: 0.85rem;
+      font-weight: 500;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0.4rem;
+      border-radius: 6px;
+      transition: background-color 0.2s, transform 0.3s;
+      opacity: 0;
+      animation: fadeTile 0.5s ease forwards;
+    }
+
+    @keyframes fadeTile {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .app-grid lottie-player {
+      width: 40px;
+      height: 40px;
+    }
+
+    .icon-box {
+      font-size: 1.5rem;
+      width: 120px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top-links">
+    <div class="menu-icon" id="gridToggle">
+      <div></div><div></div><div></div>
+      <div></div><div></div><div></div>
+      <div></div><div></div><div></div>
+    </div>
+  </div>
+
+  <div class="app-grid" id="gridMenu"></div>
+
+  <div class="logo-center">
+    <a href="index.html">
+      <img src="assets/images/ukubona.png" alt="Ukubona Logo" />
+    </a>
+  </div>
+
+  <script>
+    const toggle = document.getElementById('gridToggle');
+    const menu = document.getElementById('gridMenu');
+
+    toggle.addEventListener('click', () => {
+      const isOpen = menu.style.display === 'grid';
+      menu.style.display = isOpen ? 'none' : 'grid';
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+        menu.style.display = 'none';
+      }
+    });
+
+    const raw = `1. [nineth](https://abikesa.github.io/nineth/)
+2. [manson](https://abikesa.github.io/will/)
+3. [peterson](https://abikesa.github.io/jordanpeterson)
+4. [sch](https://abikesa.github.io/schubert/)[lem](https://abikesa.github.io/schlemiel/)[iel](https://abikesa.github.io/haydn)
+5. [digital age](https://abikesa.github.io/digital)
+6. [brahms](https://abikesa.github.io/brahms/)
+7. [festo](https://abikesa.github.io/festokivengere/)
+8. [oakland](https://abikesa.github.io/weisner)
+9. [guess](https://abikesa.github.io/guesswho)
+10. [apple](https://abikesa.github.io/apple/)
+11. [beer](https://abikesa.github.io/aficionado/)
+12. [trappiste](https://abikesa.github.io/belgian/)
+13. [networks](https://abikesa.github.io/networks/)
+14. [kelly](https://abikesa.github.io/rkelly)
+15. [boltz](https://abikesa.github.io/boltz)
+16. [clinical](https://abikesa.github.io/clinicaltrials) [trials](https://abikesa.github.io/experiment)
+17. [dictation](https://abikesa.github.io/dictation)
+18. [microsoft](https://abikesa.github.io/microsoft/)
+19. [daily grind](https://abikesa.github.io/dailygrind)
+20. [aging](https://abikesa.github.io/aging)
+21. [native](https://abikesa.github.io/native)
+22. [omni](https://abikesa.github.io/omni)
+23. [repos](https://github.com/abikesa/repos)
+24. [snippets](https://abikesa.github.io/snippets)
+25. [maps](https://github.com/abikesa/maps)
+26. [delta](https://github.com/abikesa/delta)
+27. [flow](https://abikesa.github.io/flow)
+28. [consilience](https://abikesa.github.io/consilience)
+29. [precision](https://abikesa.github.io/precision)
+30. [candance](https://abikesa.github.io/candaceowens)
+31. [frankenstein](https://abikesa.github.io/frankenstein)
+32. [oprah](https://abikesa.github.io/oprah)
+33. [wild robot](https://abikesa.github.io/wildrobot)
+34. [geotheology](https://abikesa.github.io/geotheology)
+35. [brand](https://abikesa.github.io/brand)
+36. [sonora](https://abikesa.github.io/sonora)
+37. [gods](https://abikesa.github.io/gods)
+38. [ukubona](https://abikesa.github.io/ukubona)
+39. [tuition](https://github.com/abikesa/tuition)
+40. [surgery](https://github.com/abikesa/surgery)
+41. [oil](https://abikesa.github.io/oil/)
+42. [gmu](https://github.com/abikesa/lendingpoint)
+43. [website](https://abikesa.github.io/website/)
+44. [stata](https://github.com/abikesa/stata)
+45. [fafsa](https://github.com/abikesa/nelnet)
+46. [minimalist](https://abikesa.github.io/minimalist/)
+47. [claude](https://abikesa.github.io/claude/)
+48. [palate](https://abikesa.github.io/palate/)
+49. [john adams](https://abikesa.github.io/johnadams/)
+50. [gpt4](https://abikesa.github.io/gpt4/)
+51. [joan](https://abikesa.github.io/joan)
+52. [donors](https://abikesa.github.io/donors)
+53. [vj](https://github.com/abikesa/vince)
+54. [mmd](https://github.com/abikesa/mara)
+55. [pairs](https://abikesa.github.io/pairs/)
+56. [xj](https://github.com/abikesa/xujun)
+57. [obama](https://abikesa.github.io/obama/)
+58. [father-to-son](https://abikesa.github.io/fathertoson)
+59. [chappelle](https://abikesa.github.io/davechappelle)
+60. [seinfeld](https://abikesa.github.io/jerryseinfeld/)
+61. [webApp-v3-a](https://abikesa.github.io/quickdeploy/)
+62. [network-models](https://abikesa.github.io/network-models)
+63. [valuechain](https://abikesa.github.io/valuechain/)
+64. [noise-signal](https://abikesa.github.io/noise-signal)
+65. [bach](https://abikesa.github.io/bach/)
+66. [llm](https://abikesa.github.io/llm)
+67. [webApp-v1-a](https://abikesa.github.io/webApp/)
+68. [arte-scienza](https://abikesa.github.io/artescienza)
+69. [shruti meeting](https://abikesa.github.io/shruti)
+70. [matrix](https://abikesa.github.io/matrix)
+71. [startup](https://abikesa.github.io/startup)
+72. [mundane](https://abikesa.github.io/mundane)
+73. [family](https://abikesa.github.io/fam)
+74. [cg-best](https://abikesa.github.io/cg-best)
+75. [elections](https://abikesa.github.io/elections)
+76. [time](https://abikesa.github.io/time)
+77. [speed](https://abikesa.github.io/speed)
+78. [artists](https://abikesa.github.io/artists)
+79. [progress](https://abikesa.github.io/progress)
+80. [man](https://abikesa.github.io/whatisaman)
+81. [society](https://abikesa.github.io/society)
+82. [uganda](https://abikesa.github.io/uganda/)
+83. [pain](https://abikesa.github.io/pain)
+84. [prince](https://abikesa.github.io/princeton)[ton](https://abikesa.github.io/pip)            
+85. [dreams](https://abikesa.github.io/dreams)
+86. [k08](https://github.com/abikesa/k08)
+87. [atsuko](https://github.com/abikesa/atsuko)
+88. [mva](https://github.com/abikesa/mva)
+89. [marums](https://github.com/abikesa/marums)
+90. [lor](https://abikesa.github.io/lor/)
+91. [three](https://abikesa.github.io/three/)
+92. [zuckerberg](https://abikesa.github.io/zuckerberg)
+93. [success](https://abikesa.github.io/success/)
+94. [elon](https://abikesa.github.io/elonmusk)
+95. [html](https://abikesa.github.io/html)
+96. [credo](https://abikesa.github.io/credo)
+97. [steve jobs](https://abikesa.github.io/stevejobs)
+98. [academic](https://abikesa.github.io/academia)
+99. [social](https://abikesa.github.io/social/)
+100. [gender](https://abikesa.github.io/gender)
+101. [dag](https://abikesa.github.io/dag)
+102. [jamie dimon](https://abikesa.github.io/jamiedimon)
+103. [ethics](https://abikesa.github.io/ethics)
+104. [github](https://abikesa.github.io/github)
+105. [life-raft](https://abikesa.github.io/life-raft)
+106. [wisdom](https://abikesa.github.io/wisdom)
+107. [vertigo](https://abikesa.github.io/vertigo)
+108. [tradition](https://abikesa.github.io/tradition)
+109. [ai](https://abikesa.github.io/ai)
+110. [temp](https://abikesa.github.io/temp/)
+111. [spjd](https://abikesa.github.io/spjd/)
+112. [ambiguity](https://github.com/abikesa/ambiguity)
+113. [dossier](https://github.com/abikesa/dossier)
+114. [ranking](https://github.com/abikesa/ranking)
+115. [do](https://abikesa.github.io/do/)
+116. [bonnie](https://github.com/abikesa/bonnielonze)
+117. [network](https://github.com/abikesa/network)
+118. [dofile](https://github.com/abikesa/dofile)
+119. [work flow](https://abikesa.github.io/workflow)
+120. [coding](https://github.com/abikesa/coding)
+121. [top](https://abikesa.github.io/top/)
+122. [phenotype](https://github.com/abikesa/phenotype)
+123. [url](https://github.com/abikesa/url)
+124. [nietzsche](https://abikesa.github.io/nietzsche/)
+125. [idea](https://github.com/abikesa/idea)
+126. [rivaldo](https://github.com/abikesa/rivaldo)
+127. [bonnie & clyde](https://github.com/abikesa/bonnieandclyde)
+128. [jama](https://github.com/abikesa/jama)
+129. [kate hepburn](https://github.com/abikesa/katharinehepburn)
+130. [psychiatry](https://github.com/abikesa/psychiatry)
+131. [faye dunaway](https://github.com/abikesa/fayedunaway)
+132. [types](https://github.com/abikesa/types)
+133. [gaza](https://github.com/abikesa/gaza)
+134. [brathwaite](https://abikesa.github.io/brathwaite/)
+135. [sheri](https://github.com/abikesa/sherilawal)
+136. [metaphor](https://abikesa.github.io/metaphor)
+137. [joel-v-ethan](https://abikesa.github.io/joel_v_ethan)
+138. [mentor](https://abikesa.github.io/dorry)
+139. [chighur](https://github.com/abikesa/nocountryforoldmen)
+140. [implied](https://github.com/abikesa/implied)
+141. [idiom](https://github.com/abikesa/idiom)
+142. [b2k](https://github.com/abikesa/b2k)
+143. [troy taylor](https://github.com/abikesa/troytaylor)
+144. [brady](https://github.com/abikesa/tombrady)
+145. [patti labelle](https://github.com/abikesa/pattilabelle)
+146. [outkast](https://github.com/abikesa/outkast)
+147. [neyo](https://github.com/abikesa/neyo)
+148. [siren](https://github.com/abikesa/siren)
+149. [mrc](https://github.com/abikesa/mcr)
+150. [holding it down](https://abikesa.github.io/holding-it-down/)
+151. [debarge](https://github.com/abikesa/eldebarge)
+152. [music](https://abikesa.github.io/music/)
+153. [sfumato](https://github.com/abikesa/sfumato)
+154. [fitness](https://github.com/abikesa/fitness)
+155. [joshua](https://github.com/abikesa/joshua)
+156. [structure](https://github.com/abikesa/structure)
+157. [autoencoder](https://github.com/abikesa/autoencoder)
+158. [coenbrothers](https://abikesa.github.io/coenbrothers)
+159. [welch center](https://github.com/abikesa/center)
+160. [vscode](https://github.com/abikesa/vscode)
+161. [vicarious](https://github.com/abikesa/vicarious)
+162. [welch center](https://github.com/abikesa/welchcenter)
+163. [churchy](https://github.com/abikesa/churchy)
+164. [genZ](https://github.com/abikesa/genZ)
+165. [llama3](https://github.com/abikesa/llama3)
+166. [asante](https://github.com/abikesa/asante)
+167. [odds](https://abikesa.github.io/odds)
+168. [wine source](https://github.com/abikesa/winesource)
+169. [template](https://abikesa.github.io/template/)
+170. [bills](https://github.com/abikesa/bills)
+171. [stochastic](https://github.com/abikesa/stochastic)
+172. [emails](https://github.com/abikesa/emails)
+173. [nonbinary](https://github.com/abikesa/nonbinary)
+174. [djiki](https://github.com/abikesa/sheba)
+175. [ethan coen](https://abikesa.github.io/ethancoen/)
+176. [sentience](https://github.com/abikesa/sentience)
+177. [reharm](https://github.com/abikesa/reharm)
+178. [bash](https://github.com/abikesa/bash)
+179. [unconscious](https://github.com/abikesa/unconscious)
+180. [america](https://github.com/abikesa/america)
+181. [winans](https://github.com/abikesa/winans)
+182. [mnemonic](https://github.com/abikesa/mnemonic)
+183. [natural version](https://github.com/abikesa/naturalversion)
+184. [akira kurosawa](https://github.com/abikesa/akirakurosawa)
+185. [soul](https://github.com/abikesa/soul)
+186. [teaching](https://github.com/abikesa/teaching)
+187. [r](https://github.com/abikesa/r)
+188. [aesthetics](https://abikesa.github.io/aesthetics)
+189. [raw](https://github.com/abikesa/raw)
+190. [gem & rose](https://github.com/abikesa/gemrohs)
+191. [cv](https://github.com/abikesa/cv)
+192. [risk](https://github.com/abikesa/risk)
+193. [bernstein](https://github.com/abikesa/bernstein)
+194. [theodds](https://github.com/abikesa/theodds)
+195. [subversion](https://github.com/abikesa/subversion)
+196. [history](https://abikesa.github.io/history/)
+197. [boa](https://github.com/abikesa/boa)
+198. [*la distinction*](https://github.com/abikesa/ladistinction)
+199. [seven samurai](https://github.com/abikesa/sevensamurai)
+200. [bill withers](https://github.com/abikesa/billwithers)
+201. [epi](https://abikesa.github.io/epi/)
+202. [alden](https://github.com/abikesa/alden)
+203. [agi](https://github.com/abikesa/agi)
+204. [annungamya](https://github.com/abikesa/annungamya)
+205. [python](https://abikesa.github.io/python/)
+206. [ssh](https://github.com/abikesa/ssh)
+207. [social network](https://abikesa.github.io/socialnetwork/)
+208. [neurology](https://github.com/abikesa/neurology)
+209. [hide](https://github.com/abikesa/hide)
+210. [arsenal](https://github.com/abikesa/arsenal)
+211. [donation](https://github.com/abikesa/donation)
+212. [adversarial networks](https://github.com/abikesa/adversarialnetworks)
+213. [amapiano](https://github.com/abikesa/amapiano)
+214. [unix](https://github.com/abikesa/unix)
+215. [baltimore](https://github.com/abikesa/baltimore)
+216. [nephrectomy](https://github.com/abikesa/nephrectomy)
+217. [exercize](https://github.com/abikesa/exercise)
+218. [tesla](https://github.com/abikesa/tesla)
+219. [allan](https://github.com/abikesa/allan)
+220. [tarantino](https://github.com/abikesa/tarantino)
+221. [macbeth](https://github.com/abikesa/macbeth)
+222. [melodies](https://github.com/abikesa/melodies)
+223. [lacrimosa](https://github.com/abikesa/lacrimosa)
+224. [genre](https://abikesa.github.io/genre/)
+225. [gil burnham](https://github.com/abikesa/gilburnham)
+226. [gmu](https://github.com/abikesa/gmu)
+227. [deutschland](https://github.com/abikesa/deutschland)
+228. [film](https://abikesa.github.io/film)
+229. [cigars](https://github.com/abikesa/cigars)
+230. [metaphysics](https://github.com/abikesa/metaphysics)
+231. [insidertrading](https://github.com/abikesa/insidertrading)
+232. [greeks](https://abikesa.github.io/greeks/)
+233. [hierarchy](https://github.com/abikesa/hierarchy)
+234. [sopranos](https://github.com/abikesa/sopranos)
+235. [school of resentment](https://abikesa.github.io/schoolofresentment)
+236. [la beauté](https://github.com/abikesa/beauty)
+237. [annie hall](https://github.com/abikesa/anniehall)
+238. [maids](https://github.com/abikesa/maids)
+239. [betsy](https://github.com/abikesa/betsy)
+240. [philosophy](https://abikesa.github.io/philosophy/)
+241. [md phd](https://github.com/abikesa/mdphd)
+242. [sixties](https://github.com/abikesa/sixties)
+243. [countires](https://github.com/abikesa/countries)
+244. [mentoring](https://github.com/abikesa/mentoring)
+245. [phd](https://github.com/abikesa/phd)
+246. [andrew law](https://github.com/abikesa/andrewlaw)
+247. [class](https://github.com/abikesa/class)
+248. [xfinity](https://github.com/abikesa/xfinity)
+249. [jung](https://github.com/abikesa/jung)
+250. [poem](https://github.com/abikesa/poem)
+251. [john mabior](https://github.com/abikesa/johnmabior)
+252. [pulp fiction](https://github.com/abikesa/pulpfiction)
+253. [race](https://github.com/abikesa/race)
+254. [einstein](https://github.com/abikesa/einstein)
+255. [gospel](https://abikesa.github.io/gospel/)
+256. [legacy](https://github.com/abikesa/legacy)
+257. [woody allen](https://abikesa.github.io/woodyallen/)
+258. [harmonics](https://github.com/abikesa/harmonics)
+259. [priya](https://github.com/abikesa/priya)
+260. [conspiracy](https://github.com/abikesa/conspiracy)
+261. [dhats](https://github.com/abikesa/dhatemwa)
+262. [mozart](https://abikesa.github.io/mozart)
+263. [tragedy](https://abikesa.github.io/tragedy)
+264. [casablanca](https://abikesa.github.io/casablanca/)
+265. [tyler perry](https://abikesa.github.io/tylerperry/)
+266. [darien](https://github.com/abikesa/darien)
+267. [nyaru](https://github.com/abikesa/nyaru)
+268. [hedonism](https://github.com/abikesa/hedonism)
+269. [katende](https://github.com/abikesa/katende)
+270. [rich harrison](https://github.com/abikesa/richharrison)
+271. [common denominator](https://github.com/abikesa/commondenominator)
+272. [analyze this!](https://github.com/abikesa/analyzethis)
+273. [out of africa](https://github.com/abikesa/outofafrica)
+274. [hierarchical](https://github.com/abikesa/hierarchical)
+275. [checklist](https://github.com/abikesa/checklist)
+276. [era](https://github.com/abikesa/era)
+277. [god father](https://abikesa.github.io/godfather/)
+278. [feminism](https://abikesa.github.io/feminism)
+279. [inversions](https://github.com/abikesa/inversions)
+280. [umu](https://abikesa.github.io/umu/)
+281. [victory](https://github.com/abikesa/victory)
+282. [french](https://github.com/abikesa/french)
+283. [generalist](https://abikesa.github.io/generalist)
+284. [freud](https://github.com/abikesa/freud)
+285. [gpt](https://abikesa.github.io/gpt/)
+286. [temperament](https://github.com/abikesa/temperament)
+287. [ragnarok](https://github.com/abikesa/ragnarok)
+288. [abc](https://github.com/abikesa/abc)
+289. [hideth](https://github.com/abikesa/abc)
+290. [life](https://abikesa.github.io/life) 
+291. [prediction](https://github.com/abikesa/prediction)
+292. [counterfeit](https://github.com/abikesa/counterfeit)
+293. [luxury](https://github.com/abikesa/luxury)
+294. [das kapital](https://abikesa.github.io/daskapital)
+295. [mhadpt](https://github.com/abikesa/mhadpt)
+296. [obituaries](https://github.com/abikesa/obituaries)
+297. [classical](https://github.com/abikesa/classical)
+298. [education](https://abikesa.github.io/education)
+299. [cluster](https://github.com/abikesa/cluster)
+300. [andrew](https://github.com/abikesa/arking)
+301. [memory](https://github.com/abikesa/memory)
+302. [*non plus ultra*](https://github.com/abikesa/nonplusultra)
+303. [writing](https://github.com/abikesa/writing)
+304. [brian](https://github.com/abikesa/caffo)
+305. [mode](https://github.com/abikesa/mode)
+306. [solomon](https://github.com/abikesa/solomon)
+307. [archetype](https://abikesa.github.io/archetypes)
+308. [bcm](https://github.com/abikesa/bcm)
+309. [lebowski](https://github.com/abikesa/lebowski)
+310. [amadeus](https://github.com/abikesa/amadeus)
+311. [saturated](https://github.com/abikesa/saturated)
+312. [genius](https://github.com/abikesa/genius)
+313. [israel](https://github.com/abikesa/israel)
+314. [j](https://github.com/abikesa/j)
+315. [portrait](https://github.com/abikesa/portrait)
+316. [cltx](https://github.com/abikesa/cltx)
+317. [grants](https://github.com/abikesa/grants)
+318. [icahn](https://github.com/abikesa/icahn)
+319. [buffett](https://github.com/abikesa/buffett)
+320. [norawest](https://github.com/abikesa/norawest)
+321. [verbs](https://github.com/abikesa/verbs)
+322. [cudjoe](https://github.com/abikesa/cudjoe.md)
+323. [idiomatic](https://github.com/abikesa/idiomatic)
+324. [p](https://abikesa.github.io/p)
+325. [colleen](https://github.com/abikesa/colleen)
+326. [journal](https://github.com/abikesa/journal)
+327. [zabuli](https://github.com/abikesa/zabuli)
+328. [karugire](https://github.com/abikesa/karugire)
+329. [dehghan](https://github.com/abikesa/dehghan)
+330. [caesar](https://github.com/abikesa/caesar)
+331. [discussion](https://github.com/abikesa/discussion)
+332. [agency](https://github.com/abikesa/agency)
+333. [dexterity](https://github.com/abikesa/dexterity)
+334. [index](https://github.com/abikesa/index)
+335. [humanity](https://github.com/abikesa/humanity)
+336. [babel](https://github.com/abikesa/babel)
+337. [mtn](https://github.com/abikesa/mtn)
+338. [emotion](https://abikesa.github.io/emotion/)
+339. [feminist](https://abikesa.github.io/feminist)
+340. [att](https://github.com/abikesa/att)
+341. [ganda](https://github.com/abikesa/ganda)
+342. [career](https://github.com/abikesa/career)
+343. [idioms](https://github.com/abikesa/idioms)
+344. [yafe](https://github.com/abikesa/yafe)
+345. [hamlet](https://abikesa.github.io/hamlet/)
+346. [psalm](https://github.com/abikesa/psalm)
+347. [isabirye](https://github.com/abikesa/isabirye)
+348. [fedosa](https://github.com/abikesa/fedosa)
+349. [bloom](https://github.com/abikesa/bloom)
+350. [travel](https://github.com/abikesa/travel)
+351. [irb](https://github.com/abikesa/irb)
+352. [epicurus](https://github.com/abikesa/epicurus)
+353. [bourdieu](https://github.com/abikesa/bourdieu)
+354. [explo85](https://github.com/abikesa/explo85)
+355. [boeing](https://github.com/abikesa/boeing)
+356. [iago](https://github.com/abikesa/iago)
+357. [equity](https://github.com/abikesa/equity)
+358. [pmap](https://github.com/abikesa/pmap)
+359. [babadi](https://github.com/abikesa/sagharbabadi)
+360. [homage](https://abikesa.github.io/homage)
+361. [katumba](https://github.com/abikesa/katumbawamala)
+362. [judaism](https://github.com/abikesa/judaism)
+363. [jeff](https://github.com/abikesa/jeff)
+364. [tsa locks](https://github.com/abikesa/tsalocks)
+365. [khaneman](https://github.com/abikesa/reimbursement)
+366. [voice](https://abikesa.github.io/voice)
+367. [ventura](https://github.com/abikesa/marventura)
+368. [thesis](https://abikesa.github.io/thesis/)
+369. [art-science](https://github.com/abikesa/artscience)
+370. [values](https://github.com/abikesa/values)
+371. [mtdna](https://github.com/abikesa/mtdna)
+372. [sza](https://github.com/abikesa/sza)
+373. [types of people](https://github.com/abikesa/typesofpeople)
+374. [ilya](https://github.com/abikesa/ilyasutskever)
+375. [compute](https://github.com/abikesa/compute)
+376. [ntp](https://github.com/abikesa/ntp)
+377. [bard](https://github.com/abikesa/bard)
+378. [foucault](https://github.com/abikesa/foucault)
+379. [language](https://github.com/abikesa/language)
+380. [gigi](https://github.com/abikesa/gigi)
+381. [trey songz](https://github.com/abikesa/treysongz)
+382. [inflection](https://github.com/abikesa/inflection)
+383. [tournaments](https://github.com/abikesa/tournaments)
+384. [canada](https://github.com/abikesa/canada)
+385. [japan](https://abikesa.github.io/japan/)
+386. [whatshot](https://github.com/abikesa/whatshot)
+387. [game of thrones](https://abikesa.github.io/gameofthrones)
+388. [larry](https://github.com/abikesa/lawrencebrown)
+389. [bestpart](https://github.com/abikesa/bestpart)
+390. [business](https://abikesa.github.io/business)
+391. [hvdscwmbft](https://github.com/abikesa/hvdscwmbft)
+392. [duncan](https://github.com/abikesa/duncan)
+393. [openai](https://github.com/abikesa/openai)
+394. [consulting](https://abikesa.github.io/consulting)
+395. [bill](https://github.com/abikesa/bill)
+396. [datasets](https://github.com/abikesa/datasets)
+397. [trials](https://github.com/abikesa/trials)
+398. [updates](https://github.com/abikesa/updates)
+399. [jhu](https://github.com/abikesa/jhu)
+400. [banking](https://github.com/abikesa/banking)
+401. [whatsApp](https://abikesa.github.io/whatsApp/)
+402. [grio awards](https://github.com/abikesa/grioawards)
+403. [cosmogonia](https://github.com/abikesa/cosmogonia)
+404. [guardiola](https://github.com/abikesa/guardiola)
+405. [gtpci](https://github.com/abikesa/gtpci)
+406. [hopkins](https://github.com/abikesa/hopkins)
+407. [rnb](https://abikesa.github.io/rnb/)
+408. [doom](https://github.com/abikesa/doom)
+409. [limits](https://github.com/abikesa/limits)
+410. [swim](https://github.com/abikesa/swim)
+411. [orthodox](https://github.com/abikesa/orthodox)
+412. [war](https://github.com/abikesa/war)
+413. [themvar](https://github.com/abikesa/themevar)
+414. [drugs](https://github.com/abikesa/drugs)
+415. [google](https://abikesa.github.io/google/)
+416. [hack](https://github.com/abikesa/hack)
+417. [curtis](https://github.com/abikesa/curtis)
+418. [draw-a-ui](https://github.com/abikesa/draw-a-ui)
+419. [co-pilot](https://github.com/abikesa/copilot)
+420. [frailty](https://github.com/abikesa/frailty)
+421. [chopin](https://abikesa.github.io/chopin)
+422. [icc](https://github.com/abikesa/icc)
+423. [nutshell](https://github.com/abikesa/nutshell)
+424. [them-variation](https://github.com/abikesa/theme-variation)
+425. [director](https://github.com/abikesa/director)
+426. [bootcamp](https://github.com/abikesa/bootcamp)
+427. [error](https://github.com/abikesa/error)
+428. [sheetmusic](https://github.com/abikesa/sheetmusic)
+429. [idealism](https://abikesa.github.io/idealism)
+430. [art](https://abikesa.github.io/art/)
+431. [dailygrind](https://github.com/abikesa/dailygrind)
+432. [tele](https://github.com/abikesa/tele)
+433. [liver](https://github.com/abikesa/liver)
+434. [trc](https://github.com/abikesa/trc)
+435. [writers](https://github.com/abikesa/writers)
+436. [mentor](https://github.com/abikesa/mentor)
+437. [theology](https://github.com/abikesa/theology)
+438. [horror](https://github.com/abikesa/horror)
+439. [roi](https://github.com/abikesa/roi)
+440. [middleast](https://github.com/abikesa/middleeast)
+441. [selfpublication](https://github.com/abikesa/selfpublication)
+442. [metaphysical](https://github.com/abikesa/metaphysical)
+443. [symphony](https://github.com/abikesa/symphony)
+444. [bodymindgeist](https://github.com/abikesa/bodymindgeist)
+445. [apollonian](https://github.com/abikesa/apollonian)
+446. [gold mine](https://github.com/abikesa/goldmine)
+447. [fentanyl](https://github.com/abikesa/fentanyl)
+448. [mickey](https://github.com/abikesa/mickey)
+449. [recurrence](https://github.com/abikesa/recurrence)
+450. [sleep](https://abikesa.github.io/sleep/)
+451. [rent](https://github.com/abikesa/rent)
+452. [clo](https://github.com/abikesa/clo)
+453. [definitions](https://github.com/abikesa/definitions)
+454. [dalle](https://github.com/abikesa/dalle)
+455. [tupac](https://github.com/abikesa/tupac)
+456. [hallucinate](https://github.com/abikesa/hallucinate)
+457. [dostoevsky](https://abikesa.github.io/dostoevsky)
+458. [dropbox](https://github.com/abikesa/dropbox)
+459. [alzheimers](https://github.com/abikesa/alzheimers)
+460. [padlock](https://github.com/abikesa/padlock)
+461. [calculator](https://github.com/abikesa/calculator)
+462. [thermo](https://github.com/abikesa/thermo)
+463. [veritas](https://github.com/abikesa/veritas)
+464. [formula](https://github.com/abikesa/formula)
+465. [rome](https://github.com/abikesa/rome)
+466. [likert](https://github.com/abikesa/likert)
+467. [kiyingi](https://github.com/abikesa/kiyingi)
+468. [dalle3](https://github.com/abikesa/dalle3)
+469. [pedigree](https://github.com/abikesa/pedigree)
+470. [plato](https://github.com/abikesa/plato)
+471. [nrop](https://github.com/abikesa/nrop)
+472. [style](https://github.com/abikesa/style)
+473. [ultra](https://github.com/abikesa/ultra)
+474. [iciarus](https://github.com/abikesa/icarus)
+475. [chomsky-foucault](https://abikesa.github.io/chomsky-foucault/)
+476. [flamenco](https://github.com/abikesa/flamenco)
+477. [che](https://github.com/abikesa/che)
+478. [aesthetic](https://abikesa.github.io/aesthetic/)
+479. [regulate](https://github.com/abikesa?page=16&tab=repositories)
+480. [dmv](https://github.com/abikesa/dmv)
+481. [mass](https://github.com/abikesa/mass)
+482. [tokens](https://github.com/abikesa/tokens)
+483. [stat5](https://abikesa.github.io/stat5/)
+484. [stat6](https://abikesa.github.io/stat6/)
+485. [stat4](https://abikesa.github.io/stat4/)
+486. [stat3](https://abikesa.github.io/stat3/)
+487. [stat2](https://abikesa.github.io/stat2/)
+488. [knightley](https://github.com/abikesa/knightley)
+489. [got](https://abikesa.github.io/got/)
+490. [som](https://abikesa.github.io/som/)
+491. [review](https://abikesa.github.io/review/)
+492. [me](https://abikesa.github.io/me/)
+493. [run](https://abikesa.github.io/run/)
+494. [justice](https://abikesa.github.io/justice/)
+495. [disability](https://github.com/abikesa/disability)
+496. [abikesa](https://abikesa.github.io)
+497. [audit](https://abikesa.github.io/audit/)
+498. [savoir](https://abikesa.github.io/savoir/)
+499. [models](https://abikesa.github.io/models/)
+500. [iterate](https://abikesa.github.io/iterate/)
+501. [cbs](https://abikesa.github.io/cbs/)
+502. [fena](https://github.com/abikesa/jhufena.github.io)
+503. [nabongo](https://abikesa.github.io/nabongo/)
+504. [notes](https://abikesa.github.io/notes/)
+505. [existential fatigue](https://abikesa.github.io/existentialfatigue/)
+506. [everything](https://abikesa.github.io/everything/)
+507. [zeta](https://github.com/abikesa/zeta)
+508. [denotas fork](https://abikesa.github.io/denotas)
+509. [collapsible](https://github.com/abikesa/collapsible)
+510. [bcmodel](https://github.com/abikesa/bcmodel)
+511. [politico](https://github.com/abikesa/politico)
+512. [sonora](https://muzaale.github.io/sonora/)
+513. [joan album](https://muzaale.github.io/joan/)
+514. [kevin](https://github.com/muzaale/kevin)
+515. [excellence](https://muzaale.github.io/excellence/)
+516. [project](https://github.com/muzaale/project)
+517. [index](https://github.com/muzaale/index)
+518. [flow](https://github.com/muzaale/flow/tree/main)
+519. [the](https://abikesa.github.io/forum/)[gtpci](https://abikesa.github.io/gtpci-forum/)[forum](https://muzaale.github.io/forum/)
+520. [center](https://muzaale.github.io/center/)
+521. [llama3](https://github.com/muzaale/llama3)
+522. [hw1](https://github.com/muzaale/hw1)
+523. [gerontology take1](https://muzaale.github.io/github.gerontology.io/)
+524. [gerontology take2](https://github.com/muzaale/gerontology)
+525. [webApp-v0-m](https://github.com/muzaale/webApp)
+526. [thesis](https://muzaale.github.io/thesis/)
+527. [original account](https://muzaale.github.io)
+528. [vince](https://github.com/muzaale/vince)
+529. [desktop-tutorial](https://github.com/muzaale/desktop-tutorial)
+530. [charles](https://muzaale.github.io/education/)
+531. [reharm](https://github.com/muzaale/reharm)
+532. [intelligence](https://github.com/muzaale/intelligence)
+533. [passion](https://github.com/muzaale/passion)
+534. [savoir](https://github.com/muzaale/savoir)
+535. [spjd fork](https://github.com/muzaale/spjd)
+536. [got](https://github.com/muzaale/got)
+537. [zeta](https://github.com/muzaale/zeta)
+538. [denotas](https://muzaale.github.io/denotas)
+539. [destruction](https://github.com/muzaale/destruction)
+540. [bcmodel](https://github.com/muzaale/bcmodel)
+541. [idioms](https://github.com/muzaale/idioms)
+542. [alpha](https://github.com/jhurepos/projectalpha)
+543. [rdc](https://github.com/jhurepos/rdc)
+544. [beta](https://github.com/jhurepos/projectbeta)
+545. [dsmb](https://github.com/jhurepos/dsmb)
+546. [stata](https://github.com/jhurepos/stata)
+547. [zeta](https://jhurepos.github.io/projectzeta/)
+548. [cores](https://github.com/jhurepos/cores)
+549. [teaching](https://github.com/jhurepos/teaching)
+550. [cps](https://github.com/jhurepos/cps)
+551. [logo](https://abikesa.github.io/logo)
+552. [immunology](https://github.com/jhurepos/immunology)
+553. [generalist](https://github.com/jhurepos/generalist)
+554. [aging](https://github.com/jhurepos/aging)
+555. [egfr6m](https://github.com/jhurepos/egfr6m)
+556. [daniels](https://github.com/jhurepos/daniels)
+557. [savoir](https://github.com/jhurepos/savoir)
+558. [kulala](https://github.com/jhurepos/kulala)
+559. [epsilon](https://github.com/jhurepos/projectepsilon)
+560. [delta](https://jhurepos.github.io/projectdelta/)
+561. [cdc visit](https://github.com/Vince-Jin/cdc_visit)
+562. [simulate](https://github.com/jhurepos/simulate)
+563. [gamma](https://github.com/jhurepos/projectgamma)
+564. [basic](https://github.com/jhurepos/basic)
+565. [webApp-v2-j](https://jhurepos.github.io/webApp.github.io/)
+566. [intermediate](https://github.com/jhurepos/intermediate)
+567. [fena](https://github.com/jhurepos/fena)
+568. [gpt-pilot](https://github.com/jhurepos/gpt-pilot)
+569. [kelly](https://github.com/jhurepos/kelly)
+570. [jb create](https://abikesa.github.io/create/)
+571. [shell](https://abikesa.github.io/shell/)
+572. [denotas](https://muzaale.github.io/denotas/)
+573. [flying](https://github.com/abikesa/flying/blob/main/README.md)
+574. [joyce](https://muzaale.github.io/denotas/bdn2023/bdn202308.html#bloom)
+575. [churchy](https://abikesa.github.io/church/)
+576. [donors](https://abikesa.github.io/nondonor/notebooks.html)
+577. [job](https://github.com/abikesa/job)
+578. [iframe](https://abikesa.github.io/iframe/)
+579. [cvsformat](https://abikesa.github.io/format/notebooks.html)
+580. [rdc](https://github.com/abikesa/rdc/tree/main)
+581. [dogg](https://abikesa.github.io/adog/)
+582. [california grid](https://abikesa.github.io/californiagrid/)
+583. [graph theory](https://abikesa.github.io/graphtheory/)
+584. [sociology](https://abikesa.github.io/sociology/)
+585. [revolution](https://abikesa.github.io/revolution/)
+586. [savior](https://abikesa.github.io/savior/)
+587. [~/.https/id_apollodionysus](https://abikesa.github.io/dionysus/)
+588. [~/.https/id_macbookpro](https://abikesa.github.io/pro/)
+589. [~/.https/id_poseidonodysseus](https://abikesa.github.io/odysseus/)
+590. [vectors of nonjbprojects](https://abikesa.github.io/odysseus/markdown.html)
+591. [solid lipid nanoparticles](https://abikesa.github.io/encode/) 
+592. [personalized](https://abikesa.github.io/personalized/)
+593. [magic bullet](https://abikesa.github.io/magicbullet/)
+594. [platonic](https://abikesa.github.io/platonic/)
+595. [bias-variance](https://abikesa.github.io/bias-variance/)
+596. [cause](https://www.youtube.com/watch?v=easWqy08wr8) and will and [strength and means](https://abikesa.github.io/means/)
+597. [altman](https://abikesa.github.io/samaltman/)
+598. [identity](https://abikesa.github.io/identity/)
+599. [weight](https://abikesa.github.io/weight/)
+600. [existentialism](https://abikesa.github.io/existentialism/)
+601. [trial](https://abikesa.github.io/trial/)
+602. [henry v](https://abikesa.github.io/henryv/)
+603. [nationalism](https://abikesa.github.io/nationalism/)
+604. [irkernel](https://abikesa.github.io/kernel/)
+605. [ipython pystata](https://abikesa.github.io/pystata/)
+606. [setup](https://abikesa.github.io/setup/)
+607. [dynamic](https://abikesa.github.io/dynamic/)
+608. [cars](https://abikesa.github.io/cars/)
+609. [morality](https://abikesa.github.io/morality/)
+610. [caitlin](https://abikesa.github.io/caitlin/)
+611. [effortless](https://abikesa.github.io/effortless/)
+612. [setup env](https://abikesa.github.io/environment/)
+613. [just do it!](https://abikesa.github.io/it/)
+614. [multilingual scripts](https://abikesa.github.io/scripts/)
+615. [myst](https://abikesa.github.io/myst/)
+616. [khod'eyo](https://abikesa.github.io/eyo/)
+617. [runneth over](https://abikesa.github.io/over/)
+618. [jensens nvidia](https://abikesa.github.io/nvidia/)
+619. [mass destruction](https://abikesa.github.io/destruction/)
+620. [donor app](https://abikesa.github.io/app/)
+621. [aim 3](https://abikesa.github.io/aimthree/)
+622. [aim 2](https://abikesa.github.io/aimtwo/)
+623. [aim 1](https://abikesa.github.io/aimone/)
+624. [iam happy](https://abikesa.github.io/happy/)
+625. [ralph fiennes](https://abikesa.github.io/fiennes/)
+626. [schindler list vs. the pianist](https://abikesa.github.io/schindler/)
+627. [-oir](https://abikesa.github.io/oir/)
+628. [moral clarity](https://abikesa.github.io/clarity/)
+629. [jama worthy](https://abikesa.github.io/worthy/)
+630. [cellular](https://abikesa.github.io/cellular/)
+631. [kevin bond](https://abikesa.github.io/kevinbond/)
+632. [generalize stata](https://abikesa.github.io/generalize/)
+633. [wikipedia](https://abikesa.github.io/wikipedia/)
+634. [fatca](https://abikesa.github.io/fatca/)
+635. [my wikitemplate](https://abikesa.github.io/wikitemplate/)
+636. [nia grant](https://abikesa.github.io/grant/)
+637. [macbook](https://abikesa.github.io/macbook/)
+638. [turing way](https://abikesa.github.io/way/)
+639. [khod'eyo netlify!](https://kodheyo.netlify.app) 
+640. [netlify workflow](https://abikesa.github.io/kodheyo/)
+641. [joyce](https://abikesa.github.io/joyce/)
+642. [project deploy](https://abikesa.github.io/deploy/)
+643. [three aims](https://abikesa.github.io/aims/)
+644. [kenny edmonds](https://abikesa.github.io/edmonds/)
+645. [jam & lewis](https://abikesa.github.io/lewis/)
+646. [chloe x halle](https://abikesa.github.io/halle/)
+647. [anson & eric](https://abikesa.github.io/eric/)
+648. [github desktop](https://abikesa.github.io/desktop/)
+649. [create & destroy, everyday!](https://abikesa.github.io/everyday/)
+650. [homage & reharm](https://abikesa.github.io/homage-reharm/)
+651. [closing-gap](https://abikesa.github.io/closing-gap/)
+652. [in-the-moment](https://abikesa.github.io/in-the-moment/)
+653. [upstart unthrifts](https://abikesa.github.io/drama/)
+654. [lgbtq](https://abikesa.github.io/lgbtq/)
+655. [die-zauberflöte](https://abikesa.github.io/die-zauberflote/)  
+656. [market place](https://abikesa.github.io/market/)
+657. [leitmotif](https://abikesa.github.io/leitmotif/)
+658. [marx](https://abikesa.github.io/marx/)
+659. [medicine](https://abikesa.github.io/medicine/)
+660. [voicing](https://abikesa.github.io/voicing/)
+661. [labor](https://abikesa.github.io/labor/)
+662. [anarchist](https://abikesa.github.io/anarchist/)
+663. [why-python](https://abikesa.github.io/why-python/)
+664. [and-why-r](https://abikesa.github.io/and-why-r/)
+665. [how-about-stata](https://abikesa.github.io/how-about-stata/)
+666. [zarathustra](https://abikesa.github.io/zarathustra/)
+`;
+
+    const animationPool = [
+      "https://assets1.lottiefiles.com/packages/lf20_x62chJ.json",
+      "https://assets9.lottiefiles.com/packages/lf20_kklehxsp.json",
+      "https://assets4.lottiefiles.com/packages/lf20_q5pk6p1k.json",
+      "https://assets2.lottiefiles.com/packages/lf20_u4yrau.json",
+      "https://assets5.lottiefiles.com/private_files/lf30_editor_ski34jwz.json",
+      "https://assets7.lottiefiles.com/packages/lf20_y6n67rkf.json",
+      "https://assets10.lottiefiles.com/packages/lf20_iwmd6pyr.json"
+    ];
+
+    const keywordsToAnimate = ['donor', 'case', 'trial', 'ai', 'flow', 'graph', 'anarchist'];
+
+    const emojis = ['🌍','🎵','📚','🎨','🔬','💡','🧠','🧮','📊','🧬','⚖️','📈','📜','🏺','📷','📖','🛠️','🧰','🎼','🏥','🗺️','🧘','✊','🎬','📺','🛸','🧪','🕊️','🚀','🌱','🪐','🧭','🔭','🔐','🧳','🖼️','📼','⛵','🦠','⚙️','🖋️','💾','🔢','📁','🎙️','🧸','🔍','🎯','🦉','🧿','🔮','🥁','🎻','🏛️','🧱','🩺','🧹','🪄','📂','📇','📃','📜','💽','🎓'];
+
+    const grid = document.getElementById('gridMenu');
+    const links = raw.match(/\[(.*?)\]\((.*?)\)/g);
+
+    links.forEach((link, i) => {
+      const match = link.match(/\[(.*?)\]\((.*?)\)/);
+      if (match) {
+        const name = match[1];
+        const url = match[2];
+        const a = document.createElement('a');
+        a.href = url;
+        a.target = '_blank';
+        a.style.animationDelay = `${i * 0.02}s`;
+
+        const shouldAnimate = keywordsToAnimate.some(keyword => name.toLowerCase().includes(keyword)) || Math.random() < 0.2;
+
+        if (shouldAnimate) {
+          const anim = document.createElement('lottie-player');
+          anim.setAttribute('src', animationPool[i % animationPool.length]);
+          anim.setAttribute('autoplay', '');
+          anim.setAttribute('loop', '');
+          anim.setAttribute('mode', 'normal');
+          a.appendChild(anim);
+        } else {
+          const emoji = emojis[i % emojis.length];
+          const icon = document.createElement('div');
+          icon.textContent = emoji;
+          icon.className = 'icon-box';
+          a.appendChild(icon);
+        }
+
+        a.appendChild(document.createTextNode(name));
+        grid.appendChild(a);
+      }
+    });
+  </script>
+</body>
+</html>
+

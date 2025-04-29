@@ -1,0 +1,511 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title> &#8212; Ubuntu</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-bootstrap.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'act3/part2/part2_1';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="" href="part2_2.html" />
+    <link rel="prev" title="" href="../act2.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/ubuntu.jpg" class="logo__image only-light" alt="Ubuntu - Home"/>
+    <script>document.write(`<img src="../../_static/ubuntu.jpg" class="logo__image only-dark" alt="Ubuntu - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../index.html">
+                    Sound 🌊
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../act1/part1.html">Resonance 🚢</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../act1/chapter1.html">Idols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../act1/chapter2.html">Realities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../act1/chapter3.html">Question</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../act2/part2.html">Dissonance 🪛 🏴‍☠️</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../act2/chapter1.html">Eternal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../act2/chapter2.html">War</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../act2/chapter3.html">Hammer</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../part3.html">Tuning 🦈 ✂️ 🛟</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act1.html">Self 🗡</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../part1/part1_1.html">Adversarial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../part1/part1_2.html">Competitive</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../part1/part1_3.html">Worthy</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../act2.html">Emergent 🤝</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Transactional</a></li>
+<li class="toctree-l3"><a class="reference internal" href="part2_2.html">Suspended</a></li>
+<li class="toctree-l3"><a class="reference internal" href="part2_3.html">Loyal</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act3.html">Nonself ❤️</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../part3/part3_1.html">Cooperative</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../part3/part3_2.html">Unconditional</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="../part3/part3_3.html">Family 🎹</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bibliography.html">Mode 🏝️</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/abikesa/template/main?urlpath=tree/book/website/act3/part2/part2_1.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="../../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/act3/part2/part2_1.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1><a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<p><strong>The Non-Imitative Art of Music and the Tragedy of Dorian Gray’s Surface Imitation in Oscar Wilde’s The Picture of Dorian Gray</strong>. Oscar Wilde’s The Picture of Dorian Gray (1890) is a novel that wrestles with the nature of art, beauty, and human authenticity, presenting a scathing critique of superficiality through the tragic arc of its titular character. At the heart of the novel lies a tension between art as an autonomous, non-imitative force and the human tendency to imitate shallow ideals, a theme Wilde explicitly foregrounds in his preface and weaves into the narrative. The preface famously declares, “All art is quite useless,” a provocative assertion that art exists for its own sake, free from utilitarian or moralistic constraints. Within this framework, Wilde singles out music as the supreme art form, praising it as uniquely non-imitative and unmatched in its formal purity. Meanwhile, the novel’s protagonist, Dorian Gray, emerges as a foil to this ideal, a man who succumbs to the allure of surface beauty and imitation, ultimately embodying the antithesis of true art. By elevating the portrait as a revelatory artistic creation and casting Dorian as a hollow imitator of youth and aestheticism, Wilde critiques the human propensity to prioritize appearance over substance. This essay explores Wilde’s defense of music as the pinnacle of non-imitative art, both in the preface and the novel’s body, and examines how Dorian’s imitative existence underscores Wilde’s broader aesthetic philosophy, culminating in a tragedy that contrasts the authenticity of art with the superficiality of human vanity.</p>
+<p>In the preface to The Picture of Dorian Gray, Wilde positions music as the apotheosis of artistic form, a stance rooted in his aestheticist belief that art should be valued for its intrinsic beauty rather than its representational fidelity or moral utility. He writes, “Music is the art which is most nigh to tears and memory,” suggesting its unparalleled ability to evoke emotion and transcend the material world. Unlike painting or literature, which can be tethered to imitation—mimicking nature, human forms, or narratives—music operates in a realm of pure abstraction. Its form is self-contained, relying on rhythm, melody, and harmony rather than external referents. For Wilde, this formal purity makes music the least imitative of arts, as it does not seek to replicate the visible or tangible but instead creates an experience that is wholly its own. This aligns with his broader claim that “the only beautiful things are the things that do not concern us,” emphasizing art’s detachment from practical or moral concerns. Music, in its non-representational essence, embodies this detachment, offering a direct emotional and sensory experience that resists the reductive impulse to mirror reality. Wilde’s praise of music’s form thus reflects his belief that true art is autonomous, existing beyond the constraints of imitation that bind other mediums, such as the visual arts’ tendency to replicate the physical world or literature’s reliance on storytelling that echoes human experience.</p>
+<p>Within the body of the novel, Wilde extends this idea by implicitly contrasting music’s non-imitative purity with the imitative tendencies of other arts and, crucially, with Dorian Gray’s own life. The portrait of Dorian, painted by Basil Hallward, initially appears as a work of visual art that imitates its subject’s beauty. However, as the narrative unfolds, the portrait transcends mere imitation, becoming a dynamic entity that reflects Dorian’s moral and spiritual decay while he remains outwardly pristine. This supernatural quality elevates the portrait to a level of artistic truth that aligns with Wilde’s aesthetic ideals: it is not a static copy but a living revelation of the soul, akin to music’s ability to convey intangible truths without mimicking external forms. Wilde’s assertion in the preface that “the artist is the creator of beautiful things” finds its echo here, as the portrait’s grotesque transformation creates a beauty of truth, however horrifying, that surpasses its initial function as a mirror of Dorian’s appearance. In contrast, Dorian himself becomes a tragic figure of imitation, aping the ideals of youth and beauty peddled by Lord Henry Wotton’s hedonistic philosophy. Lord Henry’s aphorisms, such as “Youth is the one thing worth having,” seduce Dorian into valuing surface over substance, leading him to wish that the portrait bear the burden of aging while he remains forever young. This wish, granted by an unspecified supernatural force, traps Dorian in a life of imitation—not of art’s authenticity but of a shallow aesthetic ideal that prioritizes appearance over inner truth.</p>
+<p>Dorian’s imitative existence is the crux of his tragedy and the novel’s critique of superficiality. Influenced by Lord Henry’s doctrine of “new Hedonism,” Dorian seeks to embody an idealized image of eternal youth and beauty, treating his appearance as a currency for power and pleasure. His life becomes a performance, a mimicry of the aesthetic principles he adopts without questioning, much like an actor reciting lines without understanding their meaning. This is poignantly illustrated in his relationship with Sibyl Vane, a young actress whose artistic brilliance initially captivates him. Sibyl’s performances, particularly as Shakespeare’s heroines, are described as transcendent, suggesting a connection to the non-imitative quality of art that Wilde admires in music. Her acting is not mere mimicry but a creation of emotional truth, a fleeting embodiment of beauty that exists for its own sake. Yet, when Sibyl falls in love with Dorian and loses her ability to perform, prioritizing real emotion over artistic illusion, Dorian rejects her, valuing her only as a symbol of beauty rather than a complex human being. His callous dismissal of Sibyl, who subsequently dies by suicide, reveals his inability to appreciate art or humanity beyond their surface appeal. Dorian’s life, thus, is not a creation of beauty but an imitation of it, a hollow echo of the ideals he has absorbed from Lord Henry. In this sense, Wilde “throws Dorian under the bus,” as the question suggests, portraying him as a cautionary figure whose obsession with surface imitation leads to moral and existential ruin.</p>
+<p>The portrait, by contrast, emerges as the novel’s true artistic triumph, embodying the non-imitative essence Wilde ascribes to music. While it begins as a visual representation of Dorian, it evolves into something far greater: a mirror of his soul that captures the truth of his corruption. This transformation aligns with Wilde’s view of art as a creator of beauty rather than a mere imitator of reality. The portrait’s grotesque changes—its wrinkles, sneers, and bloodstains—do not imitate Dorian’s physical form but reveal the invisible decay of his character, much as music conveys emotions without depicting literal scenes. When Dorian, tormented by the portrait’s accusatory presence, attempts to destroy it, he inadvertently kills himself, and the portrait reverts to its original beauty while his corpse assumes the withered, hideous form the painting once bore. This climactic reversal underscores the portrait’s superiority as art: it outlives Dorian’s superficial existence, embodying a truth that his imitative life could never achieve. Wilde’s elevation of the portrait as a non-imitative creation thus reinforces his preface’s claim that art, at its best, transcends the mundane act of copying reality, achieving a purity akin to music’s abstract form.</p>
+<p>Wilde’s specific praise of music as the “unmatched” and “only remaining non-imitative art” in the novel’s context can be further understood through the lens of his aesthetic philosophy and the cultural debates of his time. In the late 19th century, the doctrine of “art for art’s sake” was a radical stance, challenging the Victorian emphasis on art’s moral and didactic functions. By championing music, Wilde aligns himself with thinkers like Walter Pater, whose Studies in the History of the Renaissance (1873) influenced Wilde’s views on aestheticism. Pater argued that music was the ideal art form because it was “all form,” free from the representational burdens of other mediums. For Wilde, music’s lack of imitation is its strength: it does not depict the world but creates a world of its own, evoking sensations and emotions without relying on narrative or visual mimicry. In the novel, this is subtly reflected in moments where music appears, such as Dorian’s attendance at concerts or his fleeting appreciation of Chopin, which stir his senses but fail to penetrate his moral numbness. These instances underscore music’s purity but also highlight Dorian’s inability to engage with art on a deeper level, as he remains fixated on imitating its surface pleasures. By declaring music the “only remaining non-imitative art,” Wilde may also be lamenting the commodification of other arts in Victorian society, where paintings and literature were often judged by their realism or moral lessons rather than their intrinsic beauty. Music, in its abstract glory, escapes this trap, serving as a beacon of what art can be when unburdened by imitation.</p>
+<p>Ultimately, The Picture of Dorian Gray is a meditation on the divide between art’s authentic creation and humanity’s tendency toward imitation. Dorian Gray, seduced by the allure of eternal youth and beauty, becomes a tragic figure who mimics an aesthetic ideal without embodying its truth. His life, driven by surface imitation, contrasts sharply with the portrait’s evolution into a non-imitative revelation of his soul, a creation that aligns with Wilde’s vision of art as autonomous and truthful. Music, as Wilde’s unmatched art form, serves as the novel’s implicit ideal, its non-imitative form offering a model for what art can achieve when freed from the constraints of representation. Through Dorian’s downfall and the portrait’s triumph, Wilde critiques the superficiality of a society—and a protagonist—obsessed with appearances, while celebrating art’s capacity to transcend imitation and reveal profound truths. In this sense, Dorian is indeed “thrown under the bus,” a cautionary emblem of inauthenticity, while the portrait and music stand as testaments to the enduring power of art that creates rather than copies, resonating with Wilde’s belief that “the highest, as the lowest, form of criticism is a mode of autobiography.” For Dorian, his autobiography is one of imitation and ruin; for Wilde, it is a defiant ode to the non-imitative beauty of art itself.</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./act3/part2"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../act2.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"></p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="part2_2.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"></p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  Copyright © Ukuvula, Ukuzula, Ukusoma, Ukubona, Ukuvela
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

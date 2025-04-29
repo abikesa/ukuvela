@@ -1,0 +1,178 @@
+/* Center all content on the page */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Container for the calculator */
+.container {
+  text-align: center; /* Keep the container centered */
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 800px;
+}
+
+/* Title styling */
+h1 {
+  line-height: 1.2;
+}
+
+/* Section Names */
+h2 {
+  margin-bottom: 10px;
+}
+
+/* Left alignment for sections after the slide bar */
+form, #riskOutput, #plotDiv {
+  text-align: left;
+}
+
+/* Radio button groups aligned in 3 columns */
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;  /* Add space between radio buttons */
+  justify-content: left;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Model Toggle Switch Styles */
+.model-toggle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px; /* Add space between labels and switch */
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+#model1Label, #model2Label {
+  font-size: 14px;
+}
+
+#model1Label {
+  margin-right: 10px; /* Adjust spacing on the right of Model 1 */
+}
+
+#model2Label {
+  margin-left: 10px; /* Adjust spacing on the left of Model 2 */
+}
+
+/* Form and Plot styling */
+form {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1976D2;
+}
+
+#plotDiv {
+  margin-top: 20px;
+}
+# flick 20250409213614-ys3T
+# flick 20250409214219-FfTR
+# flick 20250409214636-hO9R
+# flick 20250409230601-MeDY
+# flick 20250410002732-LdPb
+# flick 20250410004050-m4AO
+# flick 20250410161629-ihKw
+# flick 20250410162337-QpgT
+# flick 20250410162732-d1kx
+# flick 20250410201243-vKIa
+# flick 20250413005458-TBi9
+# flick 20250413011144-J7yf
+# flick 20250413132129-JUqj
+# flick 20250413165542-4Wu0
+# flick 20250413171244-PztI
+# flick 20250413213135-AVIV
+# flick 20250415193036-QjI0
+# flick 20250415193727-Z4b8
+# flick 20250415200147-Ofaf
+# flick 20250415203936-dJcq
+# flick 20250415204933-FmhZ
+# flick 20250415220558-yLQC
+# flick 20250415223233-3ih9
+# flick 20250416023210-ssGO
+# flick 20250416150454-lb3q
+# flick 20250416215309-XjnD
+# flick 20250416230551-UVaz
+# flick 20250416232104-ovh3
+# flick 20250416234900-57IE
+# flick 20250417001812-wxDd
+# flick 20250417002612-Dw1C
+# flick 20250417141942-ojsx
+# flick 20250417181704-IDWO
+# flick 20250417190343-ivyJ
+# flick 20250417193142-lcOu
+# flick 20250418040655-MUJF
+# flick 20250422032348-jQ9j
+# flick 20250422034842-S7Bh
+# flick 20250422215639-ERE1
+# flick 20250422215933-VfsK
+# flick 20250423005249-VQPB
+# flick 20250423161902-G2J3
+# flick 20250423180926-W0DM
