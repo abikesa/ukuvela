@@ -209,3 +209,10 @@ Would you like a full PDF export now with all of this updated detail and formatt
 # flick 20250429104651-mat6
 # flick 20250429153954-R5vf
 # flick 20250429170605-zAaF
+# flick 20250429230139-MaYS
+# flick 20250430035514-rxMC
+# flick 20250430131506-C6ay
+# flick 20250430214327-O2Wx
+# flick 20250430233603-I78b
+# flick 20250501010528-UNwI
+# flick 20250501105532-zcZK

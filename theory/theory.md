@@ -58,3 +58,7 @@ Equations without variables. A body with no soul.
 # flick 20250429111921-Zex0
 # flick 20250429155245-jUV9
 # flick 20250429170605-utQe
+# flick 20250430005206-1rtE
+# flick 20250430130743-Hvfp
+# flick 20250430131506-vg51
+# flick 20250430214329-vf9b
