@@ -13,37 +13,49 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{title} - MyWiki</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ukubona - Gateway to Perception</title>
   <link rel="stylesheet" href="style/main.css">
-  <link rel="stylesheet" href="style/darkmode.css">
-  <script src="js/toggle-darkmode.js" defer></script>
+  <link rel="stylesheet" href="style/homepage.css">
 </head>
+
 <body>
-<header id="top-header">
-  <h1>{title}</h1>
-  <nav>
-    <a href="index.html">Main Page</a> |
-    <a href="#" onclick="toggleDarkMode()">Toggle Dark Mode</a>
-  </nav>
-</header>
+  <!-- Site name ABOVE centerpiece -->
+  <div id="site-name">Ukubona</div>
+  <div id="site-tagline">The Gateway to Perception</div>
 
-<main id="content">
-  <h2>Introduction</h2>
-  <p>Content placeholder for {title}.</p>
+  <!-- Centerpiece -->
+  <div id="centerpiece">
+    <img src="images/ukubona-004.jpg" alt="Ukubona Globe" id="globe">
+  
+    <div id="topics-wrapper">
+      <a href="articles/mythology.html" class="topic" style="--i:0;">Mythology</a>
+      <a href="articles/theory-of-relativity.html" class="topic" style="--i:1;">Epistemology</a>
+      <a href="articles/symbolic-logic.html" class="topic" style="--i:2;">Symbolism</a>
+      <a href="articles/first-article.html" class="topic" style="--i:3;">Architecture</a>
+      <a href="articles/theory-of-relativity.html" class="topic" style="--i:4;">Cognition</a>
+      <a href="articles/your-article-title.html" class="topic" style="--i:5;">Resonance</a>
+    </div>
+  </div>
+  
 
-  <h2>Background</h2>
-  <p>More placeholder text.</p>
+  <!-- Search bar BELOW everything -->
+  <div id="search-bar">
+    <input id="search-input" type="text" placeholder="Search Ukubona...">
 
-  <h2>See Also</h2>
-  <ul>
-    <li><a href="index.html">Return to Main Page</a></li>
-  </ul>
-</main>
+  </div>
 
-<footer id="bottom-footer">
-  <hr>
-  <p>Last updated: April 2025 | Powered by MyWiki</p>
-</footer>
+  <!-- Link to the search.js script -->
+  <script src="js/search.js" defer></script>
+
+  <!-- Hidden Iframes for Searchable Content (place them here) -->
+  <iframe src="articles/mythology.html" style="display:none; border: 1px solid red;" id="mythology"></iframe>
+  <iframe src="articles/theory-of-relativity.html" style="display:none; border: 1px solid red;" id="theory-of-relativity"></iframe>
+  <iframe src="articles/symbolic-logic.html" style="display:none; border: 1px solid red;" id="symbolic-logic"></iframe>
+  <iframe src="articles/first-article.html" style="display:none; border: 1px solid red;" id="first-article"></iframe>
+  <iframe src="articles/your-article-title.html" style="display:none; border: 1px solid red;" id="your-article-title"></iframe>
+  
+  
 </body>
 </html>
 """

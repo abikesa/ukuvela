@@ -1,0 +1,12 @@
+Five things:
+1. I'm building my personal wiki 
+2. Goal is 99% fidelity to wiki aesthetics 
+3. Platform will be transferrable through variants to other sorts 
+   - Mywiki
+   - Familywiki
+   - Ukubonawiki
+4. For now, help guide us there by mapping the .md content below onto the .html content
+5. Any questions? Here is the directory structure
+   - Let me know if you wish to see any of the .css & .js content 
+   - Should not be conversational although what I share is (wiki isn't conversational)
+   - Authoritative is what we need!

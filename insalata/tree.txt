@@ -1,0 +1,67 @@
+📁 Scanning directory: .
+
+🗂️  Total files:            46
+📂 Total folders:            5
+
+🧾 File breakdown:
+  📄 HTML files       :     9
+  📓 Markdown files   :     2
+  🐍 Python files     :     2
+  📜 JavaScript files :     3
+  🎨 CSS files        :     6
+  🖼️  Image files      :    12
+  🧾 Citation (.cff)  :     0
+  📦 Compressed files :     0
+
+📚 Folder structure (first 3 levels):
+.
+├── ..dat.flick (hidden)
+├── .dat (hidden)
+├── .kww3 (hidden)
+├── 0.old
+├── 📓 README.md
+├── 📁 articles
+│   ├── .DS_Store (hidden)
+│   ├── .amptjw (hidden)
+│   ├── 📄 create-new-article.html
+│   ├── 📄 first-article.html
+│   ├── 📄 mythology.html
+│   ├── 📄 paella.html
+│   ├── 📄 symbolic-logic.html
+│   ├── 📄 template.html
+│   ├── 📄 theory-of-relativity.html`
+│   ├── 📄 your-article-title.html
+├── 📓 create-new-article.md
+├── favicon.ico
+├── 📁 images
+│   ├── .ptvgyagh (hidden)
+│   ├── 🖼️  drawing-hands.jpg
+│   ├── 🖼️  marge-fargo.jpg
+│   ├── 🖼️  mousetrap.jpeg
+│   ├── 🖼️  music-tree.jpg
+│   ├── 🖼️  octopus.jpeg
+│   ├── 🖼️  paella.jpeg
+│   ├── 🖼️  placeholder.png
+│   ├── 🖼️  recursion.png
+│   ├── 🖼️  recursive-branching.jpg
+│   ├── 🖼️  ukubona-004.jpg
+│   ├── 🖼️  ukubona.png
+│   ├── unfurl.GIF
+├── 📄 index.html
+├── 📁 js
+│   ├── .tglgawcj (hidden)
+│   ├── 📜 search.js
+│   ├── 📜 toggle-darkmode.js
+│   ├── 📜 wiki-controls.js
+├── 🐍 setup_wiki.py
+├── 📁 style
+│   ├── .iwsp (hidden)
+│   ├── 🎨 article.css
+│   ├── 🎨 darkmode.css
+│   ├── 🎨 homepage.css
+│   ├── 🎨 main.css
+│   ├── 🎨 settings-bar.css
+│   ├── 🎨 wiki-controls.css
+├── tree.sh
+├── tree.txt
+├── 🐍 wiki.py

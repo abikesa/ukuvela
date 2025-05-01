@@ -14,7 +14,8 @@ header {
   justify-content: space-between;
   background-color: #f8f9fa;
   padding: 0.8em 1em;
-  border-bottom: 1px solid #a2a9b1;
+  border: none;
+  box-shadow: none;
 }
 
 #logo {
@@ -32,13 +33,14 @@ header {
 
 nav#toc {
   background-color: #f8f9f9;
-  border: 1px solid #ccc;
   padding: 1em;
   font-size: 0.9em;
   position: sticky;
   top: 1em;
   max-height: calc(100vh - 4em);
   overflow-y: auto;
+  border: none;
+  box-shadow: none;
 }
 
 main#content {
@@ -50,12 +52,13 @@ main#content {
 
 aside#settings-bar {
   background-color: #f8f9f9;
-  border: 1px solid #ccc;
   padding: 1em;
   font-size: 0.9em;
   position: sticky;
   top: 1em;
   height: fit-content;
+  border: none;
+  box-shadow: none;
 }
 
 footer {
@@ -77,23 +80,99 @@ p {
 
 aside#infobox {
   background-color: #f8f9fa;
-  border: 1px solid #a2a9b1;
+  border: 1px solid #eaecf0;
   padding: 1em;
   float: right;
   width: 250px;
   margin: 0 0 1em 1em;
 }
 
+aside#infobox img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
 aside#infobox table {
   width: 100%;
+  border-collapse: collapse;
 }
 
 aside#infobox th {
   background-color: #cedff2;
   font-size: 1.2em;
   padding: 0.5em;
+  text-align: center;
 }
 
 aside#infobox td {
   padding: 0.5em;
+  border: 1px solid #eaecf0;
 }
+
+aside#infobox caption {
+  font-weight: bold;
+  padding: 8px;
+  background-color: #eaecf0;
+}
+
+.wikitable {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+  background-color: #f8f9fa;
+}
+
+.wikitable th, .wikitable td {
+  border: 1px solid #eaecf0;
+  padding: 8px;
+  text-align: left;
+}
+
+.wikitable caption {
+  font-weight: bold;
+  padding: 8px;
+  background-color: #eaecf0;
+}
+
+.image-placeholder, .video-placeholder, .audio-placeholder, .gif-placeholder {
+  float: right; /* Default float right, can be overridden to left */
+  margin: 0 0 1em 1em; /* Right float: margin left; Left float: margin right */
+  width: 250px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  background-color: #f9f9f9;
+}
+
+.image-placeholder img, .gif-placeholder img, .video-placeholder iframe, .audio-placeholder audio {
+  width: 100%;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.image-placeholder p, .gif-placeholder p, .video-placeholder p, .audio-placeholder p {
+  font-size: 0.9em;
+  text-align: center;
+  margin: 0;
+}
+
+blockquote {
+  border-left: 2px solid #444;
+  padding: 1em;
+  margin: 1.5em 0;
+  font-style: italic;
+  background-color: #f5f5f5;
+  color: #202122;
+  border-radius: 4px;
+}
+
+
+.quote-callout {
+  border-left: 2px solid #444;
+  padding: 1em;
+  margin: 1.5em 0;
+  font-style: italic;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
