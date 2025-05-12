@@ -1,49 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ukubona - Gateway to Perception</title>
-  <link rel="stylesheet" href="style/main.css">
-  <link rel="stylesheet" href="style/homepage.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ukubona</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <style>
+    :root {
+      --bg-light: #ffffff;
+      --bg-dark: #000000;
+    }
+
+    html[data-theme='light'] {
+      background-color: var(--bg-light);
+    }
+
+    html[data-theme='dark'] {
+      background-color: var(--bg-dark);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      font-family: 'Inter', system-ui, sans-serif;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      opacity: 0;
+      animation: fadeIn 0.8s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    .logo-center img {
+      width: 220px;
+      height: 220px;
+      animation: spin 60s linear infinite;
+      object-fit: contain;
+      image-rendering: auto;
+      filter: drop-shadow(0 0 0 transparent);
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .top-left, .top-right {
+      position: absolute;
+      top: 1em;
+      z-index: 999;
+    }
+
+    .top-left {
+      left: 1em;
+    }
+
+    .top-right {
+      right: 1em;
+    }
+
+    .menu-icon, #toggle-theme {
+      cursor: pointer;
+      background: transparent;
+      border: none;
+      font-size: 1.5rem;
+    }
+
+    .menu-icon {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      width: 32px;
+      height: 32px;
+    }
+
+    .menu-icon div {
+      background-color: currentColor;
+      width: 8px;
+      height: 8px;
+      border-radius: 1px;
+    }
+
+    .app-grid {
+      position: absolute;
+      top: 4rem;
+      left: 1em;
+      display: none;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 1rem;
+      background: rgba(255, 255, 255, 0.95);
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      max-height: 80vh;
+      overflow-y: auto;
+      width: 90vw;
+      max-width: 1000px;
+      z-index: 998;
+    }
+
+    html[data-theme='dark'] .app-grid {
+      background: rgba(0, 0, 0, 0.95);
+      color: #eee;
+    }
+
+    .app-grid a {
+      text-decoration: none;
+      color: inherit;
+      font-size: 0.85rem;
+      font-weight: 500;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0.4rem;
+      border-radius: 6px;
+      transition: background-color 0.2s, transform 0.3s;
+      opacity: 0;
+      animation: fadeTile 0.5s ease forwards;
+    }
+
+    @keyframes fadeTile {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .app-grid .icon-box {
+      font-size: 1.4rem;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0.5rem;
+    }
+  </style>
 </head>
-
 <body>
-  <!-- Site name ABOVE centerpiece -->
-  <div id="site-name">Ukubona</div>
-  <div id="site-tagline">The Gateway to Perception</div>
-
-  <!-- Centerpiece -->
-  <div id="centerpiece">
-    <img src="images/ukubona-004.jpg" alt="Ukubona Globe" id="globe">
-  
-    <div id="topics-wrapper">
-      <a href="articles/mythology.html" class="topic" style="--i:0;">Mythology</a>
-      <a href="articles/theory-of-relativity.html" class="topic" style="--i:1;">Epistemology</a>
-      <a href="articles/symbolic-logic.html" class="topic" style="--i:2;">Symbolism</a>
-      <a href="articles/first-article.html" class="topic" style="--i:3;">Architecture</a>
-      <a href="articles/theory-of-relativity.html" class="topic" style="--i:4;">Cognition</a>
-      <a href="articles/your-article-title.html" class="topic" style="--i:5;">Resonance</a>
+  <div class="top-left">
+    <div class="menu-icon" id="gridToggle">
+      <div></div><div></div><div></div>
+      <div></div><div></div><div></div>
+      <div></div><div></div><div></div>
     </div>
   </div>
-  
 
-  <!-- Search bar BELOW everything -->
-  <div id="search-bar">
-    <input id="search-input" type="text" placeholder="Search Ukubona...">
-
+  <div class="top-right">
+    <button id="toggle-theme">🌞 / 🌙</button>
   </div>
 
-  <!-- Link to the search.js script -->
-  <script src="js/search.js" defer></script>
+  <div class="logo-center">
+    <img src="./images/ukubona-light-fixed.png" alt="Ukubona Logo" id="logo">
+  </div>
 
-  <!-- Hidden Iframes for Searchable Content (place them here) -->
-  <iframe src="articles/mythology.html" style="display:none; border: 1px solid red;" id="mythology"></iframe>
-  <iframe src="articles/theory-of-relativity.html" style="display:none; border: 1px solid red;" id="theory-of-relativity"></iframe>
-  <iframe src="articles/symbolic-logic.html" style="display:none; border: 1px solid red;" id="symbolic-logic"></iframe>
-  <iframe src="articles/first-article.html" style="display:none; border: 1px solid red;" id="first-article"></iframe>
-  <iframe src="articles/your-article-title.html" style="display:none; border: 1px solid red;" id="your-article-title"></iframe>
-  
-  
+  <div class="app-grid" id="gridMenu"></div>
+
+  <script>
+    const html = document.documentElement;
+    const toggleBtn = document.getElementById('toggle-theme');
+    const logo = document.getElementById('logo');
+
+    const LIGHT_LOGO = './images/ukubona-light-fixed.png';
+    const DARK_LOGO = './images/ukubona-dark-fixed.png';
+
+    function setTheme(theme) {
+      html.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+      logo.src = theme === 'dark' ? DARK_LOGO : LIGHT_LOGO;
+      toggleBtn.textContent = theme === 'dark' ? '🌙' : '🌞';
+    }
+
+    const storedTheme = localStorage.getItem('theme') || 'light';
+    setTheme(storedTheme);
+
+    toggleBtn.addEventListener('click', () => {
+      const newTheme = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      setTheme(newTheme);
+    });
+
+    const toggle = document.getElementById('gridToggle');
+    const menu = document.getElementById('gridMenu');
+
+    toggle.addEventListener('click', () => {
+      menu.style.display = menu.style.display === 'grid' ? 'none' : 'grid';
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+        menu.style.display = 'none';
+      }
+    });
+
+    const links = [
+      { name: 'Mythology', url: 'articles/mythology.html', icon: '🏺' },
+      { name: 'Epistemology', url: 'articles/theory-of-relativity.html', icon: '🧠' },
+      { name: 'Symbolism', url: 'articles/symbolic-logic.html', icon: '🧿' },
+      { name: 'Architecture', url: 'articles/first-article.html', icon: '🏛️' },
+      { name: 'Cognition', url: 'articles/theory-of-relativity.html', icon: '🧬' },
+      { name: 'Resonance', url: 'articles/your-article-title.html', icon: '🎼' }
+    ];
+
+    links.forEach((link, i) => {
+      const a = document.createElement('a');
+      a.href = link.url;
+      a.target = '_blank';
+      a.style.animationDelay = `${i * 0.03}s`;
+
+      const icon = document.createElement('div');
+      icon.textContent = link.icon;
+      icon.className = 'icon-box';
+      a.appendChild(icon);
+      a.appendChild(document.createTextNode(link.name));
+      menu.appendChild(a);
+    });
+  </script>
 </body>
 </html>

@@ -1,0 +1,1091 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Sound 🌊 &#8212; Ukuvela</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-bootstrap.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'spjd-rebuild/spjd-2025';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/decision-tree.jpeg" class="logo__image only-light" alt="Ukuvela - Home"/>
+    <script>document.write(`<img src="../_static/decision-tree.jpeg" class="logo__image only-dark" alt="Ukuvela - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    Sound 🌊
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../act1/part1.html">Resonance 🚢</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../act1/chapter1.html">Idols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../act1/chapter2.html">Realities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../act1/chapter3.html">Question</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../act2/part2.html">Dissonance 🪛 🏴‍☠️</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../act2/chapter1.html">Eternal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../act2/chapter2.html">War</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../act2/chapter3.html">Hammer</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../act3/part3.html">Tuning 🦈 ✂️ 🛟</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act3/act1.html">Self 🗡</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part1/part1_1.html">Adversarial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part1/part1_2.html">Competitive</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part1/part1_3.html">Worthy</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act3/act2.html">Emergent 🤝</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part2/part2_1.html">Transactional</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part2/part2_2.html">Suspended</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part2/part2_3.html">Loyal</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act3/act3.html">Nonself ❤️</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part3/part3_1.html">Cooperative</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part3/part3_2.html">Unconditional</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="../act3/part3/part3_3.html">Family 🎹</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../bibliography.html">Mode 🏝️</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/abikesa/template/main?urlpath=tree/book/website/spjd-rebuild/spjd-2025.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/spjd-rebuild/spjd-2025.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Sound 🌊</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">02/02/02025</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#session-16">Session 16</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#s">S</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#p">P</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#j">J</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#d">D</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">02/22/2025</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#session-17">Session 17</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">S</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">P</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">J</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">D</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">05/03/2025</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#session-18">Session 18</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">S</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">P</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">J</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">D</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#marums">Marums</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="sound">
+<h1>Sound 🌊<a class="headerlink" href="#sound" title="Permalink to this heading">#</a></h1>
+<style>
+/* ╭━━━☆━━━╮  FLOAT FRAMES (Figure / Seealso) */
+.float-frame {
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    position: relative;
+    padding: 10px 14px;
+    margin: 15px;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.float-frame.figure-style {
+    float: right;
+    width: 35%;
+    text-align: center;
+}
+
+.float-frame.left-style {
+    float: left;
+    width: 35%;
+    text-align: center;
+    margin-right: 15px;
+    margin-left: 0;
+}
+
+.float-frame.seealso-style {
+    float: right;
+    display: inline-block;
+    width: 190px;
+    max-width: 190px;
+    min-width: 100px;
+    padding: 6px 10px;
+    font-size: 13px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+/* Responsive override for all floats */
+@media (max-width: 768px) {
+    .float-frame,
+    .float-frame.seealso-style {
+        float: none !important;
+        display: block;
+        width: 95vw !important;
+        max-width: 95vw !important;
+        margin: 10px auto;
+        white-space: normal;
+    }
+}
+
+/* ╭━━━☆━━━╮  BLOCKQUOTES */
+blockquote {
+    border-left: 2px solid #999;
+    padding-left: 1em;
+    margin: 0;
+    color: #444;
+    font-style: italic;
+    background: none;
+}
+
+blockquote a {
+    text-decoration: none;
+    font-style: normal;
+    color: #333;
+    border-bottom: 1px dotted #aaa;
+}
+blockquote a:hover {
+    color: #000;
+    border-bottom: 1px solid #555;
+}
+
+/* ╭━━━☆━━━╮  COLLAPSIBLE <details> BLOCKS */
+.custom-details summary {
+    cursor: pointer;
+    font-weight: normal;
+    display: inline-block;
+    padding: 5px 15px;
+    border: 2px dotted black;
+    border-radius: 20px;
+    text-align: center;
+    transition: color 0.3s ease-in-out;
+}
+.custom-details summary:hover {
+    color: lightgray;
+}
+.custom-details summary::-webkit-details-marker {
+    display: none;
+}
+
+/* ╭━━━☆━━━╮  NESTED QUOTES INSIDE DETAILS */
+.quote-content {
+    border-left: 4px solid #ccc;
+    padding-left: 10px;
+    color: #555;
+    font-style: italic;
+    margin-top: 15px;
+}
+.quote-content details {
+    margin-top: 10px;
+}
+.quote-content summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ╭━━━☆━━━╮  FLOATING IMAGES */
+.float-right {
+    float: right;
+    width: 35%;
+    margin-left: 15px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    font-size: 12px;
+    background-color: #f9f9f9;
+    position: relative;
+}
+.float-right img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ╭━━━☆━━━╮  MAGNIFY ICON OVERLAY */
+.image-bubble.layered-icon {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 12px;
+    height: 10px;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 5;
+}
+.large-icon, .small-icon {
+    position: absolute;
+    border-radius: 2px;
+}
+.large-icon {
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+    border: 1px solid #888;
+}
+.small-icon {
+    width: 50%;
+    height: 50%;
+    background-color: #aaa;
+    border: 1px solid #666;
+    bottom: -1px;
+    left: -1px;
+}
+.image-bubble.layered-icon:hover .large-icon {
+    background-color: #007BFF;
+    border-color: #0056b3;
+}
+.image-bubble.layered-icon:hover .small-icon {
+    background-color: white;
+    border-color: #007BFF;
+}
+
+.float-frame pre,
+.float-frame div.highlight,
+.float-frame code {
+    text-align: left !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    display: block;
+}
+
+@media (prefers-color-scheme: dark) {
+  .float-frame,
+  .float-right,
+  .float-frame.figure-style,
+  .float-frame.left-style,
+  .float-frame.seealso-style {
+    background-color: #1e1e1e !important;
+    border-color: #444 !important;
+    color: #ddd;
+  }
+
+  .float-frame a,
+  .float-frame p,
+  .float-frame span {
+    color: #ccc;
+  }
+
+  blockquote {
+    color: #bbb;
+    border-left: 2px solid #555;
+  }
+
+  .quote-content {
+    border-left: 4px solid #444;
+    color: #aaa;
+  }
+}
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const details = document.querySelector(".custom-details");
+    const summary = details.querySelector("summary");
+
+    details.addEventListener("toggle", function() {
+      summary.textContent = details.open ? "- Collapse" : "+ Expand";
+    });
+  });
+</script><details class="custom-details">
+  <summary>+ Expand</summary>
+      <iframe src="https://www.mithril.com/" width="100%" height="1000px" style="border:none"></iframe>
+  <blockquote class="quote-content">
+    <details>
+        <summary>Doge</summary>
+        <p>Replace humans with AI agents</p>
+    </details>
+    <p>-- <a href="https://en.wikipedia.org/wiki/Peter_Thiel">Peter Thiel</a></p>
+  </blockquote>
+</details><script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const details = document.querySelector(".custom-details");
+    const summary = details.querySelector("summary");
+
+    details.addEventListener("toggle", function() {
+      summary.textContent = details.open ? "- Collapse" : "+ Expand";
+    });
+  });
+</script><section id="id1">
+<h2>02/02/02025<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<section id="session-16">
+<h3>Session 16<a class="headerlink" href="#session-16" title="Permalink to this heading">#</a></h3>
+<section id="s">
+<h4>S<a class="headerlink" href="#s" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>Looking for jobs in the light of the turbulence with government contracts</p></li>
+<li><p>Thank God that my consulting work is picking up; pray that God opens these opportunities</p></li>
+<li><p>Also pray for God to open possible opportunities in teaching in academia</p></li>
+</ol>
+</section>
+<section id="p">
+<h4>P<a class="headerlink" href="#p" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>Continue praying for promotion at job</p>
+<ul class="simple">
+<li><p>Assistant Commissioner (e-learning, etc); do not wish to take these on</p></li>
+<li><p>Praying for promotion to Commissioner and resolve pay issues</p></li>
+<li><p>This is the highest position in government (non-political)</p></li>
+</ul>
+</li>
+<li><p>Results from external examination are back</p>
+<ul class="simple">
+<li><p>Superviser asked to prepare for PowerPoint presentation (45min)</p></li>
+<li><p><a class="reference external" href="https://www.biblegateway.com/passage/?search=Psalm%2091&amp;amp;version=KJV">Psalm 91</a></p>
+<ul>
+<li><p>He that dwelleth in the secret place of …</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="j">
+<h4>J<a class="headerlink" href="#j" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>Ask the lord for peace. May his will be done.</p></li>
+<li><p>Protection of our jobs, bring you honor through our work</p></li>
+<li><p>Bria and Gabby are candidates navigating mocks: grant them fortitude through this</p></li>
+</ol>
+</section>
+<section id="d">
+<h4>D<a class="headerlink" href="#d" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>No longer with Department of Surgery</p>
+<ul class="simple">
+<li><p>Contract not renewed after grant funding expired on Dec 31 2024</p></li>
+</ul>
+</li>
+<li><p>Have no funding secured for my last two terms of the PhD</p>
+<ul class="simple">
+<li><p>Pray for School funding to be secure (eg through the school)</p></li>
+</ul>
+</li>
+<li><p>Most grateful for the capstone (culmination) of my research grant and doctoral work: transformational findings and developments that I pray for guidance in executing</p>
+<ul class="simple">
+<li><p>Digital Transformation (Thankful for Ps alignment of my experiences with his doctoral work)</p></li>
+<li><p>Dynamic Capabilities (Grateful that my work also aligns with Sarah’s doctoral work)</p></li>
+<li><p>Ecosystem Integration (When taken together, gives me a very clear vision for my “sales pitch” to Department of Epidemiology at Johns Hopkins and beyond)</p></li>
+</ul>
+</li>
+</ol>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="id2">
+<h2>02/22/2025<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<section id="session-17">
+<h3>Session 17<a class="headerlink" href="#session-17" title="Permalink to this heading">#</a></h3>
+<section id="id3">
+<h4>S<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>God’s provision, protection and peace</p></li>
+<li><p>Continue to thank God for thriving consulting work</p></li>
+<li><p>Also pray for God to open possible opportunities in teaching in academia</p></li>
+</ol>
+</section>
+<section id="id4">
+<h4>P<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>Continue praying for promotion at job</p>
+<ul class="simple">
+<li><p>Acting appointment for Commissioner of library, e-learning, and ICT is with HR</p>
+<ul>
+<li><p>Comes with its privileges</p></li>
+<li><p>Number of staff under me</p></li>
+<li><p>Compensation</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Results from external examination are back</p>
+<ul class="simple">
+<li><p>All examiners passed</p></li>
+</ul>
+</li>
+<li><p>Thanksgiving: thesis paper accepted in top-tier peer reviewed journal</p></li>
+<li><p>Dorothy’s work</p>
+<ul class="simple">
+<li><p>Much greater responsibilities and assignments</p></li>
+<li><p>Pray for wisdom and continued</p>
+<ul>
+<li><p>Navigating bosses and colleagues</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Pray that I’m able to see you in Virginia in March</p></li>
+</ol>
+</section>
+<section id="id5">
+<h4>J<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>Praying for peace and greatful that I’ve had that during this period (protection, providence, peace)</p>
+<ul class="simple">
+<li><p>Gates foundation (Program officer)</p></li>
+<li><p>World Agroforestry Center</p></li>
+</ul>
+</li>
+<li><p>Or may I get a breakthrough elsewhere</p></li>
+<li><p>Protection of Brenda’s job</p>
+<ul class="simple">
+<li><p>Likelihood of defunding the UN</p></li>
+</ul>
+</li>
+<li><p>Continued prayers for protection of our jobs, bring you honor through our work</p></li>
+<li><p>Thanking the Lord for a very productive time with the girls</p>
+<ul class="simple">
+<li><p>Bria starts her mocks in a week</p></li>
+<li><p>Continued study for candidate exams</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="id6">
+<h4>D<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>FRPPR due at NIA/NIH on Apr 30, 2025</p></li>
+<li><p>Secured funding for 3rd &amp; 4th term from my <a class="reference external" href="https://publichealth.jhu.edu/academics/academic-program-finder/graduate-training-programs-in-clinical-investigation">department</a> (Graduate Training Program in Clinical Investigations)</p></li>
+<li><p>Making great progress with my doctoral thesis</p>
+<ul class="simple">
+<li><p>Thankful for tuition payment</p></li>
+<li><p>Grateful for powerful insights emerging out of challenges encountered</p></li>
+<li><p>Praying that my work is satisfactory to my thesis committee</p>
+<ul>
+<li><p>That I complete defense before May 15</p></li>
+<li><p>To achieve that I need to defend by April 15</p></li>
+<li><p>To get to this point I need the committees approval within six weeks from now</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Delighted to be in Centreville with Sarah</p>
+<ul class="simple">
+<li><p>Such a delight in too many ways to list</p></li>
+<li><p>Chats, workouts, interactions across our work has yielded surprising results</p></li>
+</ul>
+</li>
+</ol>
+</section>
+</section>
+<hr class="docutils" />
+<section id="id7">
+<h3>05/03/2025<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h3>
+<section id="session-18">
+<h4>Session 18<a class="headerlink" href="#session-18" title="Permalink to this heading">#</a></h4>
+<section id="id8">
+<h5>S<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h5>
+<ol class="arabic simple">
+<li><p>Prayer is to get a job</p>
+<ul class="simple">
+<li><p>Doing interviews</p></li>
+<li><p>Send more resumes</p></li>
+</ul>
+</li>
+<li><p>Also that consulting work is consistent and it grows</p></li>
+<li><p>Thanksgiving for Masese</p>
+<ul class="simple">
+<li><p>The roof is up</p></li>
+<li><p>The tiles are up</p></li>
+<li><p>Very grateful but also pray for provision for next steps</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="id9">
+<h5>P<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h5>
+<ol class="arabic simple">
+<li><p>Praying for leave to prepare for defense</p></li>
+<li><p>Thanksgiving for work</p>
+<ul class="simple">
+<li><p>No longer stressful</p></li>
+<li><p>Very cordial and nice boss</p></li>
+</ul>
+</li>
+<li><p>Thank God for my acting commissioner job</p>
+<ul class="simple">
+<li><p>National library of Uganda brought to Education</p></li>
+<li><p>Requirements from President defined me</p>
+<ul>
+<li><p>First degree library sciences</p></li>
+<li><p>Second degree computer sciences</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="id10">
+<h5>J<a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h5>
+<ol class="arabic simple">
+<li><p>Global RIF (reduction in force), Aug 15th final date</p>
+<ul class="simple">
+<li><p>We are grateful for being able to continue with work in this turbulent time</p></li>
+<li><p>Thank God for peace of mind through this all</p></li>
+</ul>
+</li>
+<li><p>Also commit Brenda’s job to prayer since UNICEF is planning to lay off 20-30%</p></li>
+</ol>
+</section>
+<section id="id11">
+<h5>D<a class="headerlink" href="#id11" title="Permalink to this heading">#</a></h5>
+<ol class="arabic simple">
+<li><p>Thanks for getting clearance from thesis committe to set date for defense in next 2 weeks</p></li>
+<li><p>And also thank the department (Graduate Training Program in Clinical Investigation) for pathway around challenging relationship with my advisor</p></li>
+<li><p>Closed out the NIH on Friday</p></li>
+<li><p>Very grateful for a return to physical health</p>
+<ul class="simple">
+<li><p>Last two years have been a challenge with exercise and weight</p></li>
+<li><p>Sarah has created a wonderful therapeutic</p></li>
+</ul>
+</li>
+<li><p>Pray for work (self and business)</p></li>
+</ol>
+</section>
+</section>
+<section id="marums">
+<h4>Marums<a class="headerlink" href="#marums" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Pray for the Marums</p></li>
+<li><p>Larry has had progression in his illness</p></li>
+</ul>
+<details>
+  <summary>Zoom AI Summary</summary>
+<p>Meeting Summary for SPJD
+May 03, 2025 10:03 PM Eastern Time (US and Canada) ID: 408 570 5178
+Quick recap
+The team discussed various personal and professional topics, including their phone models, politics, social capital, and the progress of Abimereki’s PhD defense. They also shared their experiences with weight gain and loss, and discussed the challenges faced by PhD students. The team expressed gratitude for the blessings in their lives and prayed for continued favor, protection, and provision in their work and personal lives.</p>
+<p>Next steps
+Abimereki: Set thesis defense date within the next two weeks before academic year ends</p>
+<p>Abimereki: Complete all necessary thesis clearance forms from chair and committee</p>
+<p>Abimereki: Write three papers for PhD completion</p>
+<p>Patì: Replace “digitization” with appropriate terms throughout thesis while maintaining definitions</p>
+<p>Patì: Prepare for PhD defense by reviewing methodology, design, and policy implications</p>
+<p>Sarah: Continue job search, sending resumes, and attending interviews</p>
+<p>Martin: Update LinkedIn profile with appropriate filters for job searching</p>
+<p>Sarah: Help Martin optimize his LinkedIn profile and navigate job opportunities</p>
+<p>Patì: Arrange 15 million shillings for school fees within next two weeks</p>
+<p>Abimereki: Follow up on consultancy service pitches for his company</p>
+<p>Sarah: Secure funds to pay off debts related to house roofing project</p>
+<p>Patì: Prepare for ministry trip to Naivasha on Saturday</p>
+<p>Sarah: Take a rest period after roofing phase before continuing construction</p>
+<p>Martin: Forward Larry’s email to “mummy” regarding health condition</p>
+<p>Abimereki: Continue development work on the app business prospect</p>
+<p>Martin: Monitor situation regarding global reduction in force at workplace</p>
+<p>Summary
+Phone Models and Political Discussions</p>
+<p>Martin and Abimereki discussed their respective phone models, with Martin expressing his satisfaction with the Samsung S24 Ultra’s AI capabilities, particularly in low-light conditions. They also touched on the topic of daylight saving time and its potential changes. The conversation then shifted to politics, with Martin and Abimereki discussing the leadership of the Democratic Party and the impact of executive orders. They also mentioned the recent launch of a podcast by Michelle Obama.</p>
+<p>Podcast, Funeral, and Workplace Solidarity</p>
+<p>Martin, Sarah, Abimereki, and Patì discussed various topics including a podcast, a funeral, and a tragic accident involving Sudhir’s son. They also talked about social capital, the importance of showing solidarity in the workplace, and the consequences of reckless driving. The group also discussed the upcoming defense of Patì’s work and the potential consequences of the accident.</p>
+<p>PhD Defense and Global Economic Updates</p>
+<p>Martin, Abimereki, Sarah, and Patì discussed the progress of Abimereki’s PhD defense. Abimereki shared that the committee agreed on the next steps, which include setting a date for the defense. They also discussed the seriousness of the defense process, with Abimereki comparing it to a wedding ceremony. The group also discussed the challenges faced by PhD students, including the need to defend their work in front of a committee. Martin shared updates about the global reduction in force at his organization, and the potential for new positions in the Department of State. The group also discussed the stability of the Uganda shilling and its attractiveness to foreign investors.</p>
+<p>Guidance and Support During Challenging Times</p>
+<p>Martin expressed gratitude for the Lord’s guidance and support during challenging times, particularly in relation to the US government’s contractors. He mentioned that many people were sent home in January, but they were fortunate to continue their work. Martin also discussed the situation with the PS for health, who was asking people to work voluntarily for the government. He emphasized the importance of maintaining peace and consistency in their actions, as it is a temporary situation. Sarah shared her concerns about her job and the potential for further cuts in her company. She expressed her desire for a job and consistent growth in her consulting work. Abimereki updated the group on his thesis committee and the process of closing out his grant. Martin also mentioned the potential for job opportunities and the importance of maintaining peace and consistency in their actions.</p>
+<p>Personal and Professional Life Updates</p>
+<p>In the meeting, Sarah, Martin, Abimereki, and Patì discussed their personal and professional lives. Sarah expressed gratitude for the support she received, while Abimereki shared his journey towards financial independence and his efforts to improve his physical health. Patì shared his plans to apply for leave to focus on preparing for a difference and expressed gratitude for his supportive boss. The team also discussed their experiences with weight gain and loss.</p>
+<p>Personal and Professional Life Updates</p>
+<p>In the meeting, Sarah, Martin, and Patì discussed their personal and professional lives. Patì shared that their prayer life is inversely related to their weight, and they have to pay school fees for their children. Sarah expressed gratitude for God’s provision and the completion of the roof on her house, but also mentioned the need for more resources to pay off debts. Martin and Patì agreed to pray for resources. The group also discussed a disturbing email about City.</p>
+<p>Larry’s Health and Job Challenges</p>
+<p>Martin discussed the health issues of a friend named Larry, who was battling pancreatic cancer and had recently been diagnosed with liver cancer. The group also discussed the challenges faced by Americans who had to return to their home country due to job cuts. Martin mentioned that he would be attending an early morning service and asked the group to pray for a breakthrough in his job situation. The group also discussed a road trip to Naivasha and the need for someone to process vehicle details at the border.</p>
+<p>Gratitude and Prayers for Blessings</p>
+<p>The team expressed gratitude for the blessings in their lives, including job opportunities, family support, and health improvements. They prayed for continued favor, protection, and provision in their work and personal lives. They also prayed for specific individuals, including Sarah’s job prospects, P’s thesis defense, Johnny’s job security, and the Marims’ family friend facing health challenges. The team sought God’s guidance, wisdom, and miracles in their lives, trusting in His promises and faithfulness.</p>
+<p>Language and Terminology in Research</p>
+<p>In the meeting, the participants discussed the use of language in their research and the potential for misinterpretation. They debated the distinction between “digitization” and “digitalization,” with one participant arguing that the former refers to the introduction of technology, while the latter involves leveraging technology to improve processes and workflows. The group also discussed the importance of taking responsibility for one’s work and the potential for language to be fluid and open to interpretation. They concluded that it might be more practical to align with the recommendations of their advisors rather than engaging in a potentially fruitless debate about the correct terminology.</p>
+<p>Language Consensus in Published Papers</p>
+<p>Abimereki advised Patì to not be a purist over language, as there is no consensus on the meaning of words. He suggested that Patì should not change the meaning of words in their published papers and thesis, and should not have a fight with themselves over this. He also advised Patì to not change the definition of words in their table of contents, and to not defend their change. He reassured Patì that no one else would bother them over this, and that Patì should focus on solving the problem at hand.</p>
+</details></section>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./spjd-rebuild"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">02/02/02025</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#session-16">Session 16</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#s">S</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#p">P</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#j">J</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#d">D</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">02/22/2025</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#session-17">Session 17</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">S</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">P</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">J</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">D</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">05/03/2025</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#session-18">Session 18</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">S</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">P</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">J</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">D</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#marums">Marums</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  Copyright © Ubuntu Series: Ukuvula, Ukuzula, Ukusoma, Ukubona, Ukuvela
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

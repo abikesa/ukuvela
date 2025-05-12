@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>The Risk You Thought You Escaped: Counterfactual Consent - Ukubona Wiki</title>
+    <link href="../style/article.css" rel="stylesheet"/>
+    <link href="../style/settings-bar.css" rel="stylesheet"/>
+    <link href="../favicon.ico" rel="icon" type="image/x-icon"/>
+    <script defer src="../js/toggle-darkmode.js"></script>
+    <script defer src="../js/wiki-controls.js"></script>
+    <script defer src="../js/lightbox.js"></script>
+</head>
+<body>
+    <header>
+        <div id="header-left">
+            <a href="../index.html">
+                <img class="lightbox-trigger" alt="Ukubona Logo" id="logo" src="../images/ukubona-004.jpg"/>
+            </a>
+        </div>
+        <div id="header-right">
+            <a href="#">Login</a> | <a href="#">Create Account</a>
+        </div>
+    </header>
+    <div id="content-wrapper">
+        <!-- TOC Sidebar -->
+        <nav id="toc">
+            <strong>Contents</strong>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#aim3-deliverable">Aim 3 Deliverable: A Living Consent Interface</a></li>
+                <li><a href="#counterfactual-risk">Counterfactual Risk: The Myth of Safe Inaction</a></li>
+                <li><a href="#ecosystem-frictions">Ecosystem Frictions: Data and Relational Barriers</a></li>
+                <li><a href="#kahneman-critique">Critiquing Kahneman: Loss Aversion’s Blind Spot</a></li>
+                <li><a href="#offshore-finance">Offshore Finance: The Morality of Legal Loopholes</a></li>
+                <li><a href="#see-also">See Also</a></li>
+                <li><a href="#references">References</a></li>
+            </ul>
+        </nav>
+        <!-- Main Content -->
+        <main id="content">
+            <h1>The Risk You Thought You Escaped: Counterfactual Consent</h1>
+            <!-- Infobox -->
+            <aside id="infobox">
+                <img class="lightbox-trigger" alt="Consent Interface Screenshot" src="../images/interface-screenshot.jpg" style="width:100%; border-radius:8px; margin-bottom:8px;"/>
+                <table class="infobox">
+                    <caption>Living Consent Interface</caption>
+                    <tr><td><strong>Domain:</strong> Transplant Ethics, Health Informatics</td></tr>
+                    <tr><td><strong>Frameworks:</strong> Counterfactual Logic, Prospect Theory</td></tr>
+                    <tr><td><strong>Principle:</strong> Epistemic Humility</td></tr>
+                    <tr><td><strong>Analogs:</strong> Shared Decision-Making, Risk Visualization</td></tr>
+                    <tr><td><strong>Symbol:</strong> Interactive Graph</td></tr>
+                </table>
+            </aside>
+            <section id="introduction">
+                <h2>Introduction</h2>
+                <p>
+                    Informed consent in living kidney donation has historically relied on static risk estimates, framing donation as a trade-off between altruistic gain and surgical loss. 
+                    Yet, this approach obscures a deeper truth: choosing not to donate is not a risk-free path. 
+                    The Ukubona platform, developed as the Aim 3 deliverable of an NIH K08 grant (1K08AG065520-01), redefines consent as a living, interactive interface that reveals both donation-attributable risks and the irreducible uncertainties of inaction. 
+                    By integrating counterfactual logic from matched non-donor controls, it challenges the cognitive orthodoxy of loss aversion, exposing risks like homicide and suicide in those who decline donation. 
+                    This article documents the platform’s development, its epistemic contributions, and the institutional frictions encountered in its dataR ecosystem.<sup id="ref1"><a href="#references">[1]</a></sup>
+                </p>
+                <table class="wikitable" style="margin-top: 1em;">
+                    <caption>Ukubona Epistemic Layers</caption>
+                    <tr>
+                        <th>Stage</th>
+                        <th>Symbolic Mode</th>
+                        <th>Cognitive System</th>
+                        <th>Medical Parallel</th>
+                        <th>Structural Form</th>
+                    </tr>
+                    <tr>
+                        <td>Root</td>
+                        <td>Counterfactual Design</td>
+                        <td>Empirical Comparison</td>
+                        <td>Donor vs. Non-Donor Risk</td>
+                        <td>Matched Cohorts</td>
+                    </tr>
+                    <tr>
+                        <td>Trunk</td>
+                        <td>Risk Visualization</td>
+                        <td>Interactive Modeling</td>
+                        <td>Personalized Consent</td>
+                        <td>Dynamic Variables</td>
+                    </tr>
+                    <tr>
+                        <td>Branching</td>
+                        <td>Epistemic Humility</td>
+                        <td>Confidence Intervals</td>
+                        <td>Uncertainty Disclosure</td>
+                        <td>Toggleable Models</td>
+                    </tr>
+                    <tr>
+                        <td>Recursion</td>
+                        <td>Ethical Clarity</td>
+                        <td>Shared Decision-Making</td>
+                        <td>Donor Autonomy</td>
+                        <td>Iterative Consent</td>
+                    </tr>
+                    <tr>
+                        <td>Canopy</td>
+                        <td>Translational Ethics</td>
+                        <td>Interface as Thesis</td>
+                        <td>Clinical Practice</td>
+                        <td>Harmonious Integration</td>
+                    </tr>
+                </table>
+                <div class="image-placeholder" style="float:right; margin: 0 0 1em 1em; width: 250px; border: 1px solid #ccc; padding: 5px;">
+                    <img class="lightbox-trigger" alt="Ecosystem Integration Diagram" src="https://raw.githubusercontent.com/abikesa/tidjane-thiam/refs/heads/main/tidjane-thiam.jpeg" style="width:100%; display:block; margin-bottom:5px;"/>
+                    <p style="font-size:0.9em; text-align:center;">Caption: Diagram illustrating the entangled data ecosystem for risk modeling. Source: Ukubona Epistemic Archive.</p>
+                </div>
+            </section>
+            <section id="aim3-deliverable">
+                <h2>Aim 3 Deliverable: A Living Consent Interface</h2>
+                <p>
+                    The Ukubona platform, built with Plotly and modular JavaScript, fulfills the NIH K08 grant’s commitment to develop online risk calculators for older living kidney donors. 
+                    It offers three calculators: 90-day mortality, 30-year mortality/ESRD, and post-nephrectomy hospitalization. 
+                    Unlike static disclosures, it allows users to input personalized variables (e.g., age, sex, comorbidities), toggle between models, and visualize confidence intervals, embodying epistemic humility. 
+                    The platform integrates data from SRTR, NHANES, and Medicare, extending the counterfactual logic established in prior work.<sup id="ref2"><a href="#references">[2]</a></sup> 
+                    By rendering risk as a relational, navigable experience, it transforms consent from a one-time document into an iterative, ethical exchange.<sup id="ref3"><a href="#references">[3]</a></sup>
+                </p>
+                <div class="image-placeholder" style="float:left; margin: 0 1em 1em 0; width: 250px; border: 1px solid #ccc; padding: 5px;">
+                    <iframe src="../../the-rug/"></iframe>
+                    <p style="font-size:0.9em; text-align:center;">Caption: Screenshot of the 90-day mortality risk calculator with toggleable models. Source: Ukubona Clinical Archive.</p>
+                </div>
+            </section>
+            <section id="counterfactual-risk">
+                <h2>Counterfactual Risk: The Myth of Safe Inaction</h2>
+                <p>
+                    The platform’s core innovation is its use of matched non-donor controls to reveal not only donation-attributable risks but also the risks of inaction. 
+                    For instance, 90-day mortality data include non-biological outcomes like homicide and suicide in non-donors, challenging the assumption that declining donation is inherently safer.<sup id="ref4"><a href="#references">[4]</a></sup> 
+                    This finding disrupts traditional risk models, which focus solely on surgical outcomes, and aligns with critiques of COVID-19 vaccine trials that excluded vulnerable populations yet generalized safety claims.<sup id="ref5"><a href="#references">[5]</a></sup> 
+                    By visualizing both donor and non-donor risk distributions, the platform reframes consent as a choice between competing uncertainties, not between risk and safety.
+                </p>
+                <div class="video-placeholder" style="float:right; margin: 0 0 1em 1em; width: 250px; border: 1px solid #ccc; padding: 5px;">
+                    <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="140" src="https://www.youtube.com/embed/placeholder-risk-visualization" style="display:block; margin-bottom:5px;" title="Risk Visualization Demo" width="100%"></iframe>
+                    <p style="font-size:0.9em; text-align:center;">Caption: Video demonstrating the platform’s risk visualization features. Source: Ukubona Medical Archive.</p>
+                </div>
+            </section>
+            <section id="ecosystem-frictions">
+                <h2>Ecosystem Frictions: Data and Relational Barriers</h2>
+                <p>
+                    Developing the platform required navigating a fragmented data ecosystem. 
+                    Analytic scripts, disclosure risks, and hospital records converge at an information node, but institutional gatekeeping has hindered integration. 
+                    Dorry Segev, the primary data guardian for SRTR access, has been unresponsive to analytic requests, redirecting responsibility to Allan Massie, despite Segev’s supervisory role on overlapping grants (e.g., R01DK132395).<sup id="ref6"><a href="#references">[6]</a></sup> 
+                    Massie’s parallel work, including a 2024 JAMA research letter updating perioperative mortality estimates, builds on Ukubona’s foundational contributions without acknowledgment, illustrating a relational inefficiency that prioritizes institutional control over collaborative progress.<sup id="ref7"><a href="#references">[7]</a></sup>
+                </p>
+                <div class="image-placeholder" style="float:left; margin: 0 1em 1em 0; width: 250px; border: 1px solid #ccc; padding: 5px;">
+                    <img class="lightbox-trigger" alt="Data Pipeline Diagram" src="../images/ecosystem-integration.jpeg" style="width:100%; display:block; margin-bottom:5px;"/>
+                    <p style="font-size:0.9em; text-align:center;">Caption: Diagram of the fragmented data pipeline for risk modeling. Source: Ukubona Data Archive.</p>
+                </div>
+            </section>
+            <section id="kahneman-critique">
+                <h2>Critiquing Kahneman: Loss Aversion’s Blind Spot</h2>
+                <p>
+                    Daniel Kahneman’s prospect theory, emphasizing loss aversion, has shaped clinical consent by framing donation as a potential loss.<sup id="ref8"><a href="#references">[8]</a></sup> 
+                    However, as noted by thesis committee member Brian Caffo, co-author of the 2010 JAMA study, the granularity of risk estimates (e.g., 2.1378945 per 10,000) raises questions about interpretability.<sup id="ref9"><a href="#references">[9]</a></sup> 
+                    Kahneman’s model assumes a riskless baseline for inaction, but Ukubona’s counterfactuals reveal that non-donors face risks like homicide and suicide, undermining the notion of a “safe” status quo. 
+                    This critique extends to COVID-19 vaccine trials, which ignored the risks of inaction for excluded populations.<sup id="ref5"><a href="#references">[5]</a></sup> 
+                    The platform’s precision is not a flaw but a feature, prioritizing transparency over narrative simplicity.
+                </p>
+                <div class="gif-placeholder" style="float:right; margin: 0 0 1em 1em; width: 250px; border: 1px solid #ccc; padding: 5px;">
+                    <img class="lightbox-trigger" alt="Risk Toggle Animation" src="../images/risk-toggle.gif" style="width:100%; display:block; margin-bottom:5px;"/>
+                    <p style="font-size:0.9em; text-align:center;">Caption: Animated GIF showing model toggling in the risk calculator. Source: Ukubona Philosophical Archive.</p>
+                </div>
+            </section>
+            <section id="offshore-finance">
+                <h2>Offshore Finance: The Morality of Legal Loopholes</h2>
+                <p>
+                    The use of offshore vehicles in places like Bermuda and the Cayman Islands is not just a legal strategy; it's a moral Rorschach test for the late stages of capitalism. These jurisdictions serve as the vascular <a href="https://github.com/abikesa/ecosystem/tree/main?tab=readme-ov-file">systems</a> of global capital's most elusive flows, where legality and illegitimacy blur not by accident but by design. It’s not merely that these tax havens exist within loopholes of international law—it’s that they are the loopholes, architected by lawyers and lobbyists to serve as the shadow scaffolding of empire.
+                </p>
+                <p>
+                    Let’s be clear: offshore vehicles are not neutral financial instruments. They are protective shells engineered to shield wealth from transparency, taxation, and accountability. Nominally legal, yes—but legality in this context is downstream of influence. The moral problem is not simply that they help the rich avoid taxes. It’s that they enforce a dual system: one for citizens who live within the boundaries of state enforcement, and another for capital that lives nowhere and everywhere.
+                </p>
+                <p>
+                    Bermuda and the Cayman Islands—though often vilified as if they were the masterminds—are more accurately the servers hosting the back-end of a front-end built in Manhattan, London, and Zurich. The opacity they offer isn’t accidental. It’s the product of geopolitical agreement, not rogue activity. These aren’t pirate coves. They’re state-sponsored escape hatches for multinationals and ultra-high-net-worth individuals who’ve correctly understood that accountability is for the poor.
+                </p>
+                <p>
+                    Capitalism’s defenders often claim that tax avoidance is the duty of corporate officers, whose role is to maximize shareholder value. But this "fiduciary ethics" is a hollow morality. It celebrates legality without questioning legitimacy. It defines good not by justice but by compliance. And that’s the ultimate indictment: capitalism’s legal machinery has outpaced its moral vocabulary. The problem isn’t that offshore finance is illegal—it’s that it isn’t.
+                </p>
+                <p>
+                    This dynamic mirrors the ecosystem frictions discussed earlier (<a href="#ecosystem-frictions">Ecosystem Frictions</a>), where institutional gatekeeping and opaque systems prioritize control over transparency. Just as the Ukubona platform seeks to reveal hidden risks in medical consent, exposing the mechanics of offshore finance could illuminate the ethical trade-offs of global capital flows. A visual diagram of these pathways—routing wealth through legal, quasi-legal, and anonymous channels—would further clarify the back-end infrastructure of this ecosystem.<sup id="ref10"><a href="#references">[10]</a></sup>
+                </p>
+                <div class="image-placeholder" style="float:right; margin: 0 0 1em 1em; width: 250px; border: 1px solid #ccc; padding: 5px;">
+                    <img class="lightbox-trigger" alt="Offshore Finance Diagram" src="https://abikesa.github.io/facade/figures/us-research-ecosystem.jpeg" style="width:100%; display:block; margin-bottom:5px;"/>
+                    <p style="font-size:0.9em; text-align:center;">Caption: Placeholder for a diagram illustrating offshore wealth routing pathways. Source: Ukubona Ethical Archive.</p>
+                </div>
+            </section>
+            <section id="see-also">
+                <h2>See Also</h2>
+                <ul>
+                    <li><a href="counterfactual-reasoning.md">Counterfactual Reasoning</a></li>
+                    <li><a href="informed-consent.md">Informed Consent</a></li>
+                    <li><a href="prospect-theory.md">Prospect Theory</a></li>
+                    <li><a href="living-donation.md">Living Kidney Donation</a></li>
+                    <li><a href="data-ecosystems.md">Data Ecosystems</a></li>
+                    <li><a href="offshore-finance.md">Offshore Finance and Tax Havens</a></li>
+                    <li><a href="https://abikesa.github.io/book-ukubona/" target="_blank">Ukubona Project</a></li>
+                    <li><a href="./einstein.html">Einstein: Ontology vs. Epistemology</a></li>
+
+                </ul>
+            </section>
+            <section id="references">
+                <h2>References</h2>
+                <ol class="references-list">
+                    <li id="cite_note-k08">Muzaale, Abimereki. <i>Perioperative and Long-Term Risks Following Nephrectomy in Older Live Kidney Donors</i>. NIH K08 Grant 1K08AG065520-01, 2020. [<a href="#ref1">↩︎</a>]</li>
+                    <li id="cite_note-2010">Segev, Dorry L., et al. “Perioperative Mortality and Long-Term Survival Following Live Kidney Donation.” <i>JAMA</i>, 2010. [<a href="#ref2">↩︎</a>]</li>
+                    <li id="cite_note-2014">Muzaale, Abimereki D., et al. “Risk of End-Stage Renal Disease Following Live Kidney Donation.” <i>JAMA</i>, 2014. [<a href="#ref3">↩︎</a>]</li>
+                    <li id="cite_note-2024">Massie, Allan B., et al. “Thirty-Year Trends in Perioperative Mortality Risk for Living Kidney Donors.” <i>JAMA</i>, 2024. [<a href="#ref4">↩︎</a>]</li>
+                    <li id="cite_note-covid">Polack, Fernando P., et al. “Safety and Efficacy of the BNT162b2 mRNA Covid-19 Vaccine.” <i>NEJM</i>, 2020. [<a href="#ref5">↩︎</a>]</li>
+                    <li id="cite_note-r01">Massie, Allan B. <i>Optimizing Donor Selection and Outcomes</i>. NIH R01DK132395, 2022. [<a href="#ref6">↩︎</a>]</li>
+                    <li id="cite_note-locke">Locke, Jayme E. “Living Kidney Donation: Advances and Challenges.” <i>JAMA Surgery</i>, 2024. [<a href="#ref7">↩︎</a>]</li>
+                    <li id="cite_note-kahneman">Kahneman, Daniel, and Tversky, Amos. “Prospect Theory: An Analysis of Decision under Risk.” <i>Econometrica</i>, 1979. [<a href="#ref8">↩︎</a>]</li>
+                    <li id="cite_note-caffo">Caffo, Brian. Personal communication, GTPCI Thesis Committee Meeting, May 2025. [<a href="#ref9">↩︎</a>]</li>
+                    <li id="cite_note-offshore">Zucman, Gabriel. “The Hidden Wealth of Nations: The Scourge of Tax Havens.” <i>University of Chicago Press</i>, 2015. [<a href="#ref10">↩︎</a>]</li>
+                </ol>
+            </section>
+            <aside id="version-timeline" style="border-left: 2px solid #aaa; padding: 1em; margin-top: 2em; background: none;">
+                <h2 style="margin-top: 0;">🕰️ Version Timeline</h2>
+                <ul id="timeline-list" style="list-style-type: none; padding-left: 0;">
+                    <li>
+                        <strong>May 8, 2025</strong><br/>
+                        <em>Author:</em> Abimereki Muzaale<br/>
+                        <em>Change:</em> Initial draft documenting Aim 3 deliverable and ecosystem frictions<br/>
+                        <em>Note:</em> Emphasized counterfactual consent and Kahneman critique
+                    </li>
+                    <li>
+                        <strong>May 10, 2025</strong><br/>
+                        <em>Author:</em> Abimereki Muzaale<br/>
+                        <em>Change:</em> Added section on offshore finance, linking to ecosystem frictions<br/>
+                        <em>Note:</em> Incorporated moral and legal analysis of tax havens
+                    </li>
+                </ul>
+            </aside>
+        </main>
+        <aside id="settings-bar">
+            <div class="settings-section">Appearance</div>
+            <div class="radio-group">
+                <div class="radio-option">
+                    <input id="small-text" name="text-size" type="radio"/>
+                    <label for="small-text">Small</label>
+                </div>
+                <div class="radio-option">
+                    <input checked="" id="normal-text" name="text-size" type="radio"/>
+                    <label for="normal-text">Standard</label>
+                </div>
+                <div class="radio-option">
+                    <input id="large-text" name="text-size" type="radio"/>
+                    <label for="large-text">Large</label>
+                </div>
+            </div>
+            <div class="radio-group">
+                <div class="radio-option">
+                    <input checked="" id="standard-width" name="width-setting" type="radio"/>
+                    <label for="standard-width">Standard</label>
+                </div>
+                <div class="radio-option">
+                    <input id="wide-width" name="width-setting" type="radio"/>
+                    <label for="wide-width">Wide</label>
+                </div>
+            </div>
+            <div class="radio-group">
+                <div class="radio-option">
+                    <input checked="" id="light-mode" name="theme-setting" type="radio"/>
+                    <label for="light-mode">Light</label>
+                </div>
+                <div class="radio-option">
+                    <input id="dark-mode" name="theme-setting" type="radio"/>
+                    <label for="dark-mode">Dark</label>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <footer>
+        <p>Last updated: May 2025 | Powered by Ukubona Wiki</p>
+    </footer>
+    <!-- Lightbox Modal -->
+    <div id="lightbox" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.95); z-index:9999; justify-content:center; align-items:center;">
+        <span id="lightbox-close" style="position:absolute; top:30px; right:45px; color:#fff; font-size:40px; font-weight:bold; cursor:pointer;">×</span>
+        <img class="lightbox-trigger" id="lightbox-img" src="" style="max-width:90%; max-height:90%; box-shadow:0 0 20px rgba(255,255,255,0.3); border-radius:10px;"/>
+    </div>
+</body>
+</html>

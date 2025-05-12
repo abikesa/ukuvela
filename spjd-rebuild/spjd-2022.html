@@ -1,0 +1,1135 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Sound 🌊 &#8212; Ukuvela</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-bootstrap.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'spjd-rebuild/spjd-2022';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/decision-tree.jpeg" class="logo__image only-light" alt="Ukuvela - Home"/>
+    <script>document.write(`<img src="../_static/decision-tree.jpeg" class="logo__image only-dark" alt="Ukuvela - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    Sound 🌊
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../act1/part1.html">Resonance 🚢</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../act1/chapter1.html">Idols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../act1/chapter2.html">Realities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../act1/chapter3.html">Question</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../act2/part2.html">Dissonance 🪛 🏴‍☠️</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../act2/chapter1.html">Eternal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../act2/chapter2.html">War</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../act2/chapter3.html">Hammer</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../act3/part3.html">Tuning 🦈 ✂️ 🛟</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act3/act1.html">Self 🗡</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part1/part1_1.html">Adversarial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part1/part1_2.html">Competitive</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part1/part1_3.html">Worthy</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act3/act2.html">Emergent 🤝</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part2/part2_1.html">Transactional</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part2/part2_2.html">Suspended</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part2/part2_3.html">Loyal</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act3/act3.html">Nonself ❤️</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part3/part3_1.html">Cooperative</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part3/part3_2.html">Unconditional</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="../act3/part3/part3_3.html">Family 🎹</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../bibliography.html">Mode 🏝️</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/abikesa/template/main?urlpath=tree/book/website/spjd-rebuild/spjd-2022.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/spjd-rebuild/spjd-2022.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Sound 🌊</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">01/20/2022</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#session-3">Session 3</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#s">S</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#p">P</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#j">J</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#d">D</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dad-mum">Dad &amp; Mum</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">05/02/2022</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#session-4">Session 4</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">S</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">P</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">J</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">D</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#others">Others</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">09/17/2022</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#session-5">Session 5</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">S</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">P</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">J</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">D</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dad-mom">Dad &amp; Mom</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">10/29/2022</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#session-6-1">Session 6.1</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">S</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">P</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">J</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">D</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Dad &amp; Mom</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#session-6-2">Session 6.2</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">S</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">P</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">J</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">D</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="sound">
+<h1>Sound 🌊<a class="headerlink" href="#sound" title="Permalink to this heading">#</a></h1>
+<style>
+/* ╭━━━☆━━━╮  FLOAT FRAMES (Figure / Seealso) */
+.float-frame {
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    position: relative;
+    padding: 10px 14px;
+    margin: 15px;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.float-frame.figure-style {
+    float: right;
+    width: 35%;
+    text-align: center;
+}
+
+.float-frame.left-style {
+    float: left;
+    width: 35%;
+    text-align: center;
+    margin-right: 15px;
+    margin-left: 0;
+}
+
+.float-frame.seealso-style {
+    float: right;
+    display: inline-block;
+    width: 190px;
+    max-width: 190px;
+    min-width: 100px;
+    padding: 6px 10px;
+    font-size: 13px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+/* Responsive override for all floats */
+@media (max-width: 768px) {
+    .float-frame,
+    .float-frame.seealso-style {
+        float: none !important;
+        display: block;
+        width: 95vw !important;
+        max-width: 95vw !important;
+        margin: 10px auto;
+        white-space: normal;
+    }
+}
+
+/* ╭━━━☆━━━╮  BLOCKQUOTES */
+blockquote {
+    border-left: 2px solid #999;
+    padding-left: 1em;
+    margin: 0;
+    color: #444;
+    font-style: italic;
+    background: none;
+}
+
+blockquote a {
+    text-decoration: none;
+    font-style: normal;
+    color: #333;
+    border-bottom: 1px dotted #aaa;
+}
+blockquote a:hover {
+    color: #000;
+    border-bottom: 1px solid #555;
+}
+
+/* ╭━━━☆━━━╮  COLLAPSIBLE <details> BLOCKS */
+.custom-details summary {
+    cursor: pointer;
+    font-weight: normal;
+    display: inline-block;
+    padding: 5px 15px;
+    border: 2px dotted black;
+    border-radius: 20px;
+    text-align: center;
+    transition: color 0.3s ease-in-out;
+}
+.custom-details summary:hover {
+    color: lightgray;
+}
+.custom-details summary::-webkit-details-marker {
+    display: none;
+}
+
+/* ╭━━━☆━━━╮  NESTED QUOTES INSIDE DETAILS */
+.quote-content {
+    border-left: 4px solid #ccc;
+    padding-left: 10px;
+    color: #555;
+    font-style: italic;
+    margin-top: 15px;
+}
+.quote-content details {
+    margin-top: 10px;
+}
+.quote-content summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ╭━━━☆━━━╮  FLOATING IMAGES */
+.float-right {
+    float: right;
+    width: 35%;
+    margin-left: 15px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    font-size: 12px;
+    background-color: #f9f9f9;
+    position: relative;
+}
+.float-right img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ╭━━━☆━━━╮  MAGNIFY ICON OVERLAY */
+.image-bubble.layered-icon {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 12px;
+    height: 10px;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 5;
+}
+.large-icon, .small-icon {
+    position: absolute;
+    border-radius: 2px;
+}
+.large-icon {
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+    border: 1px solid #888;
+}
+.small-icon {
+    width: 50%;
+    height: 50%;
+    background-color: #aaa;
+    border: 1px solid #666;
+    bottom: -1px;
+    left: -1px;
+}
+.image-bubble.layered-icon:hover .large-icon {
+    background-color: #007BFF;
+    border-color: #0056b3;
+}
+.image-bubble.layered-icon:hover .small-icon {
+    background-color: white;
+    border-color: #007BFF;
+}
+
+.float-frame pre,
+.float-frame div.highlight,
+.float-frame code {
+    text-align: left !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    display: block;
+}
+
+@media (prefers-color-scheme: dark) {
+  .float-frame,
+  .float-right,
+  .float-frame.figure-style,
+  .float-frame.left-style,
+  .float-frame.seealso-style {
+    background-color: #1e1e1e !important;
+    border-color: #444 !important;
+    color: #ddd;
+  }
+
+  .float-frame a,
+  .float-frame p,
+  .float-frame span {
+    color: #ccc;
+  }
+
+  blockquote {
+    color: #bbb;
+    border-left: 2px solid #555;
+  }
+
+  .quote-content {
+    border-left: 4px solid #444;
+    color: #aaa;
+  }
+}
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const details = document.querySelector(".custom-details");
+    const summary = details.querySelector("summary");
+
+    details.addEventListener("toggle", function() {
+      summary.textContent = details.open ? "- Collapse" : "+ Expand";
+    });
+  });
+</script><details class="custom-details">
+  <summary>+ Expand</summary>
+      <iframe src="https://www.mithril.com/" width="100%" height="1000px" style="border:none"></iframe>
+  <blockquote class="quote-content">
+    <details>
+        <summary>Doge</summary>
+        <p>Replace humans with AI agents</p>
+    </details>
+    <p>-- <a href="https://en.wikipedia.org/wiki/Peter_Thiel">Peter Thiel</a></p>
+  </blockquote>
+</details><script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const details = document.querySelector(".custom-details");
+    const summary = details.querySelector("summary");
+
+    details.addEventListener("toggle", function() {
+      summary.textContent = details.open ? "- Collapse" : "+ Expand";
+    });
+  });
+</script><section id="id1">
+<h2>01/20/2022<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<section id="session-3">
+<h3>Session 3<a class="headerlink" href="#session-3" title="Permalink to this heading">#</a></h3>
+<section id="s">
+<h4>S<a class="headerlink" href="#s" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>Request for Spiritual growth this year: To align my life, with everything I am and do, to God’s purpose and plan for my life</p></li>
+<li><p>Prayer for Lauren and Kevin for their spiritual growth. Thanksgiving for Lauren, who is much better today following depression a while ago</p></li>
+<li><p>Kevin graduates on May 12th; I am graduating (hooding) on May 6th this year. We pray for God’s provision and for Dad and Mum to be able to travel well</p></li>
+<li><p>We pray for Derrick to continue to play the supportive role for the children and family</p></li>
+<li><p>Prayer for financial stability and to have a job that pays enough to meet the needs that I have</p></li>
+</ol>
+</section>
+<section id="p">
+<h4>P<a class="headerlink" href="#p" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>Prayer for promotion and clarity on how to proceed from there</p></li>
+<li><p>To experience growth in God and to live in God’s victory this year</p></li>
+<li><p>For God to bless Dorothy as she returns to work starting tomorrow and for God to promote her too</p></li>
+<li><p>Pray for excellence in my PhD research this year</p></li>
+</ol>
+</section>
+<section id="j">
+<h4>J<a class="headerlink" href="#j" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>Spiritual Growth: God is the author of our lives, and He alone has the manual that directs the plans and purposes of our lives</p></li>
+<li><p>Thanksgiving for the change and transformation in Bria’s life; she is performing well in class, and her relationship and fellowship with Dad and the family are great today. This is answered prayer</p></li>
+<li><p>Career growth: We ask the author of life to do His will in our lives</p></li>
+<li><p>We thank God for good health</p></li>
+<li><p>Prayer for J’s family</p></li>
+</ol>
+</section>
+<section id="d">
+<h4>D<a class="headerlink" href="#d" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>Prayer for success in the 2nd year of PhD studies</p></li>
+<li><p>To achieve independence from D’s mentor sooner and quickly</p></li>
+<li><p>Continued health, strength, fitness, and to share more with family and friends</p></li>
+</ol>
+</section>
+<section id="dad-mum">
+<h4>Dad &amp; Mum<a class="headerlink" href="#dad-mum" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>Prayer for funds for the purchase of a new car for Daddy and Mummy. We pray for God’s provision</p></li>
+</ol>
+<hr class="docutils" />
+</section>
+</section>
+</section>
+<section id="id2">
+<h2>05/02/2022<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<section id="session-4">
+<h3>Session 4<a class="headerlink" href="#session-4" title="Permalink to this heading">#</a></h3>
+<section id="id3">
+<h4>S<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p><strong>Successful Graduation:</strong> Pray for a successful graduation for Sarah and Kevin.</p></li>
+<li><p><strong>Safe Travels:</strong> Pray for Night’s travel and safe stay with Lauren; also for Sarah’s safe travels for work in Europe and Africa and a chance to visit home.</p></li>
+<li><p><strong>Good Health:</strong> Grateful for good health, pray for continued strength and health.</p></li>
+<li><p><strong>Lauren’s Education:</strong> Pray for Lauren to successfully complete 11th grade and move to 12th grade.</p></li>
+</ol>
+</section>
+<section id="id4">
+<h4>P<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p><strong>Thanksgiving:</strong> Children came back with coughs and flus, it was very expensive, but they are very well now.</p></li>
+<li><p><strong>Martin’s Education:</strong> He is doing P7; we need to keep him in prayers for PLE preparation.</p></li>
+<li><p><strong>Thanksgiving for Dorothy:</strong> She is back in Kampala; we still trust the Lord for her promotion.</p></li>
+<li><p><strong>Patrick’s Promotion:</strong> Move to a position of Commissioner. Pray that during the restructure they can create that position.</p></li>
+<li><p><strong>PhD Journey:</strong> Very lonely journey—pray that the Lord grants P fortitude for the journey, and to get back to the previous level of focus. Pray for fewer distractions.</p></li>
+<li><p><strong>Medical Health Check:</strong> Focus on his physical health.</p></li>
+<li><p><strong>International Job Opportunity:</strong> Specifically in Canada.</p></li>
+</ol>
+</section>
+<section id="id5">
+<h4>J<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p><strong>Grateful for Health:</strong> Grateful for good health; girls and Brenda are in very good health.</p></li>
+<li><p><strong>Gabby’s Education:</strong> Gabby turned 13, doing her common entrance in June, will join her sister in Pepponi. Trusting the Lord for resources.</p></li>
+<li><p><strong>Career Advancement:</strong> Pray for Johnny’s career; changes in USAID due to funding constraints have impacted staff; we pray for J’s career advancement to the next level - specifically praying for a breakthrough in management.</p></li>
+<li><p><strong>Support for Brenda:</strong> Pray for Brenda, she is still grieving for her mom. Pray for her safety.</p></li>
+</ol>
+</section>
+<section id="id6">
+<h4>D<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p><strong>Data Access:</strong> Being granted access to 2 sources of data: National transplant registry and from CDC and electronic medical records. Pray for completion in the 3rd year.</p></li>
+<li><p><strong>Thanksgiving:</strong></p>
+<ul class="simple">
+<li><p>Successful preliminary oral exams on April 1st.</p></li>
+<li><p>Flexibility to extend his research and retain mentor.</p></li>
+<li><p>Getting teaching assistants and smooth teaching, and beyond halfway.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="others">
+<h4>Others<a class="headerlink" href="#others" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p><strong>Prayer for Dr. Katebalirwe:</strong> He is sick, we have to pray.</p></li>
+<li><p><strong>Mummy’s Health:</strong> Pray for Mummy’s eye recovery and general health.</p></li>
+<li><p><strong>Daddy’s Health:</strong> Pray for Daddy’s health and strength.</p></li>
+</ol>
+<hr class="docutils" />
+</section>
+</section>
+</section>
+<section id="id7">
+<h2>09/17/2022<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h2>
+<section id="session-5">
+<h3>Session 5<a class="headerlink" href="#session-5" title="Permalink to this heading">#</a></h3>
+<section id="id8">
+<h4>S<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p><strong>Financial Provision:</strong> Thankful to God for job, but need prayers for fixing home.</p></li>
+<li><p><strong>Home Sale:</strong> Put house on market, sell house, and take care of loans.</p></li>
+<li><p><strong>Children’s Education and Mental Health:</strong></p>
+<ul class="simple">
+<li><p>Teenagers: finally a 12th grader, finish the year successfully, mental health (thanks).</p></li>
+<li><p>Kevin: finish up electives missed while in Spain, thankful for Merrill Lynch job, pray for Feb.</p></li>
+</ul>
+</li>
+<li><p><strong>Job and Promotion Opportunities:</strong></p>
+<ul class="simple">
+<li><p>First time ever wide-range of skills have been recognized, pray for success.</p></li>
+<li><p>Dynamic capabilities: may be able to bring doctoral thesis work to bear in a white paper with Palladium.</p></li>
+<li><p>May create a job/promotion to specifically leverage this avenue.</p></li>
+</ul>
+</li>
+<li><p><strong>Personal Care and Health:</strong></p>
+<ul class="simple">
+<li><p>Has a week off next week, submit paper with Lars to journals, take care of self (doctors’ appointments), new glasses.</p></li>
+<li><p>Need to schedule a colonoscopy.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="id9">
+<h4>P<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p><strong>Nicole’s Health and Academics:</strong> Eating &amp; weight gain issue, not interested in exercise; weak muscles. Academics also; not very motivated.</p></li>
+<li><p><strong>Career Progression:</strong> Resumes work after the longest leave; confirmed promotion position (full commissioner) 07/23.</p></li>
+<li><p><strong>Studies and Fieldwork:</strong> Approval for fieldwork, framework in context of what you are improving, reduced.</p></li>
+<li><p><strong>Health Concerns:</strong> Throat-related issues, several months, but finally improving and can swallow; pray for complete healing.</p></li>
+<li><p><strong>Spiritual Growth:</strong> Work in victory with the feeling of excellence, not contending with anyone/people. Thankful for what God has done in his life.</p></li>
+</ol>
+</section>
+<section id="id10">
+<h4>J<a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p><strong>Work Breakthrough:</strong> Expecting breakthrough in Oct adverts.</p></li>
+<li><p><strong>Bria’s Development:</strong> Proud of her, disciplined.</p></li>
+<li><p><strong>Health Concerns:</strong> On meds.</p></li>
+</ol>
+</section>
+<section id="id11">
+<h4>D<a class="headerlink" href="#id11" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p><strong>Health Concerns:</strong> Pray for overall well-being.</p></li>
+<li><p><strong>Work Progress:</strong> Prayers for continued success.</p></li>
+<li><p><strong>PhD Journey:</strong> Guidance and wisdom.</p></li>
+<li><p><strong>Grants and Teaching:</strong> Prayers for obtaining grants and success in teaching responsibilities.</p></li>
+</ol>
+</section>
+<section id="dad-mom">
+<h4>Dad &amp; Mom<a class="headerlink" href="#dad-mom" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p><strong>Overall Wellness:</strong> Ok on the whole.</p></li>
+<li><p><strong>Thanksgiving:</strong> For the car.</p></li>
+</ol>
+<hr class="docutils" />
+</section>
+</section>
+</section>
+<section id="id12">
+<h2>10/29/2022<a class="headerlink" href="#id12" title="Permalink to this heading">#</a></h2>
+<section id="session-6-1">
+<h3>Session 6.1<a class="headerlink" href="#session-6-1" title="Permalink to this heading">#</a></h3>
+<section id="id13">
+<h4>S<a class="headerlink" href="#id13" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p><strong>Financial Provision:</strong> Thankful to God for job, but need prayers for fixing home.</p></li>
+<li><p><strong>Home Sale:</strong> Put house on market, sell house, and take care of loans.</p></li>
+<li><p><strong>Children’s Education and Mental Health:</strong></p>
+<ul class="simple">
+<li><p>Teenagers: finally a 12th grader, finish the year successfully, mental health (thanks).</p></li>
+<li><p>Kevin: finish up electives missed while in Spain, thankful for Merrill Lynch job, pray for Feb.</p></li>
+</ul>
+</li>
+<li><p><strong>Job and Promotion Opportunities:</strong></p>
+<ul class="simple">
+<li><p>First time ever wide-range of skills have been recognized, pray for success.</p></li>
+<li><p>Dynamic capabilities: may be able to bring doctoral thesis work to bear in a white paper with Palladium.</p></li>
+<li><p>May create a job/promotion to specifically leverage this avenue.</p></li>
+</ul>
+</li>
+<li><p><strong>Personal Care and Health:</strong></p>
+<ul class="simple">
+<li><p>Has a week off next week, submit paper with Lars to journals, take care of self (doctors’ appointments), new glasses.</p></li>
+<li><p>Need to schedule a colonoscopy.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="id14">
+<h4>P<a class="headerlink" href="#id14" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p><strong>Nicole’s Health and Academics:</strong> Eating &amp; weight gain issue, not interested in exercise; weak muscles. Academics also; not very motivated.</p></li>
+<li><p><strong>Career Progression:</strong> Resumes work after the longest leave; confirmed promotion position (full commissioner) 07/23.</p></li>
+<li><p><strong>Studies and Fieldwork:</strong> Approval for fieldwork, framework in context of what you are improving, reduced.</p></li>
+<li><p><strong>Health Concerns:</strong> Throat-related issues, several months, but finally improving and can swallow; pray for complete healing.</p></li>
+<li><p><strong>Spiritual Growth:</strong> Work in victory with the feeling of excellence, not contending with anyone/people. Thankful for what God has done in his life.</p></li>
+</ol>
+</section>
+<section id="id15">
+<h4>J<a class="headerlink" href="#id15" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p><strong>Work Breakthrough:</strong> Expecting breakthrough in Oct adverts.</p></li>
+<li><p><strong>Bria’s Development:</strong> Proud of her, disciplined.</p></li>
+<li><p><strong>Health Concerns:</strong> On meds.</p></li>
+</ol>
+</section>
+<section id="id16">
+<h4>D<a class="headerlink" href="#id16" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p><strong>Health Concerns:</strong> Pray for overall well-being.</p></li>
+<li><p><strong>Work Progress:</strong> Prayers for continued success.</p></li>
+<li><p><strong>PhD Journey:</strong> Guidance and wisdom.</p></li>
+<li><p><strong>Grants and Teaching:</strong> Prayers for obtaining grants and success in teaching responsibilities.</p></li>
+</ol>
+</section>
+<section id="id17">
+<h4>Dad &amp; Mom<a class="headerlink" href="#id17" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p><strong>Overall Wellness:</strong> Ok on the whole.</p></li>
+<li><p><strong>Thanksgiving:</strong> For the car.</p></li>
+</ol>
+</section>
+</section>
+<hr class="docutils" />
+<section id="session-6-2">
+<h3>Session 6.2<a class="headerlink" href="#session-6-2" title="Permalink to this heading">#</a></h3>
+<section id="id18">
+<h4>S<a class="headerlink" href="#id18" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p><strong>Upcoming Trips:</strong> Pray for provisions for trips to Senegal and Uganda and safety for work trips.</p></li>
+<li><p><strong>House Sale:</strong> Thank God for solutions; pray for the best price and investor to pay off debts.</p></li>
+<li><p><strong>Work Opportunities:</strong> Pray for favor at work and a possible promotion.</p></li>
+<li><p><strong>Health Concerns:</strong> Thankfulness for healing from lower tummy pain; pray for protection and good health.</p></li>
+<li><p><strong>Family’s Spiritual Growth:</strong> Pray for continued growth for Sarah, Kevin, and Lauren.</p></li>
+</ol>
+</section>
+<section id="id19">
+<h4>P<a class="headerlink" href="#id19" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p><strong>Research Progress:</strong> Pray for intervention in a pending decision from the research committee and to commence research.</p></li>
+<li><p><strong>Academic Success:</strong> Pray for provision, strength, and direction to complete Doctoral degree.</p></li>
+<li><p><strong>Martin’s Exams:</strong> Pray for success in P7 exams and admission to top school.</p></li>
+<li><p><strong>Family Needs:</strong> Pray for Nicole, Lisa, and Dorothy’s needs.</p></li>
+<li><p><strong>Promotion at Work:</strong> Pray for opportunities and success.</p></li>
+<li><p><strong>Country’s Governance:</strong> Pray for good governance.</p></li>
+<li><p><strong>Travel and Health Concerns:</strong> Pray for the Muindas, the Bazeeyis, and mom Keku.</p></li>
+</ol>
+</section>
+<section id="id20">
+<h4>J<a class="headerlink" href="#id20" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p><strong>Thanksgiving for Girls:</strong> Progress at school; Bria’s stability; Gabby’s studiousness.</p></li>
+<li><p><strong>Brenda’s Job Opportunity:</strong> Pray for success in finding a job in Africa, possibly Malawi.</p></li>
+<li><p><strong>Johnny’s Upcoming Job Interview:</strong> Pray for success and favor.</p></li>
+<li><p><strong>Continued Health and Protection:</strong> Gratitude for well-being.</p></li>
+</ol>
+</section>
+<section id="id21">
+<h4>D<a class="headerlink" href="#id21" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p><strong>Academic Achievements:</strong></p>
+<ul class="simple">
+<li><p><strong>1st Term Completion (Tuesday Oct 25):</strong> Advanced elective biostatistics, survival analysis; pray to pass.</p></li>
+<li><p><strong>2nd Term Beginning (Wednesday Oct 26):</strong> Philosophy class; not demanding; pray for wisdom in the “Ph” in PhD.</p></li>
+<li><p><strong>First Thesis Committee Meeting (Tuesday Nov 1):</strong> Discuss progress and research timeline.</p></li>
+<li><p><strong>IRB Deadline (Nov 15):</strong> Pray for Institutional Review Board approval.</p></li>
+<li><p><strong>National Institute of Aging Annual Review (Tuesday Nov 15):</strong> Demonstrate research output in gerontology.</p></li>
+</ul>
+</li>
+<li><p><strong>New Hire:</strong> Hired one of the best students to assist in research; pray for productivity.</p></li>
+<li><p><strong>Wellness Concerns:</strong> Gain of 30 pounds; pray for better fitness and stress management.</p></li>
+<li><p><strong>Passport Renewal:</strong> Pray for timely renewal.</p></li>
+<li><p><strong>Daddy/Mummy’s 50th Anniversary:</strong> Thanksgiving for their love, sacrifice, health, and continued relationship.</p></li>
+</ol>
+<p><em>These requests cover a wide array of life aspects, from personal health and well-being to academic achievements and career advancements. May you find comfort, guidance, and strength in these prayers.</em></p>
+</section>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./spjd-rebuild"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">01/20/2022</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#session-3">Session 3</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#s">S</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#p">P</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#j">J</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#d">D</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dad-mum">Dad &amp; Mum</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">05/02/2022</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#session-4">Session 4</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">S</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">P</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">J</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">D</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#others">Others</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">09/17/2022</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#session-5">Session 5</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">S</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">P</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">J</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">D</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dad-mom">Dad &amp; Mom</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">10/29/2022</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#session-6-1">Session 6.1</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">S</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">P</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">J</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">D</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Dad &amp; Mom</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#session-6-2">Session 6.2</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">S</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">P</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">J</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">D</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  Copyright © Ubuntu Series: Ukuvula, Ukuzula, Ukusoma, Ukubona, Ukuvela
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
