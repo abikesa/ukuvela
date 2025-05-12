@@ -1,27 +1,44 @@
-/* article.css - clean Wikipedia-style article page */
+/* article.css – rebooted for dark toggle, video compatibility, and Wikipedia style */
 
+/* ======= Base Typography and Layout ======= */
 body {
   font-family: 'Linux Libertine', Georgia, Times, serif;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
-  color: #202122;
+  background-color: var(--bg-main);
+  color: var(--text-main);
 }
 
+h1, h2 {
+  font-family: 'Linux Libertine', Georgia, Times, serif;
+}
+
+p {
+  line-height: 1.6;
+  margin: 1em 0;
+}
+
+/* ======= Header and Footer ======= */
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f8f9fa;
+  background-color: var(--bg-secondary);
   padding: 0.8em 1em;
-  border: none;
-  box-shadow: none;
 }
 
 #logo {
   height: 50px;
 }
 
+footer {
+  text-align: center;
+  padding: 1em;
+  font-size: 0.9em;
+  color: var(--text-muted);
+}
+
+/* ======= Grid Layout ======= */
 #content-wrapper {
   display: grid;
   grid-template-columns: 220px 1fr 220px;
@@ -31,56 +48,33 @@ header {
   padding: 0 1em;
 }
 
-nav#toc {
-  background-color: #f8f9f9;
+main#content {
+  padding: 2em;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--bg-main);
+}
+
+/* ======= Sidebar: TOC and Settings ======= */
+nav#toc,
+aside#settings-bar {
+  background-color: var(--bg-secondary);
   padding: 1em;
   font-size: 0.9em;
   position: sticky;
   top: 1em;
   max-height: calc(100vh - 4em);
   overflow-y: auto;
-  border: none;
-  box-shadow: none;
-}
-
-main#content {
-  background-color: #ffffff;
-  padding: 2em;
-  max-width: 800px;
-  margin: 0 auto;
 }
 
 aside#settings-bar {
-  background-color: #f8f9f9;
-  padding: 1em;
-  font-size: 0.9em;
-  position: sticky;
-  top: 1em;
   height: fit-content;
-  border: none;
-  box-shadow: none;
 }
 
-footer {
-  text-align: center;
-  padding: 1em;
-  font-size: 0.9em;
-  color: #777;
-}
-
-h1, h2 {
-  font-family: 'Linux Libertine', Georgia, Times, serif;
-}
-
-p {
-  line-height: 1.6;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
+/* ======= Infobox ======= */
 aside#infobox {
-  background-color: #f8f9fa;
-  border: 1px solid #eaecf0;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
   padding: 1em;
   float: right;
   width: 250px;
@@ -98,81 +92,252 @@ aside#infobox table {
   border-collapse: collapse;
 }
 
+aside#infobox caption,
 aside#infobox th {
-  background-color: #cedff2;
-  font-size: 1.2em;
+  background-color: var(--bg-box);
+  font-weight: bold;
   padding: 0.5em;
   text-align: center;
 }
 
 aside#infobox td {
   padding: 0.5em;
-  border: 1px solid #eaecf0;
+  border: 1px solid var(--border-color);
 }
 
-aside#infobox caption {
-  font-weight: bold;
-  padding: 8px;
-  background-color: #eaecf0;
-}
-
+/* ======= Tables ======= */
 .wikitable {
   border-collapse: collapse;
   width: 100%;
   margin: 1em 0;
-  background-color: #f8f9fa;
+  background-color: var(--bg-secondary);
 }
 
-.wikitable th, .wikitable td {
-  border: 1px solid #eaecf0;
+.wikitable th,
+.wikitable td {
+  border: 1px solid var(--border-color);
   padding: 8px;
   text-align: left;
 }
 
 .wikitable caption {
+  background-color: var(--bg-box);
   font-weight: bold;
   padding: 8px;
-  background-color: #eaecf0;
 }
 
-.image-placeholder, .video-placeholder, .audio-placeholder, .gif-placeholder {
-  float: right; /* Default float right, can be overridden to left */
-  margin: 0 0 1em 1em; /* Right float: margin left; Left float: margin right */
+/* ======= Placeholders (Images, Video, Audio) ======= */
+.image-placeholder,
+.video-placeholder,
+.audio-placeholder,
+.gif-placeholder {
+  float: right;
+  margin: 0 0 1em 1em;
   width: 250px;
-  border: 1px solid #ccc;
   padding: 5px;
-  background-color: #f9f9f9;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-box);
 }
 
-.image-placeholder img, .gif-placeholder img, .video-placeholder iframe, .audio-placeholder audio {
+.image-placeholder img,
+.gif-placeholder img,
+.video-placeholder iframe,
+.audio-placeholder audio {
   width: 100%;
   display: block;
   margin-bottom: 5px;
 }
 
-.image-placeholder p, .gif-placeholder p, .video-placeholder p, .audio-placeholder p {
+.image-placeholder p,
+.gif-placeholder p,
+.video-placeholder p,
+.audio-placeholder p {
   font-size: 0.9em;
   text-align: center;
+  color: var(--text-muted);
   margin: 0;
 }
 
-blockquote {
-  border-left: 2px solid #444;
-  padding: 1em;
-  margin: 1.5em 0;
-  font-style: italic;
-  background-color: #f5f5f5;
-  color: #202122;
-  border-radius: 4px;
+/* ======= Video-Specific Styling ======= */
+.video-frame-wrapper {
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1em;
+  transition: background 0.3s ease;
+  background-color: var(--bg-box);
+  border: 1px solid var(--border-color);
 }
 
+.video-caption {
+  font-size: 0.9em;
+  text-align: center;
+  margin-top: 5px;
+  color: var(--text-muted);
+}
 
+.video-frame-wrapper.dark-wrapper {
+  background-color: #000 !important;
+  border-color: #444 !important;
+}
+
+.video-frame-wrapper.light-wrapper {
+  background-color: #f9f9f9 !important;
+  border-color: #ccc !important;
+}
+
+.video-frame-wrapper.dark-wrapper iframe {
+  filter: brightness(0.85) contrast(1.1);
+}
+
+/* ======= Blockquotes ======= */
+blockquote,
 .quote-callout {
   border-left: 2px solid #444;
   padding: 1em;
   margin: 1.5em 0;
   font-style: italic;
-  background-color: #f5f5f5;
+  background-color: var(--bg-box);
+  color: var(--text-main);
   border-radius: 4px;
 }
 
+/* ======= Lightbox ======= */
+#lightbox-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.95);
+  text-align: center;
+}
+
+#lightbox-modal img {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 10px;
+}
+
+#lightbox-close {
+  position: absolute;
+  top: 30px;
+  right: 45px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+#lightbox img:hover {
+  cursor: zoom-out;
+}
+
+/* ======= Theme Variables ======= */
+:root {
+  --bg-main: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-box: #f9f9f9;
+  --text-main: #202122;
+  --text-muted: #777;
+  --border-color: #eaecf0;
+}
+
+html[data-theme="dark"] {
+  --bg-main: #121212;
+  --bg-secondary: #1e1e1e;
+  --bg-box: #2a2a2a;
+  --text-main: #f5f5f5;
+  --text-muted: #aaa;
+  --border-color: #444;
+}
+
+/* ======= Responsive Styling ======= */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 0 10px;
+  }
+
+  header,
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #content-wrapper {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+
+  nav#toc,
+  aside#settings-bar {
+    display: none;
+  }
+
+  #content {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  aside#infobox,
+  .image-placeholder {
+    float: none !important;
+    margin: 1em auto;
+    width: 100% !important;
+    max-width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .wikitable {
+    font-size: 0.95em;
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  ul, ol {
+    padding-left: 1.2em;
+  }
+
+  .references-list {
+    padding-left: 1.4em;
+  }
+
+  .radio-group label {
+    font-size: 0.9em;
+  }
+
+  #toc-toggle {
+    display: block;
+  }
+
+  #toc {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    background: var(--bg-main);
+    border: 1px solid var(--border-color);
+    padding: 1em;
+    max-width: 80%;
+    z-index: 998;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+}

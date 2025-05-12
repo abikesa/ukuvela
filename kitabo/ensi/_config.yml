@@ -5,10 +5,10 @@
 ####################################################################################### https://www.ledr.com/colours/white.jpg
 
 # Book settings
-title                       : Ubuntu # The title of the book. Will be placed in the left navbar.
+title                       : Ukuvela # The title of the book. Will be placed in the left navbar.
 author                      :  # The author of the book
 copyright                   : "2025"  # Copyright year to be placed in the footer
-logo                        : figures/ubuntu.jpg # Path to the logo image file
+logo                        : figures/decision-tree.jpeg # Path to the logo image file
 email                       : "abikesa.sh@gmail.com"
 exclude_patterns            : ["LICENSE.md"]  # Patterns to skip when building the book. Can be glob-style (for example "*skip.ipynb")
 
@@ -28,7 +28,7 @@ html:
   use_issues_button         : False  # Whether to add an "Open issue" button to pages. If `true`, repository information in repository: must be filled in
   use_edit_page_button      : False  # Whether to add an "Suggest edit" button to pages. If `true`, repository information in repository: must be filled in
   extra_footer              : |
-   Copyright © Ukuvula, Ukuzula, Ukusoma, Ukubona, Ukuvela
+   Copyright © Ubuntu Series: Ukuvula, Ukuzula, Ukusoma, Ukubona, Ukuvela
   comments:
     hypothesis              : False # For data collection in top right corner
   extra_css:

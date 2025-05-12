@@ -1,15 +1,15 @@
 import os
-from fpdf import FPDF
+from fpdf import FPDF  # this is fpdf2 now, same API for your use case
 from datetime import datetime
 import qrcode
 
 # Setup paths
-FONT_DIR = "../../fonts"
-FIGURE_DIR = "../../figures"
-OUTPUT_DIR = "../../pdfs"
+FONT_DIR = "../fonts"
+FIGURE_DIR = "../figures"
+OUTPUT_DIR = "../pdfs"
 FONT_REGULAR = os.path.join(FONT_DIR, "DejaVuSans.ttf")
 FONT_BOLD = os.path.join(FONT_DIR, "DejaVuSans-Bold.ttf")
-LOGO = os.path.join(FIGURE_DIR, "ukubona.png")
+LOGO = os.path.join(FIGURE_DIR, "ukubona-007-ib.png")
 QR_URL = "https://ukubona-llc.github.io/"
 QR_IMG_PATH = os.path.join(FIGURE_DIR, "ukubona_qr.png")
 OUTPUT_PDF = os.path.join(OUTPUT_DIR, "ukubona_invoice.pdf")
@@ -50,7 +50,7 @@ class PDF(FPDF):
         self.ln(5)
         self.set_font("DejaVu", "", 10)
         self.set_text_color(100, 100, 100)
-        self.multi_cell(0, 5, "Ukubona LLC\nEIN: XX-XXXXXXX\nBaltimore, MD 21218\nukubona.llc@gmail.com\nhttps://ukubona-llc.github.io")
+        self.multi_cell(0, 5, "Ukubona LLC\nEIN: XX-XXXXXXX\nCentreville, VA 20121\nukubona.llc@gmail.com\nhttps://ukubona-llc.github.io")
         self.ln(5)
 
     def footer(self):
@@ -79,7 +79,7 @@ pdf.ln(10)
 pdf.set_font("DejaVu", "B", 11)
 pdf.cell(0, 10, "Bill To:", ln=True)
 pdf.set_font("DejaVu", "", 11)
-pdf.multi_cell(0, 8, "Jonathan Doe\n123 Main Street\nAnytown, USA\njonathan@example.com")
+pdf.multi_cell(0, 8, "Jonathan Gasaatura\n3886 Rainier Drive\nFairfax V, 22033\njonathan@gmail.com")
 pdf.ln(5)
 
 # Service table header
@@ -125,6 +125,4 @@ pdf.image(QR_IMG_PATH, x=pdf.get_x(), y=pdf.get_y(), w=30)
 # Output
 pdf.output(OUTPUT_PDF)
 print(f"PDF saved to: {OUTPUT_PDF}")
-# flick 20250409213602-kbR3
-# flick 20250409214208-juqa
-# flick 20250409214624-GJ8d
+

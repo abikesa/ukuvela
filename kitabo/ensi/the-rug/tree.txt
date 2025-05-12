@@ -1,0 +1,37 @@
+the-rug/
+│
+├── index.html                    # Main collapsible outline (your presentation)
+├── style.css                    # Optional: extract and manage custom CSS here
+├── script.js                    # Optional: externalize JS toggle logic
+│
+├── framing/
+│   └── framing.html             # Part 1: Nested Layers deep dive
+│
+├── aims/
+│   ├── risk.html                # 2.1: Measuring Risk
+│   ├── hospitalization.html     # 2.2: Sentinel Events
+│   └── interface.html           # 2.3: Consent Tool (maybe iframe embedded .ipynb)
+│
+├── landscape/
+│   └── landscape.html           # Part 3: Challenge & Infrastructure
+│
+├── pivot/
+│   └── pivot.html               # Part 4: April 2 Interface Pivot
+│
+├── closing/
+│   └── closing.html             # Part 5: Epistemic Scaffold
+│
+├── figures/                     # Optional: images, diagrams, embedded floats
+│   ├── interface-architecture.svg
+│   └── frailty-gap.png
+│
+├── notebooks/                   # Optional: Jupyter exports (.ipynb or .html)
+│   ├── consent-tool.ipynb
+│   └── frailty-curve.ipynb
+│
+└── assets/
+    ├── js/
+    │   └── plotly.min.js        # If needed for interactive visuals
+    ├── css/
+    │   └── dark-mode.css        # Optional theme extensions
+    └── fonts/                   # Optional: academic serif or symbol fonts
