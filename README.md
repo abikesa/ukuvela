@@ -18,7 +18,7 @@ Please note: **Core documentation is deeply buried.** Explore the nested directo
 | L1    | Metadata Refraction & Signposting   | `README.cff`, `.well`    | 🧭 Partial    |
 | L2    | Functional Illusions                | `index.html`, `favicon`  | ✨ Active     |
 | L3    | Symbolic Payload                    | `ukubona.png`, `🏝️.md`    | 🪡 Hidden     |
-| L4    | Recursive Entrypoints               | `contorno/ensi/ukuzula/` | 🔑 Intentional |
+| L4    | Recursive Entrypoints               | `ukuzula/` | 🔑 Intentional |
 
 ---
 
@@ -73,7 +73,7 @@ $$
 - [Launch Dashboard](https://example.com/404)  
 - [Token Dispenser](./token.cff)  
 - [Index (Decoy)](./index.html)  
-- [Start Reading](./kitabo/ensi/ukubona/index.html) 🧭  
+- [Start Reading](./index.html) 🧭  
 - [Entropy Poem](./poem.md) ✍️
 
 ---
@@ -121,8 +121,8 @@ In Ukusoma, **Layer 2 and Layer 3** are where decoys masquerade as payloads, and
 *A poetic decoy wrapped in layered epistemology*  
 
 <p align="center">
-  <a href="kitabo/ensi/figures/poem.png">
-    <img src="kitabo/ensi/figures/poem.png" width="300" />
+  <a href="poem.png">
+    <img src="poem.png" width="300" />
   </a><br>
   <em>Click to expand the verse</em>
 </p>
@@ -183,73 +183,8 @@ shall inherit the fire.
 find decoy -name "*.py" | head -n 20
 ```
 
-# flick 20250429104651-Grmk
-# flick 20250429111918-hfTc
-# flick 20250429133512-Om1p
-# flick 20250429154359-0HTt
-# flick 20250429155245-FeS5
-# flick 20250429160215-lUng
-# flick 20250429165848-6efp
-# flick 20250429170604-0fLz
-# flick 20250429223323-roCE
-# flick 20250430035512-hyat
-# flick 20250430233603-uT87
-# flick 20250430235653-wwlF
-# flick 20250501004528-YPCW
-# flick 20250501165153-Z8jC
-# flick 20250501203114-q5Wx
-# flick 20250501212136-81Xk
-# flick 20250501212533-lGYd
-# flick 20250501213918-VSUq
-# flick 20250502040434-ZxAh
-# flick 20250502133159-GjQv
-# flick 20250502144129-Peki
-# flick 20250502151637-UY1W
-# flick 20250502153924-e7ic
-# flick 20250502160306-GCxM
-# flick 20250503223204-3Uqf
-# flick 20250504121055-YLqW
-# flick 20250504224448-IkRU
-# flick 20250505031256-BK42
-# flick 20250505031606-m17L
-# flick 20250505034955-Nv5K
-# flick 20250505042032-xX2b
-# flick 20250505045222-Vwau
-# flick 20250505060800-FM63
-# flick 20250505063023-CqUf
-# flick 20250505103129-ykCJ
-# flick 20250505181031-IiTQ
-# flick 20250506164932-Qxha
-# flick 20250506204945-fvLk
-# flick 20250506214226-8u4X
-# flick 20250507144805-0lIh
-# flick 20250507145018-mCXC
-# flick 20250508013519-7d2b
-# flick 20250508093051-XAUc
-# flick 20250508095037-sSku
-# flick 20250508095936-BekB
-# flick 20250508214044-DYtN
-# flick 20250509002243-7BJ4
-# flick 20250509003527-TuRb
-# flick 20250509165435-rZDU
-# flick 20250509171037-6hJp
-# flick 20250509171952-OGZm
-# flick 20250509202005-vBGn
-# flick 20250509203137-oIkE
-# flick 20250510105836-yT80
-# flick 20250510191944-hg0h
-# flick 20250511005218-QFcg
-# flick 20250511222050-jil1
-# flick 20250511223549-dEpy
-# flick 20250511224514-Zigd
-# flick 20250512142505-V9rx
-# flick 20250512145159-tWpR
-# flick 20250512154401-xOty
-# flick 20250512161845-QEQs
-# flick 20250512165315-YRtC
-# flick 20250512221226-yYeK
-# flick 20250513040649-op5v
-# flick 20250513115617-WzJ4
+
+
 # flick 20250513151531-xvKp
 # flick 20250513153206-lCo9
 # flick 20250513154006-p9Id
